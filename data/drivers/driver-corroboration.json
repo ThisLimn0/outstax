@@ -1,0 +1,32 @@
+{
+  "source": "official WIDE2 Windows MSI, statically extracted InstaxBLE.dll",
+  "assembly_cabinet_id": "filAF61972469244DEDBC294BA28F413DFF",
+  "dll_bytes": 113664,
+  "methods": {
+    "framing": [
+      "BleRequest.Build",
+      "BleResponse.ParseResponse",
+      "BleConstants..cctor"
+    ],
+    "ble_setup": [
+      "PrintTask.SendBleConnectionSettingsCommand",
+      "BleConstants..cctor"
+    ],
+    "start": [
+      "PrintTask.SendDownloadStartRequest",
+      "PrintTask.HandleDownloadStartResponse"
+    ],
+    "data": [
+      "PrintTask.SendNextImageFrame"
+    ],
+    "post_upload_gate": [
+      "PrintTask.HandlePostDownloadEndCheck"
+    ],
+    "completion": [
+      "PrintTask.SchedulePrinterInfoPoll",
+      "PrintTask.HandlePrinterInfoResponse"
+    ]
+  },
+  "executed": false,
+  "hardware_verified": false
+}

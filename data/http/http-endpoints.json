@@ -1,0 +1,278 @@
+[
+  {
+    "app": "mini",
+    "method": "POST",
+    "path": "data/updateImageUpload",
+    "source": "p255v2/b.java"
+  },
+  {
+    "app": "mini",
+    "method": "POST",
+    "path": "data/getUploadUrls",
+    "source": "p255v2/b.java"
+  },
+  {
+    "app": "mini",
+    "method": "POST",
+    "path": "data/updateVideoDownloadCount",
+    "source": "p255v2/b.java"
+  },
+  {
+    "app": "mini",
+    "method": "POST",
+    "path": "data/updateVideoUpload",
+    "source": "p255v2/b.java"
+  },
+  {
+    "app": "mini",
+    "method": "POST",
+    "path": "data/deleteUserData",
+    "source": "p255v2/b.java"
+  },
+  {
+    "app": "mini",
+    "method": "POST",
+    "path": "user/addAnalyticsStatus",
+    "source": "p255v2/b.java"
+  },
+  {
+    "app": "mini",
+    "method": "POST",
+    "path": "user/registerCamera",
+    "source": "p255v2/a.java"
+  },
+  {
+    "app": "mini",
+    "method": "POST",
+    "path": "user/authorizeSmartphone",
+    "source": "p255v2/f.java"
+  },
+  {
+    "app": "mini",
+    "method": "GET",
+    "path": "pins",
+    "source": "S2/b.java"
+  },
+  {
+    "app": "mini",
+    "method": "POST",
+    "path": "oauth/token",
+    "source": "S2/c.java"
+  },
+  {
+    "app": "mini",
+    "method": "POST",
+    "path": "oauth/token",
+    "source": "S2/a.java"
+  },
+  {
+    "app": "square",
+    "method": "GET",
+    "path": "/long-url/sq/{shortCode}",
+    "source": "p018d2/b.java"
+  },
+  {
+    "app": "square",
+    "method": "DELETE",
+    "path": "networkprints",
+    "source": "p018d2/d.java"
+  },
+  {
+    "app": "square",
+    "method": "POST",
+    "path": "networkprints",
+    "source": "p018d2/d.java"
+  },
+  {
+    "app": "square",
+    "method": "PUT",
+    "path": "networkprints",
+    "source": "p018d2/d.java"
+  },
+  {
+    "app": "square",
+    "method": "POST",
+    "path": "networkprints/registerNotification",
+    "source": "p018d2/d.java"
+  },
+  {
+    "app": "square",
+    "method": "GET",
+    "path": "networkprints/download",
+    "source": "p018d2/d.java"
+  },
+  {
+    "app": "square",
+    "method": "DELETE",
+    "path": "networkprints/pushRequiredUser",
+    "source": "p018d2/d.java"
+  },
+  {
+    "app": "square",
+    "method": "PUT",
+    "path": "networkprints/download",
+    "source": "p018d2/d.java"
+  },
+  {
+    "app": "square",
+    "method": "PUT",
+    "path": "networkprints/pushRequiredUser",
+    "source": "p018d2/d.java"
+  },
+  {
+    "app": "square",
+    "method": "DELETE",
+    "path": "arprints",
+    "source": "p018d2/a.java"
+  },
+  {
+    "app": "square",
+    "method": "PUT",
+    "path": "arprints",
+    "source": "p018d2/a.java"
+  },
+  {
+    "app": "square",
+    "method": "POST",
+    "path": "arprints",
+    "source": "p018d2/a.java"
+  },
+  {
+    "app": "square",
+    "method": "GET",
+    "path": "arprints/download",
+    "source": "p018d2/a.java"
+  },
+  {
+    "app": "square",
+    "method": "POST",
+    "path": "users/analytics",
+    "source": "p018d2/e.java"
+  },
+  {
+    "app": "square",
+    "method": "POST",
+    "path": "users/cameras",
+    "source": "p018d2/e.java"
+  },
+  {
+    "app": "square",
+    "method": "POST",
+    "path": "users",
+    "source": "p018d2/e.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "user/login",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/LoginApiInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "user/registerDevice",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/LoginApiInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "short-urls",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/BaiduService.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "data/deleteUserData",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/DataApiInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "user/addAnalyticsStatus",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/DataApiInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "data/updateVideoDownloadCount",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/DataApiInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "data/uploadAudio",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/DataApiInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "data/uploadImages",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/DataApiInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "data/UploadTextFile",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/DataApiInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "/",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/DeepLinkApiInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "user/registerCamera",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/CameraApiInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "complete_store",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/BackupRestoreInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "restore",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/BackupRestoreInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "GET",
+    "path": "/storage/api/store",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/BackupRestoreInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "restore_file",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/BackupRestoreInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "storage/api/restore",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/BackupRestoreInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "restore_file",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/BackupRestoreInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "POST",
+    "path": "store_file",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/BackupRestoreInterface.java"
+  },
+  {
+    "app": "wide",
+    "method": "PUT",
+    "path": "storage/api/store",
+    "source": "com/fujifilm/instaxwide/api/apiinterface/BackupRestoreInterface.java"
+  }
+]

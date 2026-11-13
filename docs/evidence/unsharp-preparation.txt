@@ -1,0 +1,1 @@
+600x800 JPEG, 52911 bytes, quality 95 -> research/re-pass/unsharp-prepared.jpg

@@ -1,0 +1,103 @@
+[
+  {
+    "asset": "fw/BOD/0104.hex",
+    "app": "com.fujifilm.instaxminiLink",
+    "valid_checksums": true,
+    "record_types": {
+      "4": 14,
+      "0": 57347,
+      "5": 1,
+      "1": 1
+    },
+    "data_bytes": 917504,
+    "minimum_address": 134348800,
+    "discontinuities": [],
+    "eof_record_present": true
+  },
+  {
+    "asset": "fw/LINKPLUS/STMicro/0100.hex",
+    "app": "com.fujifilm.instaxminiLink",
+    "valid_checksums": true,
+    "record_types": {
+      "4": 14,
+      "0": 57346,
+      "5": 1,
+      "1": 1
+    },
+    "data_bytes": 917504,
+    "minimum_address": 134348800,
+    "discontinuities": [],
+    "eof_record_present": true
+  },
+  {
+    "asset": "fw/LINK3/STMicro/0102.hex",
+    "app": "com.fujifilm.instaxminiLink",
+    "valid_checksums": true,
+    "record_types": {
+      "4": 14,
+      "0": 57347,
+      "5": 1,
+      "1": 1
+    },
+    "data_bytes": 917504,
+    "minimum_address": 134348800,
+    "discontinuities": [],
+    "eof_record_present": true
+  },
+  {
+    "asset": "fw/LINK3/RenesasRX/0102.hex",
+    "app": "com.fujifilm.instaxminiLink",
+    "valid_checksums": true,
+    "record_types": {
+      "4": 3357,
+      "0": 3623
+    },
+    "data_bytes": 917504,
+    "minimum_address": 4293918720,
+    "discontinuities": [],
+    "eof_record_present": false
+  },
+  {
+    "asset": "fw/BO23/STMicro/0100.hex",
+    "app": "com.fujifilm.instaxminiLink",
+    "valid_checksums": true,
+    "record_types": {
+      "4": 14,
+      "0": 57346,
+      "5": 1,
+      "1": 1
+    },
+    "data_bytes": 917504,
+    "minimum_address": 134348800,
+    "discontinuities": [],
+    "eof_record_present": true
+  },
+  {
+    "asset": "fw/BO23/RenesasRX/0100.hex",
+    "app": "com.fujifilm.instaxminiLink",
+    "valid_checksums": true,
+    "record_types": {
+      "4": 3355,
+      "0": 3621
+    },
+    "data_bytes": 917504,
+    "minimum_address": 4293918720,
+    "discontinuities": [],
+    "eof_record_present": false
+  },
+  {
+    "asset": "Firmware/BO22/0101.hex",
+    "app": "com.fujifilm.instaxLinkWide",
+    "valid_checksums": true,
+    "record_types": {
+      "4": 14,
+      "0": 57347,
+      "5": 1,
+      "1": 1
+    },
+    "data_bytes": 917504,
+    "minimum_address": 134348800,
+    "discontinuities": [],
+    "eof_record_present": true
+  }
+]

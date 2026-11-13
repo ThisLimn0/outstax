@@ -1,0 +1,1843 @@
+{
+ "description": "Call-graph closure of every opcode/selector in data/commands.json across Mini 7.0.6, Square 1.6.2 and Wide 2.0.0 (JADX, static). status=called if at least one app emits it towards a model it actually operates; per-app note explains library-only or dead paths. See docs/re/protocol-closure.md.",
+ "date": "2026-11-12",
+ "status_counts": {
+  "called": 36,
+  "never-called": 42
+ },
+ "entries": [
+  {
+   "opcode": "0000",
+   "name": "SUPPORT_FUNCTION_AND_VERSION_INFO",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.n.s (InstaxInfoTask) <- L1.n.p <- X3.G.W [INIT_INSTAX]"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.a.i (INSTAX_INFO) <- h2.g.e [INIT_INSTAX] L1.b(2)"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.InstaxInfoTask <- InstaxService.initInstax <- instaxwide.util.bluetooth.InstaxBluetoothService.getInstaxInfo [INIT_INSTAX]"
+    }
+   },
+   "rust": "implemented (Session::identity)"
+  },
+  {
+   "opcode": "0001",
+   "name": "DEVICE_INFO_SERVICE",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.n.s (InstaxInfoTask) <- L1.n.p <- X3.G.W [INIT_INSTAX] P1.g sel 0..5; FI033 also 9,10"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.a.i (INSTAX_INFO) <- h2.g.e [INIT_INSTAX] T1.a(i,1) sel 0..5"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.InstaxInfoTask <- InstaxService.initInstax <- instaxwide.util.bluetooth.InstaxBluetoothService.getInstaxInfo [INIT_INSTAX] sel 0..5"
+    }
+   },
+   "rust": "implemented"
+  },
+  {
+   "opcode": "0001/6-8",
+   "name": "DEVICE_INFO system_id/regulatory/pnp",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant EnumC1888g.SYSTEM_ID/REGULATORY_DATA/PNP_ID has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "W1.a.i requests k(1..6) only"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "InstaxInfoTask requests MANUFACTURER..SW_REVISION only"
+    }
+   },
+   "note": "selectors exist in enums; never requested"
+  },
+  {
+   "opcode": "0002/0-3",
+   "name": "SUPPORT_FUNCTION_INFO image/battery/printer/history",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.n.s (InstaxInfoTask) <- L1.n.p <- X3.G.W [INIT_INSTAX]; T1.v <- L1.n.o <- X3.G.c0/a0 [GET_PRINTER_INFO1/2]; T1.x <- L1.n.r/s <- ui.EditScreenActivity, ui.compatibility.*, linkplus.ui.*"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.a.i (INSTAX_INFO) <- h2.g.e [INIT_INSTAX]; W1.g <- h2.g.e [GET_PRINTER_INFO]; W1.b helpers"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.InstaxInfoTask <- InstaxService.initInstax <- instaxwide.util.bluetooth.InstaxBluetoothService.getInstaxInfo [INIT_INSTAX]; task.PrinterInfoTask <- InstaxService.getPrinterInfo <- InstaxBluetoothService.getPrinterInfo [GET_PRINTER_INFO]; task.SendPrintImageTask <- InstaxService.sendPrintImage <- ui.imageeditor.PrintingHelper"
+    }
+   },
+   "rust": "implemented"
+  },
+  {
+   "opcode": "0002/4-5",
+   "name": "SUPPORT_FUNCTION_INFO camera/camera-history",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "F.CAMERA_FUNCTION_INFO/CAMERA_HISTORY_INFO not requested by any Mini task"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "T1.a(i,3) used only with i=1..4"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.CameraInfoTask (InstaxService.getCameraInfo has no app caller); BaseTask camera helper <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   }
+  },
+  {
+   "opcode": "0010",
+   "name": "IDENTIFY_INFORMATION",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.n.s (InstaxInfoTask) <- L1.n.p <- X3.G.W [INIT_INSTAX] state IDENTIFY_PRINTER_HEAD_TYPE, SP-4 only, P1.l(W1.k.LIGHT_PEN_S_OR_N=1); reply R1.m"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "W1.a.i (INSTAX_INFO) <- h2.g.e [INIT_INSTAX] case 9: SP-4 only -> T1.a() sel 1",
+     "note": "library path exists but Square app only operates FI017; unreachable"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   },
+   "note": "selector 1 only; selectors 0,2,3 never requested",
+   "rust": "proposal P1"
+  },
+  {
+   "opcode": "0100",
+   "name": "SHUT_DOWN",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "Q1.d.b() payload [00] <- U1.a.s state BT_ABORT_FW_UPGRADE (not on CONNECTION_LOSE)",
+     "note": "Link 3 BT firmware abort only; main firmware T1.i never sends 0100"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.c.h() payload [00] <- W1.c.i on cancel and error state (merged firmware task)"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "FwUpgradeRequest.FwUpdateAbortRequest <- task.FirmwareUpdateCameraTask only",
+     "note": "Wide FirmwareUpdateTask has no abort; camera task unreachable"
+    }
+   },
+   "note": "APP_RE claim 'main firmware errors take 0100' holds for Square only",
+   "rust": "proposal P8"
+  },
+  {
+   "opcode": "0101",
+   "name": "RESET",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.RESET has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal 7 never constructed (L1.b/T1.* scan)"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID.RESET only in SID enum/parse; no Request(SID.RESET)"
+    }
+   }
+  },
+  {
+   "opcode": "0102",
+   "name": "AUTO_SLEEP_SETTINGS",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.C1866a <- L1.m.B via L1.m.F (get) / L1.m.L (set) <- ui.t, o3.i modes 0,2,5"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.a.h (T1.b) <- Q1.g.h(V1.a) <- h2.g.e [V1.a(1) GET, V1.a(4) EXTEND], ui.settings.SettingsActivity.R [V1.a(6), V1.a(3)], K.d modes 0,2,3,5"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.AutoSleepTask <- InstaxWideService.getCurrentAutoSleepSetting/extendAutoSleepTime/setCurrentAutoSleepSetting <- InstaxBluetoothService, ui.settings.SettingsActivity modes 0,2,3,5"
+    }
+   },
+   "rust": "builder exists; proposal P5"
+  },
+  {
+   "opcode": "0102/1,4",
+   "name": "AUTO_SLEEP provisional get/set",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "EnumC1884c GET/SET_PROVITIONAL not used by L1.m"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "V1.a(2)/V1.a(5) never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "AutoSleepSettingsMode.GET/SET_PROVITIONAL_SLEEP_SETTING not used"
+    }
+   }
+  },
+  {
+   "opcode": "0103",
+   "name": "BLE_CONNECT",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.x <- L1.n.r/s <- ui.EditScreenActivity, ui.compatibility.*, linkplus.ui.* state BLE_CONNECT when isBle (Link+/Link 3)"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal 9 never constructed; Square uses Classic only"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.SendPrintImageTask <- InstaxService.sendPrintImage <- ui.imageeditor.PrintingHelper BaseTask.getBleConnectionRequest when isBleConnection (Wide 2)"
+    }
+   },
+   "rust": "implemented"
+  },
+  {
+   "opcode": "1000",
+   "name": "PRINT_IMAGE_DOWNLOAD_START",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.x <- L1.n.r/s <- ui.EditScreenActivity, ui.compatibility.*, linkplus.ui.*"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.h <- A.t T1.g"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.SendPrintImageTask <- InstaxService.sendPrintImage <- ui.imageeditor.PrintingHelper"
+    }
+   },
+   "rust": "implemented"
+  },
+  {
+   "opcode": "1001",
+   "name": "PRINT_IMAGE_DOWNLOAD_DATA",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.x <- L1.n.r/s <- ui.EditScreenActivity, ui.compatibility.*, linkplus.ui.*"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.h <- A.t T1.e(i,1)"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.SendPrintImageTask <- InstaxService.sendPrintImage <- ui.imageeditor.PrintingHelper"
+    }
+   },
+   "rust": "implemented"
+  },
+  {
+   "opcode": "1002",
+   "name": "PRINT_IMAGE_DOWNLOAD_END",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.x <- L1.n.r/s <- ui.EditScreenActivity, ui.compatibility.*, linkplus.ui.*"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.h <- A.t L1.b(12)"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.SendPrintImageTask <- InstaxService.sendPrintImage <- ui.imageeditor.PrintingHelper"
+    }
+   },
+   "rust": "implemented"
+  },
+  {
+   "opcode": "1003",
+   "name": "PRINT_IMAGE_DOWNLOAD_CANCEL",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.x <- L1.n.r/s <- ui.EditScreenActivity, ui.compatibility.*, linkplus.ui.* on user cancel between START and END"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.h <- A.t L1.b(13)"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.SendPrintImageTask <- InstaxService.sendPrintImage <- ui.imageeditor.PrintingHelper printImageCancel on cancel"
+    }
+   },
+   "rust": "implemented"
+  },
+  {
+   "opcode": "1080",
+   "name": "PRINT_IMAGE",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.r <- L1.n.w <- ui.EditScreenActivity, linkplus.ui.multiprint.*"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.f <- E2.z0 L1.b(14)"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.PrintTask <- InstaxService.startPrint <- InstaxBluetoothService.startPrinting, print.PrintingService"
+    }
+   },
+   "rust": "implemented"
+  },
+  {
+   "opcode": "1081",
+   "name": "REJECT_FILM_COVER",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.REJECT_FILM_COVER has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal 15 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "PrintImageRequest.rejectFilmCoverRequest has no caller"
+    }
+   }
+  },
+  {
+   "opcode": "2000",
+   "name": "FW_DOWNLOAD_START",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.i <- L1.m.O <- ui.t, o3.i (settings firmware dialog)"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.c.i <- l2.n T1.d"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.FirmwareUpdateTask <- InstaxWideService.updateFirmware <- ui.settings.SettingsActivity.createTxFirmwareData"
+    }
+   },
+   "rust": "builder exists"
+  },
+  {
+   "opcode": "2001",
+   "name": "FW_DOWNLOAD_DATA",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.i <- L1.m.O <- ui.t, o3.i (settings firmware dialog)"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.c.i <- l2.n T1.e(i,0)"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.FirmwareUpdateTask <- InstaxWideService.updateFirmware <- ui.settings.SettingsActivity.createTxFirmwareData"
+    }
+   },
+   "rust": "builder exists"
+  },
+  {
+   "opcode": "2002",
+   "name": "FW_DOWNLOAD_END",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.i <- L1.m.O <- ui.t, o3.i (settings firmware dialog)"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.c.i <- l2.n L1.b(18)"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.FirmwareUpdateTask <- InstaxWideService.updateFirmware <- ui.settings.SettingsActivity.createTxFirmwareData"
+    }
+   },
+   "rust": "builder exists"
+  },
+  {
+   "opcode": "2003",
+   "name": "FW_UPGRADE_EXIT",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.FW_UPGRADE_EXIT has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal 19 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID.FW_UPGRADE_EXIT only in enum/parse"
+    }
+   }
+  },
+  {
+   "opcode": "2010",
+   "name": "FW_PROGRAM_INFO",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.n.s (InstaxInfoTask) <- L1.n.p <- X3.G.W [INIT_INSTAX] gate SP-4,FI019,BO-22,FI023,FI017,FI033,FI046"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.a.i (INSTAX_INFO) <- h2.g.e [INIT_INSTAX] L1.b(20), gate SP-4,FI019,BO-22,FI023,FI017"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.InstaxInfoTask <- InstaxService.initInstax <- instaxwide.util.bluetooth.InstaxBluetoothService.getInstaxInfo [INIT_INSTAX] gate SP-4,FI019,BO-22,FI049"
+    }
+   },
+   "rust": "implemented"
+  },
+  {
+   "opcode": "2080",
+   "name": "FW_DATA_BACKUP",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.i <- L1.m.O <- ui.t, o3.i (settings firmware dialog)"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.c.i <- l2.n L1.b(21)"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.FirmwareUpdateTask <- InstaxWideService.updateFirmware <- ui.settings.SettingsActivity.createTxFirmwareData"
+    }
+   },
+   "rust": "builder exists"
+  },
+  {
+   "opcode": "2081",
+   "name": "FW_UPDATE_REQUEST",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.i <- L1.m.O <- ui.t, o3.i (settings firmware dialog)"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.c.i <- l2.n L1.b(22)"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.FirmwareUpdateTask <- InstaxWideService.updateFirmware <- ui.settings.SettingsActivity.createTxFirmwareData"
+    }
+   },
+   "rust": "builder exists"
+  },
+  {
+   "opcode": "20a0",
+   "name": "BT_FW_DOWNLOAD_START",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "U1.a <- L1.m.N <- link3.ui.settings.SettingsActivityForLink3"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   },
+   "rust": "builder exists"
+  },
+  {
+   "opcode": "20a1",
+   "name": "BT_FW_DOWNLOAD_DATA",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "U1.a <- L1.m.N <- link3.ui.settings.SettingsActivityForLink3"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   },
+   "rust": "builder exists"
+  },
+  {
+   "opcode": "20a2",
+   "name": "BT_FW_DOWNLOAD_END",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "U1.a <- L1.m.N <- link3.ui.settings.SettingsActivityForLink3"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   },
+   "rust": "builder exists"
+  },
+  {
+   "opcode": "20a7",
+   "name": "BT_FW_DOWNLOAD_END_INFO",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "U1.a <- L1.m.N <- link3.ui.settings.SettingsActivityForLink3"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   },
+   "rust": "builder exists"
+  },
+  {
+   "opcode": "20b0",
+   "name": "BT_FW_DATA_BACKUP",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "U1.a <- L1.m.N <- link3.ui.settings.SettingsActivityForLink3"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   },
+   "rust": "builder exists"
+  },
+  {
+   "opcode": "20b1",
+   "name": "BT_FW_UPDATE_REQUEST",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "U1.a <- L1.m.N <- link3.ui.settings.SettingsActivityForLink3"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   },
+   "rust": "builder exists"
+  },
+  {
+   "opcode": "20a8",
+   "name": "BT_FW_PROGRAM_INFO",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.n.s (InstaxInfoTask) <- L1.n.p <- X3.G.W [INIT_INSTAX] FI033 only (t() allowlist broader but only reached for FI033)"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   },
+   "rust": "implemented"
+  },
+  {
+   "opcode": "20a6",
+   "name": "BT_FW_UPGRADE_EXIT",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.BT_FW_UPGRADE_EXIT has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   }
+  },
+  {
+   "opcode": "20a9",
+   "name": "BT_FW_PROGRAM_EXIT",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.BT_FW_PROGRAM_EXIT has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   }
+  },
+  {
+   "opcode": "3000",
+   "name": "XYZ_AXIS_INFO",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.C1868c <- L1.m.E <- X3.G.T [GET_AXIS_INFO] all Mini models (L1.m.A gate)"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal 23 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.AxisInfoTask <- InstaxBodService only",
+     "note": "InstaxBodService unreferenced by Wide app"
+    }
+   },
+   "rust": "parser exists; proposal P6"
+  },
+  {
+   "opcode": "3001",
+   "name": "LED_PATTERN_SETTINGS",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.z (P1.d) <- L1.m.I <- X3.G.r0 [SET_COLOR], P2.a, ui.EditScreenActivity"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.j (T1.c) <- Q1.g.i [FI017] <- E2.A, ui.settings.SettingsActivity"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.SetColorTask <- InstaxWideService.setColorPattern <- InstaxBluetoothService.setColorPattern <- PrintingHelper, T0.b [BO-22/FI049]"
+    }
+   },
+   "rust": "implemented"
+  },
+  {
+   "opcode": "3002",
+   "name": "AXIS_ACTION_SETTINGS",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.g (P1.h) <- L1.m.z <- X3.G.v0 [SET_AXIS_CONFIG], settings, camera activities payload [02, powerOff|reprint<<1], both bits = one preference"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal 25 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.DeviceSettingsTask <- InstaxBodService only",
+     "note": "InstaxBodService unreferenced by Wide app"
+    }
+   },
+   "rust": "builder exists; proposal P6"
+  },
+  {
+   "opcode": "3003",
+   "name": "LED_PATTERN_SETTINGS_DOUBLE",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "V1.a <- L1.m.J [FI046] <- P2.a; T1.B <- L1.m.K [FI033] <- ui.a"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal 26 never constructed"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.SetColorDoubleTask <- InstaxWideService.setColorPatternDouble <- InstaxBluetoothService.setColorPatternDouble <- PrintingHelper, T0.b [BO-22/FI049]"
+    }
+   },
+   "rust": "implemented"
+  },
+  {
+   "opcode": "3004",
+   "name": "POWER_ONOFF_LED_SETTING",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.p <- L1.m.G/L1.m.M [FI023/FI033] <- ui.t"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.e (T1.f) <- ui.settings.SettingsActivity (read: new e(..,-1); write: S(v)) [FI017]"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.PowerOnOffLedSettingsTask <- InstaxWideService.get/setPowerOnOffLedSetting <- ui.settings.SettingsActivity (button only for INSTAX_LINK_WIDE1)"
+    }
+   },
+   "note": "reply >=20 bytes; body[0] = current value",
+   "rust": "builder exists; parser proposal P4"
+  },
+  {
+   "opcode": "3006",
+   "name": "AR_LED_VIBRARTION_SETTING",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.l <- L1.m.H [FI023 only] <- X3.G.Q [GET_AR_INFO] payload [enabled,intensity,0,0]; reply >=9 bytes body[0]=SwIntelligence switch byte"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal 28 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   },
+   "rust": "builder exists; parser proposal P6"
+  },
+  {
+   "opcode": "3008",
+   "name": "FUNCTION_BUTTON_SETTING",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.FUNCTION_BUTTON_SETTING has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.d.h (T1.e mode 3, X1.a RE_PRINT) <- h2.g.e [SET_FUNCTION_BTN_SETTING], gate Q1.g.g FI017 payload [02,01]; reply >=9 bytes body[0] 0 NO_ACTION/1 RE_PRINT/else RESERVED"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   },
+   "note": "previously catalogued enum-only; Square 1.6.2 sends it on every connect",
+   "rust": "proposal P3"
+  },
+  {
+   "opcode": "3010",
+   "name": "ADDITIONAL_PRINTER_INFO",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.t <- L1.m.D [FI023/FI033/FI046] <- X3.G.X [GET_PRINTER_COLOR], ui.a sel 0 then 1; R1.a reads cpu byte (W1.u ST_MICRO/RENESAS)"
+    },
+    "square": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "W1.a.j (T1.a(1,0),(2,0)) <- h2.g.e [GET_PRINTER_COLOR] sel 0 then 1"
+    },
+    "wide": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "task.PrinterInfoAdditionalTask <- InstaxWideService.getAdditionalPrinterInfo [BO-22/FI049] <- InstaxBluetoothService.getPrinterColor sel 0 then 1; no cpu byte read"
+    }
+   },
+   "rust": "parser exists"
+  },
+  {
+   "opcode": "3020",
+   "name": "PRINTER_PARAMETER_RW",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "U1.c -> Q1.e(ParameterCommand) <- L1.m.C [FI033 only] <- X3.G.B0 [SET_SHOOTING_LIGHT], ui.a, CameraActivity.G3, LinkPlusCameraActivity.G3, PhotoBoothActivity mode always 2 (SET_CURRENT_SETTING); params used: 0 MODE_SWITCHING dt0 0/1/2, 3 SHOOTING_LIGHTING dt0 0"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   },
+   "note": "gate is FI033 (Link 3), not FI046; Link+ callers get local NOT_SUPPORTED and no packet",
+   "rust": "builder exists; gate fix proposal P2"
+  },
+  {
+   "opcode": "3020/read",
+   "name": "PRINTER_PARAMETER_RW modes 0/1 and params 1,2,4",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "Q1.e(x,A,int) ctor never called; only Q1.e(ParameterCommand) with A.SET_CURRENT_SETTING; ParameterCommand.ledBrightnessModeSetting has no caller"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": false,
+     "evidence": "identifier not present in this app's SID enum"
+    }
+   },
+   "note": "read response layout stays undetermined because no app reads it"
+  },
+  {
+   "opcode": "3080",
+   "name": "PRINTER_HEAD_LIGHT_CORRECT_INFO",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.x <- L1.n.r/s <- ui.EditScreenActivity, ui.compatibility.*, linkplus.ui.* state GET_PRINTER_HEAD_LIGHT_CORRECT_INFO: only when !isBle, model SP-4, fw digits >=103; reply R1.p >=21 bytes; non-OK aborts the print"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "W1.h <- A.t case 6 gate SP-4 && fw>=103 -> L1.b(31)",
+     "note": "library path; Square app only operates FI017, so unreachable"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.SendPrintImageTask <- InstaxService.sendPrintImage <- ui.imageeditor.PrintingHelper GET_PRINTER_HEAD_LIGHT_CORRECT_INFO state is never assigned (PRINTER_STATUS -> IMAGE_START)",
+     "note": "dead state in Wide 2.0.0"
+    }
+   },
+   "rust": "parser exists; integration proposal P1"
+  },
+  {
+   "opcode": "3081",
+   "name": "PRINTER_HEAD_LIGHT_CORRECT_SETTINGS",
+   "status": "called",
+   "apps": {
+    "mini": {
+     "status": "called",
+     "in_enum": true,
+     "evidence": "T1.x <- L1.n.r/s <- ui.EditScreenActivity, ui.compatibility.*, linkplus.ui.* only after 3080 with head FUTABA(0) and judge==1; P1.q.b(PrinterHeadLightCorrect.funcCalc brim)"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "W1.h <- A.t after 3080 only",
+     "note": "unreachable for FI017"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.SendPrintImageTask <- InstaxService.sendPrintImage <- ui.imageeditor.PrintingHelper only after dead 3080 state",
+     "note": "dead state"
+    }
+   },
+   "rust": "builder exists; integration proposal P1"
+  },
+  {
+   "opcode": "8000",
+   "name": "CAMERA_SETTINGS",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.CAMERA_SETTINGS has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.LiveViewTask (LiveViewRequest.cameraSettingsRequest) <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8001",
+   "name": "CAMERA_SETTINGS_GET",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.CAMERA_SETTINGS_GET has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.CameraLogTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8100",
+   "name": "URL_UPLOAD_INFO",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.URL_UPLOAD_INFO has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.URLUploadTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8101",
+   "name": "URL_PICTURE_UPLOAD_START",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.URL_PICTURE_UPLOAD_START has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.URLUploadTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8102",
+   "name": "URL_PICTURE_UPLOAD",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.URL_PICTURE_UPLOAD has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.URLUploadTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8103",
+   "name": "URL_PICTURE_UPLOAD_END",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.URL_PICTURE_UPLOAD_END has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.URLUploadTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8104",
+   "name": "URL_AUDIO_UPLOAD_START",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.URL_AUDIO_UPLOAD_START has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.URLUploadTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8105",
+   "name": "URL_AUDIO_UPLOAD",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.URL_AUDIO_UPLOAD has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.URLUploadTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8106",
+   "name": "URL_AUDIO_UPLOAD_END",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.URL_AUDIO_UPLOAD_END has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.URLUploadTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8107",
+   "name": "URL_UPLOAD_ADDRESS",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.URL_UPLOAD_ADDRESS has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.URLUploadTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8108",
+   "name": "URL_UPLOAD_DATA_COMPLETE",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.URL_UPLOAD_DATA_COMPLETE has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.URLUploadTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8200",
+   "name": "LIVE_VIEW_START",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.LIVE_VIEW_START has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.LiveViewTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8201",
+   "name": "LIVE_VIEW_RECEIVE",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.LIVE_VIEW_RECEIVE has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.LiveViewTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8202",
+   "name": "LIVE_VIEW_STOP",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.LIVE_VIEW_STOP has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.LiveViewTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8210",
+   "name": "LIVE_VIEW_TAKE_PICTURE",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.LIVE_VIEW_TAKE_PICTURE has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.LiveViewTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8220",
+   "name": "POST_VIEW_UPLOAD_START",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.POST_VIEW_UPLOAD_START has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.LiveViewTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8221",
+   "name": "POST_VIEW_UPLOAD",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.POST_VIEW_UPLOAD has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.LiveViewTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8222",
+   "name": "POST_VIEW_UPLOAD_END",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.POST_VIEW_UPLOAD_END has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.LiveViewTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8230",
+   "name": "POST_VIEW_PRINT",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.POST_VIEW_PRINT has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.LiveViewTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8300",
+   "name": "FRAME_PICTURE_DOWNLOAD_START",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.FRAME_PICTURE_DOWNLOAD_START has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.FrameSetTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8301",
+   "name": "FRAME_PICTURE_DOWNLOAD",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.FRAME_PICTURE_DOWNLOAD has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.FrameSetTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8302",
+   "name": "FRAME_PICTURE_DOWNLOAD_END",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.FRAME_PICTURE_DOWNLOAD_END has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.FrameSetTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8303",
+   "name": "FRAME_PICTURE_NAME_SETTING",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.FRAME_PICTURE_NAME_SETTING has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.FrameSetTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8400",
+   "name": "CAMERA_LOG_SUBTOTAL_START",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.CAMERA_LOG_SUBTOTAL_START has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.CameraLogTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8401",
+   "name": "CAMERA_LOG_SUBTOTAL_DATA",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.CAMERA_LOG_SUBTOTAL_DATA has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.CameraLogTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8402",
+   "name": "CAMERA_LOG_SUBTOTAL_CLEAR",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.CAMERA_LOG_SUBTOTAL_CLEAR has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.CameraLogTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8403",
+   "name": "CAMERA_LOG_DATE_START",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.CAMERA_LOG_DATE_START has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.CameraLogTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8404",
+   "name": "CAMERA_LOG_DATE_DATA",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.CAMERA_LOG_DATE_DATA has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.CameraLogTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8405",
+   "name": "CAMERA_LOG_DATE_CLEAR",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.CAMERA_LOG_DATE_CLEAR has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.CameraLogTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8406",
+   "name": "CAMERA_LOG_FILTER_START",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.CAMERA_LOG_FILTER_START has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.CameraLogTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8407",
+   "name": "CAMERA_LOG_FILTER_DATA",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.CAMERA_LOG_FILTER_DATA has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.CameraLogTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8408",
+   "name": "CAMERA_LOG_FILTER_CLEAR",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.CAMERA_LOG_FILTER_CLEAR has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal >=33 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "task.CameraLogTask <- InstaxBo19Service/InstaxDm1Service only",
+     "note": "service class has no reference from Wide app code (only InstaxWideService is used)"
+    }
+   },
+   "note": "hybrid-camera scope; builders exist only in the Wide library and are unreachable from Wide app code"
+  },
+  {
+   "opcode": "8304",
+   "name": "FRAME_PICTURE_NAME_GET",
+   "status": "never-called",
+   "apps": {
+    "mini": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "enum constant W1.D.FRAME_PICTURE_NAME_GET has no reference outside the SID enum/parse switch; no builder or task emits it"
+    },
+    "square": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID ordinal 56 never constructed"
+    },
+    "wide": {
+     "status": "never-called",
+     "in_enum": true,
+     "evidence": "SID.FRAME_PICTURE_NAME_GET only in enum/parse; no builder"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1572 @@
+[
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filA1CEAB60D8471C9FBB6D867C64A2522A",
+    "version_strings": {
+      "Comments": "Unity Container Public Abstractions",
+      "CompanyName": "Unity Open Source Project",
+      "FileDescription": "Unity.Abstractions",
+      "FileVersion": "5.11.7.0",
+      "InternalName": "Unity.Abstractions.dll",
+      "LegalCopyright": "Copyright \u00a9 .NET Foundation and Contributors. All Rights Reserved",
+      "OriginalFilename": "Unity.Abstractions.dll",
+      "ProductName": "Unity.Abstractions",
+      "ProductVersion": "5.11.7+096276e2cb53389ebcbe7ec08940b2757b97bf2f",
+      "Assembly Version": "5.11.7.0"
+    },
+    "assembly": [
+      "Unity.Abstractions"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil81FB40C6E68B483E7C15FC4A8E8ED26F",
+    "version_strings": {
+      "Comments": "System.Numerics.Vectors",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Numerics.Vectors",
+      "FileVersion": "4.6.26515.06",
+      "InternalName": "System.Numerics.Vectors.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation.  All rights reserved.",
+      "LegalTrademarks": "",
+      "OriginalFilename": "System.Numerics.Vectors.dll",
+      "ProductName": "Microsoft\u00ae .NET Framework",
+      "ProductVersion": "4.6.26515.06 @BuiltBy: dlab-DDVSOWINAGE059 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf",
+      "Assembly Version": "4.1.4.0"
+    },
+    "assembly": [
+      "System.Numerics.Vectors"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil21A7A51D2A18F2084EDFC507A6A29CF7",
+    "version_strings": {
+      "Comments": "Provides high-performance and low-allocating types that serialize objects to JavaScript Object Notation (JSON) text and deserialize JSON text to objects, with UTF-8 support built-in. Also provides types to read and write JSON text encoded as UTF-8, and to create an in-memory document object model (DOM), that is read-only, for random access of the JSON elements within a structured view of the data.\r\n\r\nThe System.Text.Json library is built-in as part of the shared framework in .NET Runtime. The package can be installed when you need to use it in other target frameworks.",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Text.Json",
+      "FileVersion": "8.0.23.53103",
+      "InternalName": "System.Text.Json.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "System.Text.Json.dll",
+      "ProductName": "Microsoft\u00ae .NET",
+      "ProductVersion": "8.0.0+5535e31a712343a63f5d7d796cd874e563e5ac14",
+      "Assembly Version": "8.0.0.0"
+    },
+    "assembly": [
+      "System.Text.Json"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil01F0500553E34EF4835FB47BE61C5999",
+    "version_strings": {
+      "FileDescription": "OpenCV FFmpeg wrapper",
+      "FileVersion": "2024.12.0",
+      "InternalName": "opencv_videoio_ffmpeg_64",
+      "OriginalFilename": "opencv_videoio_ffmpeg_64.dll",
+      "ProductName": "OpenCV FFmpeg wrapper",
+      "ProductVersion": "2024.12.0",
+      "Comments": "http://opencv.org/"
+    }
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filE2799C200432B3FF6DD92EF263D9D477",
+    "version_strings": {
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "Microsoft\u00ae C Runtime Library",
+      "FileVersion": "14.29.30135.0 built by: vcwrkspc",
+      "InternalName": "vcruntime140_1.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "vcruntime140_1.dll",
+      "ProductName": "Microsoft\u00ae Visual Studio\u00ae",
+      "ProductVersion": "14.29.30135.0"
+    }
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filC7E87D19277C9759D40433304A536FAD",
+    "version_strings": {
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "ReactiveUI.Events.WPF",
+      "FileVersion": "15.1.1.16107",
+      "InternalName": "ReactiveUI.Events.WPF.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors",
+      "OriginalFilename": "ReactiveUI.Events.WPF.dll",
+      "ProductName": "ReactiveUI.Events.WPF (net48)",
+      "ProductVersion": "15.1.1+eb3e4b47aa",
+      "Assembly Version": "15.1.0.0"
+    },
+    "assembly": [
+      "ReactiveUI.Events.WPF"
+    ],
+    "protocol_types": [
+      "System.Windows.Input.RxCommandBindingEvents",
+      "System.Windows.Input.RxRoutedCommandEvents"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil162BF0C62424E17DFD5313FA1E7E6B2B",
+    "version_strings": {
+      "CompanyName": "The Apache Software Foundation",
+      "FileDescription": "Apache log4net for .NET Framework 4.5",
+      "FileVersion": "2.0.15.0",
+      "InternalName": "log4net.dll",
+      "LegalCopyright": "Copyright 2004-2017 The Apache Software Foundation.",
+      "LegalTrademarks": "Apache and Apache log4net are trademarks of The Apache Software Foundation",
+      "OriginalFilename": "log4net.dll",
+      "ProductName": "log4net",
+      "ProductVersion": "2.0.15.0-.NET 4.5",
+      "Assembly Version": "2.0.15.0"
+    },
+    "assembly": [
+      "log4net"
+    ],
+    "protocol_types": [
+      "log4net.Layout.Pattern.AspNetRequestPatternConverter"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filE2799C200432B3FF6DD92EF263D9D465",
+    "version_strings": {
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "Microsoft\u00ae C Runtime Library",
+      "FileVersion": "14.29.30135.0 built by: vcwrkspc",
+      "InternalName": "msvcp140.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "msvcp140.dll",
+      "ProductName": "Microsoft\u00ae Visual Studio\u00ae",
+      "ProductVersion": "14.29.30135.0"
+    }
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil40F8E5825D09919C797730D84C7F62E7",
+    "version_strings": {
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "Pharmacist.Common",
+      "FileVersion": "2.0.8.15338",
+      "InternalName": "Pharmacist.Common.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors",
+      "OriginalFilename": "Pharmacist.Common.dll",
+      "ProductName": "Pharmacist.Common (net472)",
+      "ProductVersion": "2.0.8+ea3bd63e74",
+      "Assembly Version": "2.0.0.0"
+    },
+    "assembly": [
+      "Pharmacist.Common"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filBE8BD5168944B3F65C39284DF307AA2B",
+    "version_strings": {
+      "Comments": "System.ComponentModel.Annotations",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.ComponentModel.Annotations",
+      "FileVersion": "4.6.26515.06",
+      "InternalName": "System.ComponentModel.Annotations.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation.  All rights reserved.",
+      "LegalTrademarks": "",
+      "OriginalFilename": "System.ComponentModel.Annotations.dll",
+      "ProductName": "Microsoft\u00ae .NET Framework",
+      "ProductVersion": "4.6.26515.06 @BuiltBy: dlab-DDVSOWINAGE059 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf",
+      "Assembly Version": "4.2.1.0"
+    },
+    "assembly": [
+      "System.ComponentModel.Annotations"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filAF61972469244DEDBC294BA28F413DFF",
+    "version_strings": {
+      "CompanyName": "InstaxBLE",
+      "FileDescription": "InstaxBLE",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "InstaxBLE.dll",
+      "LegalCopyright": " ",
+      "OriginalFilename": "InstaxBLE.dll",
+      "ProductName": "InstaxBLE",
+      "ProductVersion": "1.0.0+73f35c7c1eab3f9847fa83781497bd57ca6527d0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "InstaxBLE"
+    ],
+    "protocol_types": [
+      "InstaxBLE.Utils.PrinterErrorTypeHelper",
+      "InstaxBLE.Utils.PrinterErrorType",
+      "InstaxBLE.Tasks.GetPrinterInfoTask",
+      "InstaxBLE.Tasks.PrinterInfo",
+      "InstaxBLE.Tasks.PrintTask",
+      "InstaxBLE.Tasks.PrintState",
+      "InstaxBLE.Tasks.PrintRequest",
+      "InstaxBLE.Tasks.PrintResult",
+      "InstaxBLE.Core.System.PcBluetoothStateChecker",
+      "InstaxBLE.Core.Data.BleRequest",
+      "InstaxBLE.Core.Data.BleResponse",
+      "InstaxBLE.Core.Data.BleResponseStatus",
+      "InstaxBLE.Core.Connection.BluetoothLeConnection",
+      "InstaxBLE.Core.Connection.IBluetoothConnection",
+      ".<<SchedulePrinterInfoPoll>b__32_0>d",
+      ".<<StartPollingForPCBluetoothStatusCheck>b__68_0>d",
+      ".<GetPrinterInfoAsync>d__73",
+      ".<PrintImageAsync>d__74",
+      ".<HandleRequestAsync>d__18",
+      ".<IsBluetoothRadioOnAsync>d__5",
+      ".<SendRequestAsync>d__8"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filB318D1CB6921FF995B2F1469085F0580",
+    "version_strings": {
+      "Comments": "A library to make things cross-platform that should be",
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "Splat",
+      "FileVersion": "14.8.12.56860",
+      "InternalName": "Splat.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors",
+      "OriginalFilename": "Splat.dll",
+      "ProductName": "Splat (netstandard2.0)",
+      "ProductVersion": "14.8.12+de1cc1e631",
+      "Assembly Version": "14.8.0.0"
+    },
+    "assembly": [
+      "Splat"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filE2799C200432B3FF6DD92EF263D9D476",
+    "version_strings": {
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "Microsoft\u00ae C Runtime Library",
+      "FileVersion": "14.29.30135.0 built by: vcwrkspc",
+      "InternalName": "vcruntime140.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "vcruntime140.dll",
+      "ProductName": "Microsoft\u00ae Visual Studio\u00ae",
+      "ProductVersion": "14.29.30135.0"
+    }
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil32EE86B35F73ECB2D5C087D99CF70698",
+    "version_strings": {
+      "Comments": "",
+      "CompanyName": "",
+      "FileDescription": "InstaxLogger",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "InstaxLogger.dll",
+      "LegalCopyright": "Copyright \u00a9  2024",
+      "LegalTrademarks": "",
+      "OriginalFilename": "InstaxLogger.dll",
+      "ProductName": "InstaxLogger",
+      "ProductVersion": "1.0.0.0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "InstaxLogger"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filA5AC6E9969D0241D1ED08DB852B6865D",
+    "version_strings": {
+      "Comments": "Provides types for encoding and escaping strings for use in JavaScript, HyperText Markup Language (HTML), and uniform resource locators (URL).\r\n\r\nCommonly Used Types:\r\nSystem.Text.Encodings.Web.HtmlEncoder\r\nSystem.Text.Encodings.Web.UrlEncoder\r\nSystem.Text.Encodings.Web.JavaScriptEncoder",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Text.Encodings.Web",
+      "FileVersion": "8.0.23.53103",
+      "InternalName": "System.Text.Encodings.Web.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "System.Text.Encodings.Web.dll",
+      "ProductName": "Microsoft\u00ae .NET",
+      "ProductVersion": "8.0.0+5535e31a712343a63f5d7d796cd874e563e5ac14",
+      "Assembly Version": "8.0.0.0"
+    },
+    "assembly": [
+      "System.Text.Encodings.Web"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil44F1B44958C27F24E28A2A5AC9F3FDE9",
+    "version_strings": {
+      "Comments": "Managed wrapper library around the Ghostscript native library (32-bit & 64-bit), an interpreter for the PostScript language, PDF, related software and documentation.",
+      "CompanyName": "Habjan",
+      "FileDescription": "Ghostscript.NET",
+      "FileVersion": "1.2.3",
+      "InternalName": "Ghostscript.NET.dll",
+      "LegalCopyright": "Copyright \u00a9 2013-2021 by Josip Habjan (habjan@gmail.com). All Rights Reserved.",
+      "LegalTrademarks": "",
+      "OriginalFilename": "Ghostscript.NET.dll",
+      "ProductName": "Ghostscript.NET",
+      "ProductVersion": "1.2.3",
+      "Assembly Version": "1.2.3.0"
+    },
+    "assembly": [
+      "Ghostscript.NET"
+    ],
+    "protocol_types": [
+      "Ghostscript.NET.display_rectangle_request"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil575FE950854F553BC6A33F35EC57FF6A",
+    "version_strings": {
+      "Comments": "Unity Core Engine",
+      "CompanyName": "Unity Open Source Project",
+      "FileDescription": "Unity.Container",
+      "FileVersion": "5.11.11.0",
+      "InternalName": "Unity.Container.dll",
+      "LegalCopyright": "Copyright \u00a9 .NET Foundation and Contributors. All Rights Reserved",
+      "OriginalFilename": "Unity.Container.dll",
+      "ProductName": "Unity.Container",
+      "ProductVersion": "5.11.11+03e10033114fc71deab4b5c43cddeec1c052daa7",
+      "Assembly Version": "5.11.11.0"
+    },
+    "assembly": [
+      "Unity.Container"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil48A6E127A3C2724D32B012CA387B98C7",
+    "version_strings": {
+      "Comments": "Json.NET is a popular high-performance JSON framework for .NET",
+      "CompanyName": "Newtonsoft",
+      "FileDescription": "Json.NET .NET 4.5",
+      "FileVersion": "13.0.3.27908",
+      "InternalName": "Newtonsoft.Json.dll",
+      "LegalCopyright": "Copyright \u00a9 James Newton-King 2008",
+      "LegalTrademarks": "",
+      "OriginalFilename": "Newtonsoft.Json.dll",
+      "ProductName": "Json.NET",
+      "ProductVersion": "13.0.3+0a2e291c0d9c0c7675d445703e51750363a549ef",
+      "Assembly Version": "13.0.0.0"
+    },
+    "assembly": [
+      "Newtonsoft.Json"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil8081782AF6CCBCCE58E8F64B27F1E12D",
+    "version_strings": {
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "ReactiveUI.Wpf",
+      "FileVersion": "15.1.1.16107",
+      "InternalName": "ReactiveUI.Wpf.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors",
+      "OriginalFilename": "ReactiveUI.Wpf.dll",
+      "ProductName": "ReactiveUI.Wpf (net48)",
+      "ProductVersion": "15.1.1+eb3e4b47aa",
+      "Assembly Version": "15.1.0.0"
+    },
+    "assembly": [
+      "ReactiveUI.Wpf"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil68DB82496EAB9BA327176B595AD8541E",
+    "version_strings": {
+      "Comments": "Wpf components for the iconic font and CSS toolkit Font-Awesome",
+      "CompanyName": "charri",
+      "FileDescription": "Font Awesome WPF",
+      "FileVersion": "4.7.0.9",
+      "InternalName": "FontAwesome.WPF.dll",
+      "LegalCopyright": "Copyright \u00a9 2015-2017",
+      "LegalTrademarks": "",
+      "OriginalFilename": "FontAwesome.WPF.dll",
+      "ProductName": "FontAwesome.WPF",
+      "ProductVersion": "4.7.0.9",
+      "Assembly Version": "4.7.0.37774"
+    },
+    "assembly": [
+      "FontAwesome.WPF"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil32B3FF67BEDD0492EF263D9D42799C20",
+    "version_strings": {
+      "Comments": "",
+      "CompanyName": "",
+      "FileDescription": "ImageProcLibrary",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "ImageProcLibrary.dll",
+      "LegalCopyright": "Copyright \u00a9  2024",
+      "LegalTrademarks": "",
+      "OriginalFilename": "ImageProcLibrary.dll",
+      "ProductName": "ImageProcLibrary",
+      "ProductVersion": "1.0.0.0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "ImageProcLibrary"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil21CDF09A724B894949FCDC8EE47DC558",
+    "version_strings": {
+      "Comments": "Provides the IAsyncEnumerable<T> and IAsyncDisposable interfaces and helper types for .NET Standard 2.0. This package is not required starting with .NET Standard 2.1 and .NET Core 3.0.\r\n\r\nCommonly Used Types:\r\nSystem.IAsyncDisposable\r\nSystem.Collections.Generic.IAsyncEnumerable\r\nSystem.Collections.Generic.IAsyncEnumerator",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "Microsoft.Bcl.AsyncInterfaces",
+      "FileVersion": "8.0.23.53103",
+      "InternalName": "Microsoft.Bcl.AsyncInterfaces.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "Microsoft.Bcl.AsyncInterfaces.dll",
+      "ProductName": "Microsoft\u00ae .NET",
+      "ProductVersion": "8.0.0+5535e31a712343a63f5d7d796cd874e563e5ac14",
+      "Assembly Version": "8.0.0.0"
+    },
+    "assembly": [
+      "Microsoft.Bcl.AsyncInterfaces"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil385E911A13F7FB9F137A6F52255B7023",
+    "version_strings": {
+      "Comments": "",
+      "CompanyName": "",
+      "FileDescription": "Fujifilm.Instax.PrinterDriver.CustomAction",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "Fujifilm.Instax.PrinterDriver.CustomAction.dll",
+      "LegalCopyright": "Copyright \u00a9  2024",
+      "LegalTrademarks": "",
+      "OriginalFilename": "Fujifilm.Instax.PrinterDriver.CustomAction.dll",
+      "ProductName": "Fujifilm.Instax.PrinterDriver.CustomAction",
+      "ProductVersion": "1.0.0.0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "Fujifilm.Instax.PrinterDriver.CustomAction"
+    ],
+    "protocol_types": [
+      "Fujifilm.Instax.PrinterDriver.CustomAction.PRINTER_DEFAULTS",
+      "Fujifilm.Instax.PrinterDriver.CustomAction.PRINTER_INFO_2"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil2CA8F6CAC6308F70AC451144C25985FB",
+    "version_strings": {
+      "Comments": "System.ValueTuple",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.ValueTuple",
+      "FileVersion": "4.6.26515.06",
+      "InternalName": "System.ValueTuple.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation.  All rights reserved.",
+      "LegalTrademarks": "",
+      "OriginalFilename": "System.ValueTuple.dll",
+      "ProductName": "Microsoft\u00ae .NET Framework",
+      "ProductVersion": "4.6.26515.06 @BuiltBy: dlab-DDVSOWINAGE059 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf",
+      "Assembly Version": "4.0.3.0"
+    },
+    "assembly": [
+      "System.ValueTuple"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil5F1AB79542ABFA2E6A4932BA36251AA2",
+    "version_strings": {
+      "Comments": "\r\nBring the power of Rx to collections using Dynamic Data.\r\nDynamic Data is a comprehensive caching and data manipulation solution which introduces domain centric observable collections.\r\n      Linq extensions enable dynamic filtering, sorting, grouping, transforms, binding, pagination, data virtualisation, expiration, disposal management plus more.\r\n    ",
+      "CompanyName": "Roland Pheasant",
+      "FileDescription": "DynamicData",
+      "FileVersion": "8.3.27.26536",
+      "InternalName": "DynamicData.dll",
+      "LegalCopyright": "Copyright (c) Roland Pheasant 2011-2023",
+      "OriginalFilename": "DynamicData.dll",
+      "ProductName": "DynamicData (net462)",
+      "ProductVersion": "8.3.27+67a8e742fd",
+      "Assembly Version": "8.3.0.0"
+    },
+    "assembly": [
+      "DynamicData"
+    ],
+    "protocol_types": [
+      "DynamicData.IPageRequest",
+      "DynamicData.IVirtualRequest",
+      "DynamicData.IVirtualResponse",
+      "DynamicData.PageRequest",
+      "DynamicData.PageResponse",
+      "DynamicData.VirtualRequest",
+      "DynamicData.VirtualResponse",
+      "DynamicData.Operators.IPageResponse",
+      ".PageResponseEqualityComparer"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil035EECC903E14989C4A5851F3FA2F3F1",
+    "version_strings": {
+      "Comments": "System.Runtime.CompilerServices.Unsafe",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Runtime.CompilerServices.Unsafe",
+      "FileVersion": "6.0.21.52210",
+      "InternalName": "System.Runtime.CompilerServices.Unsafe.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "System.Runtime.CompilerServices.Unsafe.dll",
+      "ProductName": "Microsoft\u00ae .NET",
+      "ProductVersion": "6.0.0+4822e3c3aa77eb82b2fb33c9321f923cf11ddde6",
+      "Assembly Version": "6.0.0.0"
+    },
+    "assembly": [
+      "System.Runtime.CompilerServices.Unsafe"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil9DB24CFD63272AFA108D439EB36E4E51"
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filE2799C200432B3FF6DD92EF263D9D47B",
+    "version_strings": {
+      "FileVersion": "10.03.1",
+      "ProductVersion": "10.03.1",
+      "LegalCopyright": "Copyright (C) 2024 Artifex Software, Inc.  All rights reserved.",
+      "ProductName": "Artifex Ghostscript"
+    }
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filFE958FE565CDE1BB1D2C234EB24B8901",
+    "version_strings": {
+      "Comments": "System.Threading.Tasks.Extensions",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Threading.Tasks.Extensions",
+      "FileVersion": "4.6.28619.01",
+      "InternalName": "System.Threading.Tasks.Extensions.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "System.Threading.Tasks.Extensions.dll",
+      "ProductName": "Microsoft\u00ae .NET Framework",
+      "ProductVersion": "4.6.28619.01 @BuiltBy: dlab14-DDVSOWINAGE069 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/7601f4f6225089ffb291dc7d58293c7bbf5c5d4f",
+      "Assembly Version": "4.2.0.1"
+    },
+    "assembly": [
+      "System.Threading.Tasks.Extensions"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil38EFE44C13223F4B907DBFF69F685DC8",
+    "version_strings": {
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "ReactiveUI.Fody.Helpers",
+      "FileVersion": "19.5.41.25387",
+      "InternalName": "ReactiveUI.Fody.Helpers.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors",
+      "OriginalFilename": "ReactiveUI.Fody.Helpers.dll",
+      "ProductName": "ReactiveUI.Fody.Helpers (net472)",
+      "ProductVersion": "19.5.41+632b33dbfc",
+      "Assembly Version": "19.5.0.0"
+    },
+    "assembly": [
+      "ReactiveUI.Fody.Helpers"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filF4A1AA1DE970E3CE55B1F34D7E9CDE15",
+    "version_strings": {
+      "Comments": "System.Buffers",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Buffers",
+      "FileVersion": "4.6.28619.01",
+      "InternalName": "System.Buffers.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "System.Buffers.dll",
+      "ProductName": "Microsoft\u00ae .NET Framework",
+      "ProductVersion": "4.6.28619.01 @BuiltBy: dlab14-DDVSOWINAGE069 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/7601f4f6225089ffb291dc7d58293c7bbf5c5d4f",
+      "Assembly Version": "4.0.3.0"
+    },
+    "assembly": [
+      "System.Buffers"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil7BA94F8488984AEBBED0CCD76871ABB8",
+    "version_strings": {
+      "CompanyName": "",
+      "FileDescription": "OpenCvSharp.Extensions",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "OpenCvSharp.Extensions.dll",
+      "LegalCopyright": " ",
+      "LegalTrademarks": "",
+      "OriginalFilename": "OpenCvSharp.Extensions.dll",
+      "ProductName": "OpenCvSharp.Extensions",
+      "ProductVersion": "1.0.0+7088049f6bee1baa244661ba2353c36bef151896",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "OpenCvSharp.Extensions"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil313E146468FEB60BB74337899568D3FB",
+    "version_strings": {
+      "Comments": "Reactive Extensions (Rx) for .NET",
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "System.Reactive",
+      "FileVersion": "6.0.0.1",
+      "InternalName": "System.Reactive.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors.",
+      "OriginalFilename": "System.Reactive.dll",
+      "ProductName": "System.Reactive (net472)",
+      "ProductVersion": "6.0.0.1+e29c7a50db",
+      "Assembly Version": "6.0.0.0"
+    },
+    "assembly": [
+      "System.Reactive"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil2B636C18E9F04E74831000DAD53CDC3C",
+    "version_strings": {
+      "CompanyName": "",
+      "FileDescription": "OpenCvSharp",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "OpenCvSharp.dll",
+      "LegalCopyright": " ",
+      "LegalTrademarks": "",
+      "OriginalFilename": "OpenCvSharp.dll",
+      "ProductName": "OpenCvSharp",
+      "ProductVersion": "1.0.0+7088049f6bee1baa244661ba2353c36bef151896",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "OpenCvSharp"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil8FA7CC7B749B6AA5558B1E8D27772D61",
+    "version_strings": {
+      "Comments": "",
+      "CompanyName": "",
+      "FileDescription": "PosthogHelper",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "PosthogHelper.exe",
+      "LegalCopyright": "Copyright \u00a9  2024",
+      "LegalTrademarks": "",
+      "OriginalFilename": "PosthogHelper.exe",
+      "ProductName": "PosthogHelper",
+      "ProductVersion": "1.0.0.0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "PosthogHelper"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filCD878469D474BDECABB381258EA8192A",
+    "version_strings": {
+      "Comments": "",
+      "CompanyName": "",
+      "FileDescription": "PrintPreferenceApplication",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "PrintPreferenceApplication.exe",
+      "LegalCopyright": "Copyright \u00a9  2024",
+      "LegalTrademarks": "",
+      "OriginalFilename": "PrintPreferenceApplication.exe",
+      "ProductName": "PrintPreferenceApplication",
+      "ProductVersion": "1.0.0.0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "PrintPreferenceApplication"
+    ],
+    "protocol_types": [
+      "PrintPreferenceApplication.View.PrintPreviewPopUpViewBase",
+      "PrintPreferenceApplication.View.PrintPreviewPopUp",
+      "PrintPreferenceApplication.View.PrintingPreferencesViewBase",
+      "PrintPreferenceApplication.View.PrintingPreferences",
+      ".<ConnectDisconnectPrinter>d__70",
+      ".<ConnectPrinter>d__73",
+      ".<Reconnection_Request>d__72",
+      ".<HandlePrint>d__67",
+      "PrintPreferenceApplication.ViewModel.PrintingPreferencesViewModel",
+      ".<ShowPrintPreviewAsync>d__72",
+      ".<GetPrinterInfoAsync>d__87",
+      ".<PrintAsync>d__71",
+      "PrintPreferenceApplication.Services.PrintService",
+      "PrintPreferenceApplication.Interfaces.IPrintService",
+      "PrintPreferenceApplication.Extentions.PrintSpeedOption",
+      ".PrintPreferenceApplication_ProcessedByFody"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filD03DF1013E1245D6A24B87CCA41F76CD"
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil74D87117E4C37256277792E78B9EFDF2",
+    "version_strings": {
+      "Comments": "",
+      "CompanyName": "",
+      "FileDescription": "Utils",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "Utils.dll",
+      "LegalCopyright": "Copyright \u00a9  2024",
+      "LegalTrademarks": "",
+      "OriginalFilename": "Utils.dll",
+      "ProductName": "Utils",
+      "ProductVersion": "1.0.0.0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "Utils"
+    ],
+    "protocol_types": [
+      "Utils.PrintSpeed",
+      "Utils.PCBluetoothSettingState",
+      "Utils.DeviceResponseResultCode",
+      "Utils.PrintSpeedSettings"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/filEFB68D045B7B99F154865D0546E9745B",
+    "version_strings": {
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "ReactiveUI",
+      "FileVersion": "19.5.41.25387",
+      "InternalName": "ReactiveUI.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors",
+      "OriginalFilename": "ReactiveUI.dll",
+      "ProductName": "ReactiveUI (net472)",
+      "ProductVersion": "19.5.41+632b33dbfc",
+      "Assembly Version": "19.5.0.0"
+    },
+    "assembly": [
+      "ReactiveUI"
+    ],
+    "protocol_types": [
+      "ReactiveUI.CommandBinder",
+      "ReactiveUI.CommandBinderImplementation",
+      "ReactiveUI.CommandBinderImplementationMixins",
+      "ReactiveUI.CreatesCommandBinding",
+      "ReactiveUI.CreatesCommandBindingViaCommandParameter",
+      "ReactiveUI.CreatesCommandBindingViaEvent",
+      "ReactiveUI.ICommandBinderImplementation",
+      "ReactiveUI.RelayCommand",
+      "ReactiveUI.ICreatesCommandBinding",
+      "ReactiveUI.CombinedReactiveCommand`2",
+      "ReactiveUI.IReactiveCommand",
+      "ReactiveUI.IReactiveCommand`2",
+      "ReactiveUI.ReactiveCommand",
+      "ReactiveUI.ReactiveCommand`2",
+      "ReactiveUI.ReactiveCommandBase`2",
+      "ReactiveUI.ReactiveCommandMixins",
+      ".InvokeCommandInfo`2"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil4CA1159ABDF49420B38519A2A4B073E8",
+    "version_strings": {
+      "Comments": "Managed libraries for Windows Installer",
+      "CompanyName": ".NET Foundation",
+      "FileDescription": " ",
+      "FileVersion": "3.14.1.8722",
+      "InternalName": "Microsoft.Deployment.WindowsInstaller.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and contributors. All rights reserved.",
+      "OriginalFilename": "Microsoft.Deployment.WindowsInstaller.dll",
+      "ProductName": "Windows Installer XML Toolset",
+      "ProductVersion": "3.14.1.8722",
+      "Assembly Version": "3.0.0.0"
+    },
+    "assembly": [
+      "Microsoft.Deployment.WindowsInstaller"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil34DACE667C99635C03349CE704B84F6D",
+    "version_strings": {
+      "CompanyName": ".NET Foundation",
+      "FileDescription": "DTF Self-Extracting Custom Action",
+      "FileVersion": "3.14.1.8722",
+      "InternalName": "SfxCA",
+      "LegalCopyright": "Copyright (c) .NET Foundation and contributors.\u00a0 All rights reserved.",
+      "OriginalFilename": "SfxCA.dll",
+      "ProductName": "Windows Installer XML Toolset",
+      "ProductVersion": "3.14.1.8722"
+    }
+  },
+  {
+    "file": "Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64/fil872969EADBF89E68AE0880DA93505394",
+    "version_strings": {
+      "Comments": "System.Memory",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Memory",
+      "FileVersion": "4.6.31308.01",
+      "InternalName": "System.Memory.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "System.Memory.dll",
+      "ProductName": "Microsoft\u00ae .NET Framework",
+      "ProductVersion": "4.6.31308.01 @BuiltBy: cloudtest-841353dfc000000 @Branch: release/2.1-MSRC @SrcCode: https://github.com/dotnet/corefx/tree/32b491939fbd125f304031c35038b1e14b4e3958",
+      "Assembly Version": "4.0.1.2"
+    },
+    "assembly": [
+      "System.Memory"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filA1CEAB60D8471C9FBB6D867C64A2522A",
+    "version_strings": {
+      "Comments": "Unity Container Public Abstractions",
+      "CompanyName": "Unity Open Source Project",
+      "FileDescription": "Unity.Abstractions",
+      "FileVersion": "5.11.7.0",
+      "InternalName": "Unity.Abstractions.dll",
+      "LegalCopyright": "Copyright \u00a9 .NET Foundation and Contributors. All Rights Reserved",
+      "OriginalFilename": "Unity.Abstractions.dll",
+      "ProductName": "Unity.Abstractions",
+      "ProductVersion": "5.11.7+096276e2cb53389ebcbe7ec08940b2757b97bf2f",
+      "Assembly Version": "5.11.7.0"
+    },
+    "assembly": [
+      "Unity.Abstractions"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil81FB40C6E68B483E7C15FC4A8E8ED26F",
+    "version_strings": {
+      "Comments": "System.Numerics.Vectors",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Numerics.Vectors",
+      "FileVersion": "4.6.26515.06",
+      "InternalName": "System.Numerics.Vectors.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation.  All rights reserved.",
+      "LegalTrademarks": "",
+      "OriginalFilename": "System.Numerics.Vectors.dll",
+      "ProductName": "Microsoft\u00ae .NET Framework",
+      "ProductVersion": "4.6.26515.06 @BuiltBy: dlab-DDVSOWINAGE059 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf",
+      "Assembly Version": "4.1.4.0"
+    },
+    "assembly": [
+      "System.Numerics.Vectors"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil21A7A51D2A18F2084EDFC507A6A29CF7",
+    "version_strings": {
+      "Comments": "Provides high-performance and low-allocating types that serialize objects to JavaScript Object Notation (JSON) text and deserialize JSON text to objects, with UTF-8 support built-in. Also provides types to read and write JSON text encoded as UTF-8, and to create an in-memory document object model (DOM), that is read-only, for random access of the JSON elements within a structured view of the data.\r\n\r\nThe System.Text.Json library is built-in as part of the shared framework in .NET Runtime. The package can be installed when you need to use it in other target frameworks.",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Text.Json",
+      "FileVersion": "8.0.23.53103",
+      "InternalName": "System.Text.Json.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "System.Text.Json.dll",
+      "ProductName": "Microsoft\u00ae .NET",
+      "ProductVersion": "8.0.0+5535e31a712343a63f5d7d796cd874e563e5ac14",
+      "Assembly Version": "8.0.0.0"
+    },
+    "assembly": [
+      "System.Text.Json"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filE2799C200432B3FF6DD92EF263D9D477",
+    "version_strings": {
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "Microsoft\u00ae C Runtime Library",
+      "FileVersion": "14.29.30135.0 built by: vcwrkspc",
+      "InternalName": "vcruntime140_1.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "vcruntime140_1.dll",
+      "ProductName": "Microsoft\u00ae Visual Studio\u00ae",
+      "ProductVersion": "14.29.30135.0"
+    }
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filC7E87D19277C9759D40433304A536FAD",
+    "version_strings": {
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "ReactiveUI.Events.WPF",
+      "FileVersion": "15.1.1.16107",
+      "InternalName": "ReactiveUI.Events.WPF.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors",
+      "OriginalFilename": "ReactiveUI.Events.WPF.dll",
+      "ProductName": "ReactiveUI.Events.WPF (net48)",
+      "ProductVersion": "15.1.1+eb3e4b47aa",
+      "Assembly Version": "15.1.0.0"
+    },
+    "assembly": [
+      "ReactiveUI.Events.WPF"
+    ],
+    "protocol_types": [
+      "System.Windows.Input.RxCommandBindingEvents",
+      "System.Windows.Input.RxRoutedCommandEvents"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil162BF0C62424E17DFD5313FA1E7E6B2B",
+    "version_strings": {
+      "CompanyName": "The Apache Software Foundation",
+      "FileDescription": "Apache log4net for .NET Framework 4.5",
+      "FileVersion": "2.0.15.0",
+      "InternalName": "log4net.dll",
+      "LegalCopyright": "Copyright 2004-2017 The Apache Software Foundation.",
+      "LegalTrademarks": "Apache and Apache log4net are trademarks of The Apache Software Foundation",
+      "OriginalFilename": "log4net.dll",
+      "ProductName": "log4net",
+      "ProductVersion": "2.0.15.0-.NET 4.5",
+      "Assembly Version": "2.0.15.0"
+    },
+    "assembly": [
+      "log4net"
+    ],
+    "protocol_types": [
+      "log4net.Layout.Pattern.AspNetRequestPatternConverter"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filE2799C200432B3FF6DD92EF263D9D465",
+    "version_strings": {
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "Microsoft\u00ae C Runtime Library",
+      "FileVersion": "14.29.30135.0 built by: vcwrkspc",
+      "InternalName": "msvcp140.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "msvcp140.dll",
+      "ProductName": "Microsoft\u00ae Visual Studio\u00ae",
+      "ProductVersion": "14.29.30135.0"
+    }
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil40F8E5825D09919C797730D84C7F62E7",
+    "version_strings": {
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "Pharmacist.Common",
+      "FileVersion": "2.0.8.15338",
+      "InternalName": "Pharmacist.Common.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors",
+      "OriginalFilename": "Pharmacist.Common.dll",
+      "ProductName": "Pharmacist.Common (net472)",
+      "ProductVersion": "2.0.8+ea3bd63e74",
+      "Assembly Version": "2.0.0.0"
+    },
+    "assembly": [
+      "Pharmacist.Common"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filBE8BD5168944B3F65C39284DF307AA2B",
+    "version_strings": {
+      "Comments": "System.ComponentModel.Annotations",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.ComponentModel.Annotations",
+      "FileVersion": "4.6.26515.06",
+      "InternalName": "System.ComponentModel.Annotations.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation.  All rights reserved.",
+      "LegalTrademarks": "",
+      "OriginalFilename": "System.ComponentModel.Annotations.dll",
+      "ProductName": "Microsoft\u00ae .NET Framework",
+      "ProductVersion": "4.6.26515.06 @BuiltBy: dlab-DDVSOWINAGE059 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf",
+      "Assembly Version": "4.2.1.0"
+    },
+    "assembly": [
+      "System.ComponentModel.Annotations"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filAF61972469244DEDBC294BA28F413DFF",
+    "version_strings": {
+      "CompanyName": "InstaxBLE",
+      "FileDescription": "InstaxBLE",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "InstaxBLE.dll",
+      "LegalCopyright": " ",
+      "OriginalFilename": "InstaxBLE.dll",
+      "ProductName": "InstaxBLE",
+      "ProductVersion": "1.0.0+87341cc9a42585bcf7570f9359988c0260aece1a",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "InstaxBLE"
+    ],
+    "protocol_types": [
+      "InstaxBLE.Utils.PrinterErrorTypeHelper",
+      "InstaxBLE.Utils.PrinterErrorType",
+      "InstaxBLE.Tasks.GetPrinterInfoTask",
+      "InstaxBLE.Tasks.PrinterInfo",
+      "InstaxBLE.Tasks.PrintTask",
+      "InstaxBLE.Tasks.PrintState",
+      "InstaxBLE.Tasks.PrintRequest",
+      "InstaxBLE.Tasks.PrintResult",
+      "InstaxBLE.Core.System.PcBluetoothStateChecker",
+      "InstaxBLE.Core.Data.BleRequest",
+      "InstaxBLE.Core.Data.BleResponse",
+      "InstaxBLE.Core.Data.BleResponseStatus",
+      "InstaxBLE.Core.Connection.BluetoothLeConnection",
+      "InstaxBLE.Core.Connection.IBluetoothConnection",
+      ".<<SchedulePrinterInfoPoll>b__27_0>d",
+      ".<<StartPollingForPCBluetoothStatusCheck>b__64_0>d",
+      ".<GetPrinterInfoAsync>d__69",
+      ".<PrintImageAsync>d__70",
+      ".<HandleRequestAsync>d__18",
+      ".<IsBluetoothRadioOnAsync>d__5",
+      ".<SendRequestAsync>d__8"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filB318D1CB6921FF995B2F1469085F0580",
+    "version_strings": {
+      "Comments": "A library to make things cross-platform that should be",
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "Splat",
+      "FileVersion": "14.8.12.56860",
+      "InternalName": "Splat.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors",
+      "OriginalFilename": "Splat.dll",
+      "ProductName": "Splat (netstandard2.0)",
+      "ProductVersion": "14.8.12+de1cc1e631",
+      "Assembly Version": "14.8.0.0"
+    },
+    "assembly": [
+      "Splat"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filE2799C200432B3FF6DD92EF263D9D476",
+    "version_strings": {
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "Microsoft\u00ae C Runtime Library",
+      "FileVersion": "14.29.30135.0 built by: vcwrkspc",
+      "InternalName": "vcruntime140.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "vcruntime140.dll",
+      "ProductName": "Microsoft\u00ae Visual Studio\u00ae",
+      "ProductVersion": "14.29.30135.0"
+    }
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil32EE86B35F73ECB2D5C087D99CF70698",
+    "version_strings": {
+      "Comments": "",
+      "CompanyName": "",
+      "FileDescription": "InstaxLogger",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "InstaxLogger.dll",
+      "LegalCopyright": "Copyright \u00a9  2024",
+      "LegalTrademarks": "",
+      "OriginalFilename": "InstaxLogger.dll",
+      "ProductName": "InstaxLogger",
+      "ProductVersion": "1.0.0.0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "InstaxLogger"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filA5AC6E9969D0241D1ED08DB852B6865D",
+    "version_strings": {
+      "Comments": "Provides types for encoding and escaping strings for use in JavaScript, HyperText Markup Language (HTML), and uniform resource locators (URL).\r\n\r\nCommonly Used Types:\r\nSystem.Text.Encodings.Web.HtmlEncoder\r\nSystem.Text.Encodings.Web.UrlEncoder\r\nSystem.Text.Encodings.Web.JavaScriptEncoder",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Text.Encodings.Web",
+      "FileVersion": "8.0.23.53103",
+      "InternalName": "System.Text.Encodings.Web.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "System.Text.Encodings.Web.dll",
+      "ProductName": "Microsoft\u00ae .NET",
+      "ProductVersion": "8.0.0+5535e31a712343a63f5d7d796cd874e563e5ac14",
+      "Assembly Version": "8.0.0.0"
+    },
+    "assembly": [
+      "System.Text.Encodings.Web"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil44F1B44958C27F24E28A2A5AC9F3FDE9",
+    "version_strings": {
+      "Comments": "Managed wrapper library around the Ghostscript native library (32-bit & 64-bit), an interpreter for the PostScript language, PDF, related software and documentation.",
+      "CompanyName": "Habjan",
+      "FileDescription": "Ghostscript.NET",
+      "FileVersion": "1.2.3",
+      "InternalName": "Ghostscript.NET.dll",
+      "LegalCopyright": "Copyright \u00a9 2013-2021 by Josip Habjan (habjan@gmail.com). All Rights Reserved.",
+      "LegalTrademarks": "",
+      "OriginalFilename": "Ghostscript.NET.dll",
+      "ProductName": "Ghostscript.NET",
+      "ProductVersion": "1.2.3",
+      "Assembly Version": "1.2.3.0"
+    },
+    "assembly": [
+      "Ghostscript.NET"
+    ],
+    "protocol_types": [
+      "Ghostscript.NET.display_rectangle_request"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil575FE950854F553BC6A33F35EC57FF6A",
+    "version_strings": {
+      "Comments": "Unity Core Engine",
+      "CompanyName": "Unity Open Source Project",
+      "FileDescription": "Unity.Container",
+      "FileVersion": "5.11.11.0",
+      "InternalName": "Unity.Container.dll",
+      "LegalCopyright": "Copyright \u00a9 .NET Foundation and Contributors. All Rights Reserved",
+      "OriginalFilename": "Unity.Container.dll",
+      "ProductName": "Unity.Container",
+      "ProductVersion": "5.11.11+03e10033114fc71deab4b5c43cddeec1c052daa7",
+      "Assembly Version": "5.11.11.0"
+    },
+    "assembly": [
+      "Unity.Container"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil48A6E127A3C2724D32B012CA387B98C7",
+    "version_strings": {
+      "Comments": "Json.NET is a popular high-performance JSON framework for .NET",
+      "CompanyName": "Newtonsoft",
+      "FileDescription": "Json.NET .NET 4.5",
+      "FileVersion": "13.0.3.27908",
+      "InternalName": "Newtonsoft.Json.dll",
+      "LegalCopyright": "Copyright \u00a9 James Newton-King 2008",
+      "LegalTrademarks": "",
+      "OriginalFilename": "Newtonsoft.Json.dll",
+      "ProductName": "Json.NET",
+      "ProductVersion": "13.0.3+0a2e291c0d9c0c7675d445703e51750363a549ef",
+      "Assembly Version": "13.0.0.0"
+    },
+    "assembly": [
+      "Newtonsoft.Json"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil8081782AF6CCBCCE58E8F64B27F1E12D",
+    "version_strings": {
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "ReactiveUI.Wpf",
+      "FileVersion": "19.5.41.25387",
+      "InternalName": "ReactiveUI.Wpf.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors",
+      "OriginalFilename": "ReactiveUI.Wpf.dll",
+      "ProductName": "ReactiveUI.Wpf (net48)",
+      "ProductVersion": "19.5.41+632b33dbfc",
+      "Assembly Version": "19.5.0.0"
+    },
+    "assembly": [
+      "ReactiveUI.Wpf"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil68DB82496EAB9BA327176B595AD8541E",
+    "version_strings": {
+      "Comments": "Wpf components for the iconic font and CSS toolkit Font-Awesome",
+      "CompanyName": "charri",
+      "FileDescription": "Font Awesome WPF",
+      "FileVersion": "4.7.0.9",
+      "InternalName": "FontAwesome.WPF.dll",
+      "LegalCopyright": "Copyright \u00a9 2015-2017",
+      "LegalTrademarks": "",
+      "OriginalFilename": "FontAwesome.WPF.dll",
+      "ProductName": "FontAwesome.WPF",
+      "ProductVersion": "4.7.0.9",
+      "Assembly Version": "4.7.0.37774"
+    },
+    "assembly": [
+      "FontAwesome.WPF"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil32B3FF67BEDD0492EF263D9D42799C20",
+    "version_strings": {
+      "Comments": "",
+      "CompanyName": "",
+      "FileDescription": "ImageProcLibrary",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "ImageProcLibrary.dll",
+      "LegalCopyright": "Copyright \u00a9  2024",
+      "LegalTrademarks": "",
+      "OriginalFilename": "ImageProcLibrary.dll",
+      "ProductName": "ImageProcLibrary",
+      "ProductVersion": "1.0.0.0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "ImageProcLibrary"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil21CDF09A724B894949FCDC8EE47DC558",
+    "version_strings": {
+      "Comments": "Provides the IAsyncEnumerable<T> and IAsyncDisposable interfaces and helper types for .NET Standard 2.0. This package is not required starting with .NET Standard 2.1 and .NET Core 3.0.\r\n\r\nCommonly Used Types:\r\nSystem.IAsyncDisposable\r\nSystem.Collections.Generic.IAsyncEnumerable\r\nSystem.Collections.Generic.IAsyncEnumerator",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "Microsoft.Bcl.AsyncInterfaces",
+      "FileVersion": "8.0.23.53103",
+      "InternalName": "Microsoft.Bcl.AsyncInterfaces.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "Microsoft.Bcl.AsyncInterfaces.dll",
+      "ProductName": "Microsoft\u00ae .NET",
+      "ProductVersion": "8.0.0+5535e31a712343a63f5d7d796cd874e563e5ac14",
+      "Assembly Version": "8.0.0.0"
+    },
+    "assembly": [
+      "Microsoft.Bcl.AsyncInterfaces"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil385E911A13F7FB9F137A6F52255B7023",
+    "version_strings": {
+      "Comments": "",
+      "CompanyName": "",
+      "FileDescription": "Fujifilm.Instax.PrinterDriver.CustomAction",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "Fujifilm.Instax.PrinterDriver.CustomAction.dll",
+      "LegalCopyright": "Copyright \u00a9  2024",
+      "LegalTrademarks": "",
+      "OriginalFilename": "Fujifilm.Instax.PrinterDriver.CustomAction.dll",
+      "ProductName": "Fujifilm.Instax.PrinterDriver.CustomAction",
+      "ProductVersion": "1.0.0.0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "Fujifilm.Instax.PrinterDriver.CustomAction"
+    ],
+    "protocol_types": [
+      "Fujifilm.Instax.PrinterDriver.CustomAction.PRINTER_DEFAULTS",
+      "Fujifilm.Instax.PrinterDriver.CustomAction.PRINTER_INFO_2"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil2CA8F6CAC6308F70AC451144C25985FB",
+    "version_strings": {
+      "Comments": "System.ValueTuple",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.ValueTuple",
+      "FileVersion": "4.6.26515.06",
+      "InternalName": "System.ValueTuple.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation.  All rights reserved.",
+      "LegalTrademarks": "",
+      "OriginalFilename": "System.ValueTuple.dll",
+      "ProductName": "Microsoft\u00ae .NET Framework",
+      "ProductVersion": "4.6.26515.06 @BuiltBy: dlab-DDVSOWINAGE059 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf",
+      "Assembly Version": "4.0.3.0"
+    },
+    "assembly": [
+      "System.ValueTuple"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil5F1AB79542ABFA2E6A4932BA36251AA2",
+    "version_strings": {
+      "Comments": "\r\nBring the power of Rx to collections using Dynamic Data.\r\nDynamic Data is a comprehensive caching and data manipulation solution which introduces domain centric observable collections.\r\n      Linq extensions enable dynamic filtering, sorting, grouping, transforms, binding, pagination, data virtualisation, expiration, disposal management plus more.\r\n    ",
+      "CompanyName": "Roland Pheasant",
+      "FileDescription": "DynamicData",
+      "FileVersion": "8.3.27.26536",
+      "InternalName": "DynamicData.dll",
+      "LegalCopyright": "Copyright (c) Roland Pheasant 2011-2023",
+      "OriginalFilename": "DynamicData.dll",
+      "ProductName": "DynamicData (net462)",
+      "ProductVersion": "8.3.27+67a8e742fd",
+      "Assembly Version": "8.3.0.0"
+    },
+    "assembly": [
+      "DynamicData"
+    ],
+    "protocol_types": [
+      "DynamicData.IPageRequest",
+      "DynamicData.IVirtualRequest",
+      "DynamicData.IVirtualResponse",
+      "DynamicData.PageRequest",
+      "DynamicData.PageResponse",
+      "DynamicData.VirtualRequest",
+      "DynamicData.VirtualResponse",
+      "DynamicData.Operators.IPageResponse",
+      ".PageResponseEqualityComparer"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil035EECC903E14989C4A5851F3FA2F3F1",
+    "version_strings": {
+      "Comments": "System.Runtime.CompilerServices.Unsafe",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Runtime.CompilerServices.Unsafe",
+      "FileVersion": "6.0.21.52210",
+      "InternalName": "System.Runtime.CompilerServices.Unsafe.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "System.Runtime.CompilerServices.Unsafe.dll",
+      "ProductName": "Microsoft\u00ae .NET",
+      "ProductVersion": "6.0.0+4822e3c3aa77eb82b2fb33c9321f923cf11ddde6",
+      "Assembly Version": "6.0.0.0"
+    },
+    "assembly": [
+      "System.Runtime.CompilerServices.Unsafe"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil9DB24CFD63272AFA108D439EB36E4E51"
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filE2799C200432B3FF6DD92EF263D9D47B",
+    "version_strings": {
+      "FileVersion": "10.03.1",
+      "ProductVersion": "10.03.1",
+      "LegalCopyright": "Copyright (C) 2024 Artifex Software, Inc.  All rights reserved.",
+      "ProductName": "Artifex Ghostscript"
+    }
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filFE958FE565CDE1BB1D2C234EB24B8901",
+    "version_strings": {
+      "Comments": "System.Threading.Tasks.Extensions",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Threading.Tasks.Extensions",
+      "FileVersion": "4.6.28619.01",
+      "InternalName": "System.Threading.Tasks.Extensions.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "System.Threading.Tasks.Extensions.dll",
+      "ProductName": "Microsoft\u00ae .NET Framework",
+      "ProductVersion": "4.6.28619.01 @BuiltBy: dlab14-DDVSOWINAGE069 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/7601f4f6225089ffb291dc7d58293c7bbf5c5d4f",
+      "Assembly Version": "4.2.0.1"
+    },
+    "assembly": [
+      "System.Threading.Tasks.Extensions"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil38EFE44C13223F4B907DBFF69F685DC8",
+    "version_strings": {
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "ReactiveUI.Fody.Helpers",
+      "FileVersion": "19.5.41.25387",
+      "InternalName": "ReactiveUI.Fody.Helpers.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors",
+      "OriginalFilename": "ReactiveUI.Fody.Helpers.dll",
+      "ProductName": "ReactiveUI.Fody.Helpers (net472)",
+      "ProductVersion": "19.5.41+632b33dbfc",
+      "Assembly Version": "19.5.0.0"
+    },
+    "assembly": [
+      "ReactiveUI.Fody.Helpers"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filF4A1AA1DE970E3CE55B1F34D7E9CDE15",
+    "version_strings": {
+      "Comments": "System.Buffers",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Buffers",
+      "FileVersion": "4.6.28619.01",
+      "InternalName": "System.Buffers.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "System.Buffers.dll",
+      "ProductName": "Microsoft\u00ae .NET Framework",
+      "ProductVersion": "4.6.28619.01 @BuiltBy: dlab14-DDVSOWINAGE069 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/7601f4f6225089ffb291dc7d58293c7bbf5c5d4f",
+      "Assembly Version": "4.0.3.0"
+    },
+    "assembly": [
+      "System.Buffers"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil313E146468FEB60BB74337899568D3FB",
+    "version_strings": {
+      "Comments": "Reactive Extensions (Rx) for .NET",
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "System.Reactive",
+      "FileVersion": "6.0.0.1",
+      "InternalName": "System.Reactive.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors.",
+      "OriginalFilename": "System.Reactive.dll",
+      "ProductName": "System.Reactive (net472)",
+      "ProductVersion": "6.0.0.1+e29c7a50db",
+      "Assembly Version": "6.0.0.0"
+    },
+    "assembly": [
+      "System.Reactive"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil8FA7CC7B749B6AA5558B1E8D27772D61",
+    "version_strings": {
+      "Comments": "",
+      "CompanyName": "",
+      "FileDescription": "PosthogHelper",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "PosthogHelper.exe",
+      "LegalCopyright": "Copyright \u00a9  2024",
+      "LegalTrademarks": "",
+      "OriginalFilename": "PosthogHelper.exe",
+      "ProductName": "PosthogHelper",
+      "ProductVersion": "1.0.0.0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "PosthogHelper"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filCD878469D474BDECABB381258EA8192A",
+    "version_strings": {
+      "Comments": "",
+      "CompanyName": "",
+      "FileDescription": "PrintPreferenceApplication",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "PrintPreferenceApplication.exe",
+      "LegalCopyright": "Copyright \u00a9  2024",
+      "LegalTrademarks": "",
+      "OriginalFilename": "PrintPreferenceApplication.exe",
+      "ProductName": "PrintPreferenceApplication",
+      "ProductVersion": "1.0.0.0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "PrintPreferenceApplication"
+    ],
+    "protocol_types": [
+      "PrintPreferenceApplication.View.PrintPreviewPopUpViewBase",
+      "PrintPreferenceApplication.View.PrintPreviewPopUp",
+      "PrintPreferenceApplication.View.PrintingPreferencesViewBase",
+      "PrintPreferenceApplication.View.PrintingPreferences",
+      ".<ConnectDisconnectPrinter>d__75",
+      ".<ConnectPrinter>d__78",
+      ".<Reconnection_Request>d__77",
+      ".<HandlePrint>d__88",
+      "PrintPreferenceApplication.ViewModel.PrintingPreferencesViewModel",
+      ".<ShowPrintPreviewAsync>d__60",
+      ".<GetPrinterInfoAsync>d__81",
+      ".<PrintAsync>d__65",
+      "PrintPreferenceApplication.Services.PrintService",
+      "PrintPreferenceApplication.Interfaces.IPrintService",
+      ".PrintPreferenceApplication_ProcessedByFody"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil74D87117E4C37256277792E78B9EFDF2",
+    "version_strings": {
+      "Comments": "",
+      "CompanyName": "",
+      "FileDescription": "Utils",
+      "FileVersion": "1.0.0.0",
+      "InternalName": "Utils.dll",
+      "LegalCopyright": "Copyright \u00a9  2024",
+      "LegalTrademarks": "",
+      "OriginalFilename": "Utils.dll",
+      "ProductName": "Utils",
+      "ProductVersion": "1.0.0.0",
+      "Assembly Version": "1.0.0.0"
+    },
+    "assembly": [
+      "Utils"
+    ],
+    "protocol_types": [
+      "Utils.PCBluetoothSettingState",
+      "Utils.DeviceResponseResultCode"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/filEFB68D045B7B99F154865D0546E9745B",
+    "version_strings": {
+      "CompanyName": ".NET Foundation and Contributors",
+      "FileDescription": "ReactiveUI",
+      "FileVersion": "19.5.41.25387",
+      "InternalName": "ReactiveUI.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and Contributors",
+      "OriginalFilename": "ReactiveUI.dll",
+      "ProductName": "ReactiveUI (net472)",
+      "ProductVersion": "19.5.41+632b33dbfc",
+      "Assembly Version": "19.5.0.0"
+    },
+    "assembly": [
+      "ReactiveUI"
+    ],
+    "protocol_types": [
+      "ReactiveUI.CommandBinder",
+      "ReactiveUI.CommandBinderImplementation",
+      "ReactiveUI.CommandBinderImplementationMixins",
+      "ReactiveUI.CreatesCommandBinding",
+      "ReactiveUI.CreatesCommandBindingViaCommandParameter",
+      "ReactiveUI.CreatesCommandBindingViaEvent",
+      "ReactiveUI.ICommandBinderImplementation",
+      "ReactiveUI.RelayCommand",
+      "ReactiveUI.ICreatesCommandBinding",
+      "ReactiveUI.CombinedReactiveCommand`2",
+      "ReactiveUI.IReactiveCommand",
+      "ReactiveUI.IReactiveCommand`2",
+      "ReactiveUI.ReactiveCommand",
+      "ReactiveUI.ReactiveCommand`2",
+      "ReactiveUI.ReactiveCommandBase`2",
+      "ReactiveUI.ReactiveCommandMixins",
+      ".InvokeCommandInfo`2"
+    ]
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil4CA1159ABDF49420B38519A2A4B073E8",
+    "version_strings": {
+      "Comments": "Managed libraries for Windows Installer",
+      "CompanyName": ".NET Foundation",
+      "FileDescription": " ",
+      "FileVersion": "3.14.1.8722",
+      "InternalName": "Microsoft.Deployment.WindowsInstaller.dll",
+      "LegalCopyright": "Copyright (c) .NET Foundation and contributors. All rights reserved.",
+      "OriginalFilename": "Microsoft.Deployment.WindowsInstaller.dll",
+      "ProductName": "Windows Installer XML Toolset",
+      "ProductVersion": "3.14.1.8722",
+      "Assembly Version": "3.0.0.0"
+    },
+    "assembly": [
+      "Microsoft.Deployment.WindowsInstaller"
+    ],
+    "protocol_types": []
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil34DACE667C99635C03349CE704B84F6D",
+    "version_strings": {
+      "CompanyName": ".NET Foundation",
+      "FileDescription": "DTF Self-Extracting Custom Action",
+      "FileVersion": "3.14.1.8722",
+      "InternalName": "SfxCA",
+      "LegalCopyright": "Copyright (c) .NET Foundation and contributors.\u00a0 All rights reserved.",
+      "OriginalFilename": "SfxCA.dll",
+      "ProductName": "Windows Installer XML Toolset",
+      "ProductVersion": "3.14.1.8722"
+    }
+  },
+  {
+    "file": "Fujifilm.Instax.PrinterDriver.Setup.x64/fil872969EADBF89E68AE0880DA93505394",
+    "version_strings": {
+      "Comments": "System.Memory",
+      "CompanyName": "Microsoft Corporation",
+      "FileDescription": "System.Memory",
+      "FileVersion": "4.6.31308.01",
+      "InternalName": "System.Memory.dll",
+      "LegalCopyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "OriginalFilename": "System.Memory.dll",
+      "ProductName": "Microsoft\u00ae .NET Framework",
+      "ProductVersion": "4.6.31308.01 @BuiltBy: cloudtest-841353dfc000000 @Branch: release/2.1-MSRC @SrcCode: https://github.com/dotnet/corefx/tree/32b491939fbd125f304031c35038b1e14b4e3958",
+      "Assembly Version": "4.0.1.2"
+    },
+    "assembly": [
+      "System.Memory"
+    ],
+    "protocol_types": []
+  }
+]

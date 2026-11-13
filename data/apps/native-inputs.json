@@ -1,0 +1,72 @@
+[
+  {
+    "name": "libfdiaconv.so",
+    "bytes": 206248,
+    "sha256": "ec6a81c84ca1c8f2888c0e8484c1ab2afaba902bc2c44112cbfa084e290664c3"
+  },
+  {
+    "name": "libi2fdiawrapper.so",
+    "bytes": 4331024,
+    "sha256": "8c87d8c231d281ef67fd2bd17115701af1bd88686b0523645074ba524f148f58"
+  },
+  {
+    "name": "libfdiaprofileex.so",
+    "bytes": 319160,
+    "sha256": "9799390ff7501013401159c45403291ed2d0a94dae8739053a7ecb4fb8c2abcc"
+  },
+  {
+    "name": "libi2fdiainstaxwrapper.so",
+    "bytes": 56736,
+    "sha256": "0424b06b3facbfff9c76624865b6bbd3b755587eea149952e3bde8a00a8710b3"
+  },
+  {
+    "name": "libsharpness.so",
+    "bytes": 54256,
+    "sha256": "a88cee794811ab1e8abb476148f7c522cba35bc121df8fed2db4687a645b9aa1"
+  },
+  {
+    "name": "libfdiatool.so",
+    "bytes": 68496,
+    "sha256": "af846e1b5c886322e9ba2cd86efba3b01bcf42051b319c65839b4cc9a4db5b87"
+  },
+  {
+    "name": "libfdiaprofilemgr.so",
+    "bytes": 99504,
+    "sha256": "3733b365ed4a383383723e0af7bb2edaf4a38857c7536a5162f71a65f666be5e"
+  },
+  {
+    "name": "libfdiaprofile.so",
+    "bytes": 265168,
+    "sha256": "f0fa0c38c37bc192f441dd786046a59a9a84c00b821b84f3ec95e474a893ff99"
+  },
+  {
+    "name": "libfdiafile.so",
+    "bytes": 868208,
+    "sha256": "85181908485025c5b4ee842a888813c6cd7a52bf87abcf16d9d098d33f1cbf0d"
+  },
+  {
+    "name": "libjnii2fdiainstaxwrapper.so",
+    "bytes": 7880,
+    "sha256": "5a162799e2da07fed52bc21b2b10f838545138ccb3f52a9d0c2da7b78483caba"
+  },
+  {
+    "name": "libffaipii.so",
+    "bytes": 8032040,
+    "sha256": "4640210d4ebbe7841e28396276802a99da248937fb9bd51a9f56cd390a41d7ec"
+  },
+  {
+    "name": "libfdiabase.so",
+    "bytes": 67528,
+    "sha256": "89f3910ce9bc1a78883d2a58c39bf5d9c4680bf034e762b30fd4ab8826ec0c04"
+  },
+  {
+    "name": "libfdiasetup.so",
+    "bytes": 1179584,
+    "sha256": "9068ba1fdc650dbcea68d129f3abbc79afd59466a3c7b2bb3bd6efe9aec647a6"
+  },
+  {
+    "name": "libfdiapreference.so",
+    "bytes": 95272,
+    "sha256": "68afd60d6ead3f9b05aff0334fe99856c6a480b435d3084d25f0f3d049808d63"
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "file": "libfdiaconv.so",
+    "bytes": 206248,
+    "defined_function_count": 25,
+    "selected_exports": []
+  },
+  {
+    "file": "libi2fdiawrapper.so",
+    "bytes": 4331024,
+    "defined_function_count": 76,
+    "selected_exports": []
+  },
+  {
+    "file": "libfdiaprofileex.so",
+    "bytes": 319160,
+    "defined_function_count": 9,
+    "selected_exports": []
+  },
+  {
+    "file": "libi2fdiainstaxwrapper.so",
+    "bytes": 56736,
+    "defined_function_count": 3,
+    "selected_exports": [
+      {
+        "name": "I2FDIA_INSTAX_ConvertRGBA2RGB",
+        "address": 18052,
+        "bytes": 92
+      },
+      {
+        "name": "I2FDIA_INSTAX_ConvertRGB2RGBA",
+        "address": 18144,
+        "bytes": 92
+      },
+      {
+        "name": "I2FDIA_INSTAX_EnhanceImage",
+        "address": 18236,
+        "bytes": 536
+      }
+    ]
+  },
+  {
+    "file": "libsharpness.so",
+    "bytes": 54256,
+    "defined_function_count": 25,
+    "selected_exports": [
+      {
+        "name": "_ZNK3aip6filter24GaussianBlurFilterOpenCV5ApplyERKN2cv3MatE",
+        "address": 23620,
+        "bytes": 184
+      },
+      {
+        "name": "_ZN3aip6filter25GaussianBlurFilterCreator6CreateEd",
+        "address": 23804,
+        "bytes": 84
+      },
+      {
+        "name": "_ZNK3aip6filter22UnsharpMaskFilterType28ApplyUsmERKN2cv3MatE",
+        "address": 24028,
+        "bytes": 1056
+      },
+      {
+        "name": "_Z11bitmapToMatP7_JNIEnvP8_jobjectRN2cv3MatE",
+        "address": 32040,
+        "bytes": 288
+      },
+      {
+        "name": "_ZN7_JNIEnv22CallStaticObjectMethodEP7_jclassP10_jmethodIDz",
+        "address": 32704,
+        "bytes": 156
+      },
+      {
+        "name": "Java_com_fujifilm_instaxbod_linkplus_utils_ImageSharpnessNative_applyUnsharpFilter",
+        "address": 23384,
+        "bytes": 212
+      },
+      {
+        "name": "_ZNK3aip6filter22UnsharpMaskFilterType25ApplyERKN2cv3MatE",
+        "address": 25132,
+        "bytes": 672
+      },
+      {
+        "name": "_ZN3aip6filter24UnsharpMaskFilterCreator6CreateERKNS0_22UnsharpMaskFilterParamE",
+        "address": 27148,
+        "bytes": 84
+      },
+      {
+        "name": "_ZN3aip6filter24GaussianBlurFilterOpenCVC2Ed",
+        "address": 23596,
+        "bytes": 24
+      },
+      {
+        "name": "_ZN3aip6filter24GaussianBlurFilterOpenCVC1Ed",
+        "address": 23596,
+        "bytes": 24
+      },
+      {
+        "name": "_ZNK3aip6filter22UnsharpMaskFilterType218ApplyOnlyLuminanceERKN2cv3MatE",
+        "address": 25804,
+        "bytes": 1240
+      },
+      {
+        "name": "_ZN3aip6filter22UnsharpMaskFilterType2C1ERKNS0_22UnsharpMaskFilterParamE",
+        "address": 23888,
+        "bytes": 140
+      },
+      {
+        "name": "_Z11matToBitmapP7_JNIEnvRKN2cv3MatE",
+        "address": 32328,
+        "bytes": 376
+      },
+      {
+        "name": "_ZN3aip6filter22UnsharpMaskFilterType2C2ERKNS0_22UnsharpMaskFilterParamE",
+        "address": 23888,
+        "bytes": 140
+      },
+      {
+        "name": "_Z18ApplyUnsharpFilterPKcS0_fff",
+        "address": 31252,
+        "bytes": 788
+      }
+    ]
+  },
+  {
+    "file": "libfdiatool.so",
+    "bytes": 68496,
+    "defined_function_count": 158,
+    "selected_exports": []
+  },
+  {
+    "file": "libfdiaprofilemgr.so",
+    "bytes": 99504,
+    "defined_function_count": 8,
+    "selected_exports": []
+  },
+  {
+    "file": "libfdiaprofile.so",
+    "bytes": 265168,
+    "defined_function_count": 93,
+    "selected_exports": []
+  },
+  {
+    "file": "libfdiafile.so",
+    "bytes": 868208,
+    "defined_function_count": 286,
+    "selected_exports": []
+  },
+  {
+    "file": "libjnii2fdiainstaxwrapper.so",
+    "bytes": 7880,
+    "defined_function_count": 2,
+    "selected_exports": [
+      {
+        "name": "Java_com_fujifilm_instaxshare_i2fdia_ImageEnhancement_enhanceImageImpl",
+        "address": 3088,
+        "bytes": 1656
+      },
+      {
+        "name": "_ZN7_JNIEnv16CallObjectMethodEP8_jobjectP10_jmethodIDz",
+        "address": 4744,
+        "bytes": 156
+      }
+    ]
+  },
+  {
+    "file": "libffaipii.so",
+    "bytes": 8032040,
+    "defined_function_count": 8,
+    "selected_exports": [
+      {
+        "name": "AIPII_SetEnhanceParam",
+        "address": 2713696,
+        "bytes": 24
+      },
+      {
+        "name": "AIPII_SetEnhanceParamExtend",
+        "address": 2713720,
+        "bytes": 24
+      },
+      {
+        "name": "AIPII_EnhanceImage",
+        "address": 2713744,
+        "bytes": 36
+      },
+      {
+        "name": "AIPII_EnhanceImageExtend",
+        "address": 2713780,
+        "bytes": 40
+      },
+      {
+        "name": "AIPII_W_EnhanceImageExtend",
+        "address": 2713820,
+        "bytes": 168
+      }
+    ]
+  },
+  {
+    "file": "libfdiabase.so",
+    "bytes": 67528,
+    "defined_function_count": 7,
+    "selected_exports": []
+  },
+  {
+    "file": "libfdiasetup.so",
+    "bytes": 1179584,
+    "defined_function_count": 123,
+    "selected_exports": [
+      {
+        "name": "_ZN4fdia17CFdiaSetupUserPrm17SetTextureEnhanceEss",
+        "address": 803612,
+        "bytes": 44
+      },
+      {
+        "name": "_ZNK4fdia17CFdiaSetupUserPrm17GetTextureEnhanceEPsS1_",
+        "address": 804004,
+        "bytes": 24
+      }
+    ]
+  },
+  {
+    "file": "libfdiapreference.so",
+    "bytes": 95272,
+    "defined_function_count": 51,
+    "selected_exports": []
+  }
+]

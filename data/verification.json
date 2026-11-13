@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-25",
+  "toolchain": "Rust 1.99.1",
+  "unit_and_integration_tests_passed": 21,
+  "simulated_formats_passed": [
+    "mini",
+    "square",
+    "wide"
+  ],
+  "hardware_verified_models": [],
+  "linux_release_binaries": true,
+  "windows_macos_target_compile_checks": true,
+  "native_windows_macos_link_and_launch": false,
+  "complete_app_parity": false,
+  "main_firmware_images_inspected": 9,
+  "app_reverse_engineering_complete": false,
+  "user_test_request_pending": false,
+  "whole_project_packaging": true
+}

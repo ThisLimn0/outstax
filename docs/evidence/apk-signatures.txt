@@ -1,0 +1,12 @@
+VERIFIED true
+SCHEMES v1=false v2=false v3=true
+CERT_SHA256 aa343d75ac4ec4f47deea94a115502722877bd7acdf39fe3a62c251940b46adf
+SUBJECT CN=Android,OU=Android,O=Google Inc.,L=Mountain View,ST=California,C=US
+VERIFIED true
+SCHEMES v1=false v2=true v3=true
+CERT_SHA256 bb4f23c9229b4d0e4608e531e876f3d3b1b594f05dfc85931979664945e5d227
+SUBJECT CN=Android,OU=Android,O=Google Inc.,L=Mountain View,ST=California,C=US
+VERIFIED true
+SCHEMES v1=false v2=true v3=true
+CERT_SHA256 165adc6adfcc0803715d92d5e39e4e08fed4cfc1652efef172e6a00740b9bad0
+SUBJECT CN=Android,OU=Android,O=Google Inc.,L=Mountain View,ST=California,C=US

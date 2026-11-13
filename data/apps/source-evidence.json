@@ -1,0 +1,1274 @@
+{
+  "wide:com/fujifilm/bluetooth/InstaxServiceStatus.java": {
+    "sha256": "805e82b363a01ae826b9986b41753fd223ce03fbdfca37a146cdb261331b3fb5"
+  },
+  "wide:com/fujifilm/bluetooth/BluetoothConnectionSerivice.java": {
+    "sha256": "b7bf7fa288901fbf03a375901c40e6984d2fbb5d8cd62e2fc3e8d547ba47ad1e"
+  },
+  "wide:com/fujifilm/bluetooth/IInstaxServiceObjectCallback.java": {
+    "sha256": "739f9e0eb0f6773d24f44462a30b5bfb7b321a86651604fb62bd14164e31601a"
+  },
+  "wide:com/fujifilm/bluetooth/R.java": {
+    "sha256": "4ccfaa431884e28af37119913730cfcbd7cc1f9afc8068dd6674bd22d26abc7e"
+  },
+  "wide:com/fujifilm/bluetooth/BtcConnectionService.java": {
+    "sha256": "061caf4663ca70d93e3e2240be1ff054724e7f58b0fd5402a9d70b97cf3bda2f"
+  },
+  "wide:com/fujifilm/bluetooth/IInstaxServiceProgressCallback.java": {
+    "sha256": "e4441840c786e579909321400dda1e2184a98a1f294465e8ebd9922947a80025"
+  },
+  "wide:com/fujifilm/bluetooth/b.java": {
+    "sha256": "4957c3fe7528845c5adfe05a7bc49afd910921e4378fbe0345b93b1cab938a10"
+  },
+  "wide:com/fujifilm/bluetooth/DeviceType.java": {
+    "sha256": "2b07d631adf605626bc3de7cda5170c161848a5e0c014f094156c52ae0be4198"
+  },
+  "wide:com/fujifilm/bluetooth/IInstaxServiceCallback.java": {
+    "sha256": "099d3f3e718d4d87b01d90296266606f6f431b583acf5901ca89e741125b9154"
+  },
+  "wide:com/fujifilm/bluetooth/c.java": {
+    "sha256": "f2fb5d24a63fd644a27a6ed6c7ed4f7cf583ff7387adb811b0057c7f547c2d4f"
+  },
+  "wide:com/fujifilm/bluetooth/IConnectionServiceListener.java": {
+    "sha256": "57f25766535310e467568daa99db6fbdf4512ba2dbf270869ed9623165408f61"
+  },
+  "wide:com/fujifilm/bluetooth/IBTDataServiceCallback.java": {
+    "sha256": "0192ba6ae45384058ecb1f9c476c2430ca8f4c6ea174193374085507f3dba94b"
+  },
+  "wide:com/fujifilm/bluetooth/g.java": {
+    "sha256": "77730bfab62b187548853e4a074973a3db67268795497c6f95a65ca8fc9b6a2e"
+  },
+  "wide:com/fujifilm/bluetooth/d.java": {
+    "sha256": "e2361694a34f3685dca9ff8a1d572586d6da87e77969a82c1945019f0c5e01f3"
+  },
+  "wide:com/fujifilm/bluetooth/IInstaxLiveViewCallback.java": {
+    "sha256": "2e6d9d7e852ff23cf0a8afaaab0e48f2ade4ac89a03bf38ea6a97790e31d5dc4"
+  },
+  "wide:com/fujifilm/bluetooth/a.java": {
+    "sha256": "5a6724ffdf27636cebef4baeac95cae1314123baa407a7bfd92572d26621e5f1"
+  },
+  "wide:com/fujifilm/bluetooth/IInstaxUrlUploadCallback.java": {
+    "sha256": "62885b4d932726bef5f57b8cfdd49fad618d57ab42b625df7117b3225e3a34bb"
+  },
+  "wide:com/fujifilm/bluetooth/f.java": {
+    "sha256": "29fd340774c7c7fac8f48bafe43c288e3807a64d8429241fa21da4b6d2db76df"
+  },
+  "wide:com/fujifilm/bluetooth/h.java": {
+    "sha256": "2fcd10de0e1547bc12a117760a62b52c6bb7e8e673e5fe9d2e19c7c51cfc5890"
+  },
+  "wide:com/fujifilm/bluetooth/InstaxWideService.java": {
+    "sha256": "ced5484402643d8ae6382f4147f7adc10435c8abfa88df24925db010bceebc5e"
+  },
+  "wide:com/fujifilm/bluetooth/InstaxBo19Service.java": {
+    "sha256": "3ef9082a3bb052c1dd6ecb0f3e9c80ee90d72285782c57fa2ff363d9a3aa6275"
+  },
+  "wide:com/fujifilm/bluetooth/IBtcConnectionServiceListener.java": {
+    "sha256": "424f675e8c0f194f80bc4936e43c152fb4ecea11039793d5a5c1607ce9d6f625"
+  },
+  "wide:com/fujifilm/bluetooth/IInstaxCameraLogCallback.java": {
+    "sha256": "020294fc3e4fdf257f20a4911c58fa452f2096b49cd486bb04e256188507929f"
+  },
+  "wide:com/fujifilm/bluetooth/InstaxDm1Service.java": {
+    "sha256": "a1d09deb6daf7943e9cf11e8e8b130c40db14e3e5dd653e46a037d0916915843"
+  },
+  "wide:com/fujifilm/bluetooth/IInstaxFwUpdateCallback.java": {
+    "sha256": "8465b8f2a340e1fdf2d2b06c2791a19b79bdef99805cef59297d62bed9a5f6e5"
+  },
+  "wide:com/fujifilm/bluetooth/BTConnectionError.java": {
+    "sha256": "4d97b0b13ea6e37f8e648d674d45e22466b87b3a8d5dfba5fb5dbac6c1e11b42"
+  },
+  "wide:com/fujifilm/bluetooth/InstaxBodService.java": {
+    "sha256": "32c796664fcb05c99eeeb77fc60078a8e78edc5ecdfeb9197810498311a6da99"
+  },
+  "wide:com/fujifilm/bluetooth/BuildConfig.java": {
+    "sha256": "445cc22e02c95872f1a3d3233206bf2a8eafbc249df3f5edf6a66211013b1cf1"
+  },
+  "wide:com/fujifilm/bluetooth/BTDataService.java": {
+    "sha256": "14d4bb8b214017ad2e6834d9ebd2b397af1127d17b78bd30f54f521cbbda3e54"
+  },
+  "wide:com/fujifilm/bluetooth/InstaxService.java": {
+    "sha256": "94bedabe0f5ea6ec1ce8885cddc7298f7e49ee28f40e7290c8ce6afb6d3b2962"
+  },
+  "wide:com/fujifilm/bluetooth/e.java": {
+    "sha256": "ea04e7fba6f69e7ba424490e36816fa210dbc47986abbf18131801d9280916d8"
+  },
+  "wide:com/fujifilm/bluetooth/ble/BleGattServiceManager$btleGattCallback$1.java": {
+    "sha256": "5411f75bc998487475ef812e07630b44dd9a4dcf352abfe906fadb7f30ef5090"
+  },
+  "wide:com/fujifilm/bluetooth/ble/BleDataService.java": {
+    "sha256": "78d84ae55116f64636128c7b67ff80dbc16840516199eda9c3a023d43173d2b7"
+  },
+  "wide:com/fujifilm/bluetooth/ble/b.java": {
+    "sha256": "7ca1ab81f4b37f2f238bfcccea4d94e2d237353acab23581b33fd0c106d381ca"
+  },
+  "wide:com/fujifilm/bluetooth/ble/c.java": {
+    "sha256": "8b3f4ea62ec4d7525051e91a431158cf5ba89b7f759098c88d13b6889273b279"
+  },
+  "wide:com/fujifilm/bluetooth/ble/g.java": {
+    "sha256": "20f810ff6c5d9a3961a2f97da1b69e95f0ea3d7e247cfa98e641e923e823a615"
+  },
+  "wide:com/fujifilm/bluetooth/ble/d.java": {
+    "sha256": "62a2dc283c51acdafc6dba1fb0d145852ce351fb899f3ea7fb561d5bdf18954b"
+  },
+  "wide:com/fujifilm/bluetooth/ble/BleConnectionService.java": {
+    "sha256": "8cd1c0451b37f7d04b0fadb3d2221097266478033a9cac4f91984f7d8717b3ca"
+  },
+  "wide:com/fujifilm/bluetooth/ble/BleGattServiceManager.java": {
+    "sha256": "8d927f608a885fa0f77b4ba2b4609cacf85e730417604d27556dc00e538decae"
+  },
+  "wide:com/fujifilm/bluetooth/ble/a.java": {
+    "sha256": "4da30e39bfdf0f24567ea8422f9bb46d8075768891e36213707d1751ef74178d"
+  },
+  "wide:com/fujifilm/bluetooth/ble/f.java": {
+    "sha256": "6e159882dc7e5b4ae3d62b029b2071066423d00d37e6b3c6afdf8bfeba42bd75"
+  },
+  "wide:com/fujifilm/bluetooth/ble/h.java": {
+    "sha256": "bc392eef7eee9f3b2150e9af1a69672459d5b0b5b13552d8ed2d89bd0da8b660"
+  },
+  "wide:com/fujifilm/bluetooth/ble/BleConnectionRequestListener.java": {
+    "sha256": "772ea48c2f2a2698845061415a9dac4801ba13f37c0de3e5d0cebbfc6ad40c78"
+  },
+  "wide:com/fujifilm/bluetooth/ble/e.java": {
+    "sha256": "e122a3245b5e8fb5fa80508e8288633ceb519873a6ed3733a603fdba7dc4302a"
+  },
+  "wide:com/fujifilm/bluetooth/old/BTConnectionService.java": {
+    "sha256": "b35108648ba17254c6c50b435918e59899fbcb75de6b6e113f5456056bb98dad"
+  },
+  "wide:com/fujifilm/bluetooth/old/IBTConnectionCallback.java": {
+    "sha256": "33c7592a47c9c32d259a7f85c06e68f3c356396c45a6f0828c5614ca15943f5b"
+  },
+  "wide:com/fujifilm/bluetooth/old/BTConnectionServiceKt.java": {
+    "sha256": "772cceda839f790aa6ae9d266e4b59e0cc6d7845b5626a5fbcf0e86f26819d0d"
+  },
+  "wide:com/fujifilm/bluetooth/models/InstaxPrinterInfo.java": {
+    "sha256": "9d1081cc0fd46eea35fb57eb3dfe87309cc03d31a2a01e031ada3d70c43166df"
+  },
+  "wide:com/fujifilm/bluetooth/models/InstaxCameraInfo.java": {
+    "sha256": "2e1effb7906540bddcfb53e6649c02b6fa7f3355bfb2c1bcbd327bdffccb5a23"
+  },
+  "wide:com/fujifilm/bluetooth/models/InstaxInfo.java": {
+    "sha256": "45f60c6ff31dcae2c8ce112a7d9d7640d7bf4cc845f261bac875f167b9b6ea7a"
+  },
+  "wide:com/fujifilm/bluetooth/models/SubTotalLogInfoBo19.java": {
+    "sha256": "a635efefcd3424b57121df39944095df62622a70a95f20f19eb90176936b3369"
+  },
+  "wide:com/fujifilm/bluetooth/models/SoundChekiInfo.java": {
+    "sha256": "edf26a78e03a9f87458805e23242f8b965c6548b44d2607e0b9dc6cb7a2d2ea2"
+  },
+  "wide:com/fujifilm/bluetooth/models/PrinterHeadLightCorrectKt.java": {
+    "sha256": "3122acfd7f0047876fe01ee0928ed4b1bbf85b7207aaa8296836549315d7ef87"
+  },
+  "wide:com/fujifilm/bluetooth/models/DateLogInfo.java": {
+    "sha256": "53e0312913cd3283cca4d53ef735662e05eea9fc85835c66b966b7d8ee364cae"
+  },
+  "wide:com/fujifilm/bluetooth/models/InstaxClientInfo.java": {
+    "sha256": "6c11774d099bc3bb519f0e9b78fd02c5f9f2b6a823ccf11b8ce8ad96ab5bf9d0"
+  },
+  "wide:com/fujifilm/bluetooth/models/InstaxAxisInfo.java": {
+    "sha256": "86899c13f4454dfb54d7ef67d94a21a07fdd1f98ba6b6cb4e1b14c7c5f3e21e3"
+  },
+  "wide:com/fujifilm/bluetooth/models/PrinterHeadLightCorrect.java": {
+    "sha256": "f7302bfefd1debecdb10d00e93e4f426c674892a0c5bc812c2417fc1c9c995b2"
+  },
+  "wide:com/fujifilm/bluetooth/models/SubTotalLogInfoDm1.java": {
+    "sha256": "a86450139c56a1d1973ce4124076ce1fbda8843ccc4fdc0b561dfe36179dccef"
+  },
+  "wide:com/fujifilm/bluetooth/models/FilterLogInfo.java": {
+    "sha256": "7c7e23e2030cb873634b7313d2b293cc8a4eb625d1ac9f3de75f4deddaf7a9c8"
+  },
+  "wide:com/fujifilm/bluetooth/models/SubTotalLogInfo.java": {
+    "sha256": "7ffa8241f6c270dd0e4ba24f90ca38877d9ddde21d5eecdc0b7a8f8d32e3b27c"
+  },
+  "wide:com/fujifilm/bluetooth/models/SettingsLog.java": {
+    "sha256": "b8e208cf5f5e38323fb8412dd0cf7a69fbd9f421fd4a8742303cd5467490ad63"
+  },
+  "wide:com/fujifilm/bluetooth/models/InstaxAdditionalPrinterInfo.java": {
+    "sha256": "bd0cf1a96ccf0646ac8f879d2eb8daf3a6346577d124e533ee8b2b78ad381456"
+  },
+  "wide:com/fujifilm/bluetooth/models/AutoSleepInfo.java": {
+    "sha256": "b4a04233408d03bea67659ce0e099237a3ca9bc1b551821130dedce7f663b79e"
+  },
+  "wide:com/fujifilm/bluetooth/util/FlashOption.java": {
+    "sha256": "0145196b50915720a26b2af83d0c5225b5e03c09fd35b194b7c8f2117b1bf26a"
+  },
+  "wide:com/fujifilm/bluetooth/util/PrinterMountedHeadType.java": {
+    "sha256": "c159f4013e8e052c856223c8452043265ebca590c10b3cd00f9c90c892cfc773"
+  },
+  "wide:com/fujifilm/bluetooth/util/CameraLogFilterType.java": {
+    "sha256": "69b20e6786873a4266163bf59d828951a9380f79c29ac31678c3a3c3bdcbe437"
+  },
+  "wide:com/fujifilm/bluetooth/util/ImageQualityMode.java": {
+    "sha256": "5d38240834dc5e4ae834aa8b3ad54e1b81ae541a9b2364b112d09ed10323be5b"
+  },
+  "wide:com/fujifilm/bluetooth/util/PrinterErrorTypes.java": {
+    "sha256": "be305126dc71b44afaf4e126e0303512a75251d61cd1cf138041771697057148"
+  },
+  "wide:com/fujifilm/bluetooth/util/AudioType.java": {
+    "sha256": "2e11c14e803b186c59b130e8fd0fa1d6a8b086c5de6319ce68ac01998855a2ba"
+  },
+  "wide:com/fujifilm/bluetooth/util/FrameImageType.java": {
+    "sha256": "7b3b2e8af4638e12970ffc250435e22f98c8e276877343c8bd71fdd8faec4238"
+  },
+  "wide:com/fujifilm/bluetooth/util/SID.java": {
+    "sha256": "edb8d81dcd75c51a15e70cfd45faf62b78658aac0268a13e4c41b1c4178e23fc"
+  },
+  "wide:com/fujifilm/bluetooth/util/DeviceInfoType.java": {
+    "sha256": "dadcb9ce2053ddc5aaed9e5f1b74fb6adfb2a62f307a111d0da99a9bb18fffaf"
+  },
+  "wide:com/fujifilm/bluetooth/util/CameraLogDateType.java": {
+    "sha256": "17e18cd5b31b0882eed43fbee5e80494826bb56817d483585f27392c43975edd"
+  },
+  "wide:com/fujifilm/bluetooth/util/ReceivedMediaType.java": {
+    "sha256": "c1bff60eca107c7383de34504321131683f730f3406fa3e3e8fe761bc1ff2bac"
+  },
+  "wide:com/fujifilm/bluetooth/util/PicturePrintOption.java": {
+    "sha256": "73a7de38756a1d3ebdbcc77d7cfcf938baaea09c7fb0d308212f3463071e450e"
+  },
+  "wide:com/fujifilm/bluetooth/util/Compressor.java": {
+    "sha256": "7d7c5ab0514f16ec0a2b0c01894f07c9f6b98a5558c0c6a915219a357598e692"
+  },
+  "wide:com/fujifilm/bluetooth/util/PrinterResults.java": {
+    "sha256": "46d5d506fd0887ce0e22b6d0471b5362ae9fd7f526c2b32dfb45abfc1fed2a4d"
+  },
+  "wide:com/fujifilm/bluetooth/util/PictureType.java": {
+    "sha256": "101ac358cf70a9800c775d4d5bbd73f6609a7504250f982579925db815210257"
+  },
+  "wide:com/fujifilm/bluetooth/util/Helper.java": {
+    "sha256": "f014ebb6608dba8bcbcc9447c30b4354ff73776ccdf13cbd9447626801aac378"
+  },
+  "wide:com/fujifilm/bluetooth/util/AdditionalPrinterInfoType.java": {
+    "sha256": "09548982bd1ce137f2104e5ec248e227a348dcf61a941cc6ba7fc34c9f70e602"
+  },
+  "wide:com/fujifilm/bluetooth/util/ResultCode.java": {
+    "sha256": "a52395b5adfd438d81b55b2531bdc349e5e4dc6c0573f398b8b46c5ec7e7c7fd"
+  },
+  "wide:com/fujifilm/bluetooth/util/LedPatternMode.java": {
+    "sha256": "de51b4c0c29045d5a46c51486beefa867d005af6cae62a44bc44c2490b0f2bdf"
+  },
+  "wide:com/fujifilm/bluetooth/util/TransferType.java": {
+    "sha256": "01cadabd491754a793b06d3169b15caed424eaea88693b8de982a445d796e6d9"
+  },
+  "wide:com/fujifilm/bluetooth/util/Constants.java": {
+    "sha256": "5f27d4802cad8db576e9c0314c581c2f5c87e7feb5fe13b05d4ccb38dca25d6b"
+  },
+  "wide:com/fujifilm/bluetooth/util/AutoSleepSettingsMode.java": {
+    "sha256": "472e0bdf9c896318bc7537f269caf2a88cb0d433b5f25c11a6545e1ff07500e6"
+  },
+  "wide:com/fujifilm/bluetooth/util/CameraSettingsGetType.java": {
+    "sha256": "8ee763edf342e96e71747c84f0760ac7cb435fbc0c5d52844e88788039287ea9"
+  },
+  "wide:com/fujifilm/bluetooth/util/SupportFunctionInfoType.java": {
+    "sha256": "14f72602fe2c72a2136525802c840778b7d6f4810f4c6749da5791ba976f76f6"
+  },
+  "wide:com/fujifilm/bluetooth/util/TimerOption.java": {
+    "sha256": "ec78ac5df765a564633224e13a0088b8ded614586400f654d72814e241be360f"
+  },
+  "wide:com/fujifilm/bluetooth/task/m.java": {
+    "sha256": "327119b5751a67cf8834366b1fc5b80c6cd7aa2506aecde8df5057bff894df87"
+  },
+  "wide:com/fujifilm/bluetooth/task/i.java": {
+    "sha256": "1b5d628f265f61d1e2e04099195d8f5e3a5829ab313f90c130e5f75b7608655a"
+  },
+  "wide:com/fujifilm/bluetooth/task/p.java": {
+    "sha256": "ff9b79345ba7fb3f4f23eef5ddefaf43ba76f71815f959111103186c88ef1bb5"
+  },
+  "wide:com/fujifilm/bluetooth/task/TaskType.java": {
+    "sha256": "db8f115062a10fd6ceb6ce483645676e142e8b8e8c04d566b528f1222ad7d365"
+  },
+  "wide:com/fujifilm/bluetooth/task/InstaxInfoTask.java": {
+    "sha256": "094e4b36e183ff055072170d890a63944975df43a58f6a4d3b27e7386cb5f170"
+  },
+  "wide:com/fujifilm/bluetooth/task/k.java": {
+    "sha256": "2f014338bbb17858863437449e3c53fba75608b7ee9a12077e208b13325e23e4"
+  },
+  "wide:com/fujifilm/bluetooth/task/PrinterInfoTask.java": {
+    "sha256": "9320a36716c7453b07a86b810c5b21ae14d696626bda61f1962a1970dddbb6a3"
+  },
+  "wide:com/fujifilm/bluetooth/task/b.java": {
+    "sha256": "7d0e0b9d74897ea34138978809eb61eb4dff65fddbf33fe3f7be4b10765feadc"
+  },
+  "wide:com/fujifilm/bluetooth/task/q.java": {
+    "sha256": "61e2e2184d834344b4890eda8e49ff186ebfb02666c2573022e8bedb35c4d100"
+  },
+  "wide:com/fujifilm/bluetooth/task/AutoSleepTask.java": {
+    "sha256": "db8ae2231791395be3713a435f842feed4e6d172962b56c595334651b58cbf1f"
+  },
+  "wide:com/fujifilm/bluetooth/task/SetColorDoubleTask.java": {
+    "sha256": "73f0c6bf184e860375b5c02278763910411ffaac72ac83bee3f134127b048587"
+  },
+  "wide:com/fujifilm/bluetooth/task/SendPrintImageTask.java": {
+    "sha256": "a407f8796d9ed32f647c813dc5bcfc7031bd596aed37e3479b9d167cb28b8cd4"
+  },
+  "wide:com/fujifilm/bluetooth/task/c.java": {
+    "sha256": "6dd70811b5ab24ed305e0dc76d44f154b56cdcf260001895e649f8553d3c8661"
+  },
+  "wide:com/fujifilm/bluetooth/task/BaseTask.java": {
+    "sha256": "2475a60798a7808f4e608459b88b0e27118e3d448e11ddb3916697e88e7d55d3"
+  },
+  "wide:com/fujifilm/bluetooth/task/r.java": {
+    "sha256": "b6997d232d92e8c56effc5961381d5867f10213797d204cf36badbf986d9b1cb"
+  },
+  "wide:com/fujifilm/bluetooth/task/PrintTask.java": {
+    "sha256": "551c804fdb60aad753ac472c4174e7202dad2def539b092bdc868534d6ac8d18"
+  },
+  "wide:com/fujifilm/bluetooth/task/URLUploadTask.java": {
+    "sha256": "7ad40e2767c52313f56c7c1c838b1271957c4f425cc0e30b26cfdf89dd30e5cf"
+  },
+  "wide:com/fujifilm/bluetooth/task/CameraInfoTask.java": {
+    "sha256": "855f9f1aaa81351aa642aecb2874ed6471cbf9e210b7b0c6a824b9cd312387b6"
+  },
+  "wide:com/fujifilm/bluetooth/task/g.java": {
+    "sha256": "df968370ae1b052439068f2474df1199d3981f09390da9e7881876ff4b2c9874"
+  },
+  "wide:com/fujifilm/bluetooth/task/d.java": {
+    "sha256": "92f62c434f1417df31bace3a4822818b7ee9341128763c48031ab791bbdf4e75"
+  },
+  "wide:com/fujifilm/bluetooth/task/CameraLogTask.java": {
+    "sha256": "e31ab7a86ae5d66657da2aae1a09b0a64a2fb8cad673311733ea1dbaaa64d24b"
+  },
+  "wide:com/fujifilm/bluetooth/task/a.java": {
+    "sha256": "8536ac0463d81958fe8faa04b3b3acb9728d4d5197d0d85528becd7a034159d7"
+  },
+  "wide:com/fujifilm/bluetooth/task/ITaskListner.java": {
+    "sha256": "871b0ad56f4d9756475340cf93fbf2adac9d8d3a3ab70b60e52817a195abc25d"
+  },
+  "wide:com/fujifilm/bluetooth/task/n.java": {
+    "sha256": "ebadf51358378edbc6a6f879dec707b07ba5ce3f42f9ae28f3486ad12ab950d6"
+  },
+  "wide:com/fujifilm/bluetooth/task/FirmwareUpdateCameraTask.java": {
+    "sha256": "53b1e26328beeb22af3ad9ad3bbc0ff5030510ee6bb4f2dd0c7eb424a33146b0"
+  },
+  "wide:com/fujifilm/bluetooth/task/f.java": {
+    "sha256": "c0fbc6bb6b4be67e33dc5265aaebe0375c7f2b1992c8661b2e11a5a59ff5f5ec"
+  },
+  "wide:com/fujifilm/bluetooth/task/h.java": {
+    "sha256": "6d1ae4f3c4bfb714525ce523518f91b08162da4c907a297f2e80f2f2edbc5dd9"
+  },
+  "wide:com/fujifilm/bluetooth/task/o.java": {
+    "sha256": "c132051184d80b1fdb212a873de4df59be1c20c20d67d27e3007a175aa89c297"
+  },
+  "wide:com/fujifilm/bluetooth/task/PrinterInfoAdditionalTask.java": {
+    "sha256": "786a386030c9684d7021a9819083132f3dc9b39a8803da0fab017ae1a43a68fe"
+  },
+  "wide:com/fujifilm/bluetooth/task/j.java": {
+    "sha256": "bd3b86aaaa21add91816056f43015cf5a2223c6e5bb5ec5eafa4036d2d98e3be"
+  },
+  "wide:com/fujifilm/bluetooth/task/SetColorTask.java": {
+    "sha256": "d2166d6178648560873a687d4cb318f765b40c1377482a5d1310ddbcc2244441"
+  },
+  "wide:com/fujifilm/bluetooth/task/l.java": {
+    "sha256": "41c3d75dd48da292dd58d661b326c11ef3ccfc090d04e198c94ebbde684ef828"
+  },
+  "wide:com/fujifilm/bluetooth/task/PowerOnOffLedSettingsTask.java": {
+    "sha256": "f8edab8f2d6078d5749cf8b21335dfcaa4480961dc18db4ad86b05aa208bb08a"
+  },
+  "wide:com/fujifilm/bluetooth/task/AxisInfoTask.java": {
+    "sha256": "5f7800ff460bff451a0e284b932da518fec7ecec8a0111ca287b7387d106a4be"
+  },
+  "wide:com/fujifilm/bluetooth/task/LiveViewTask.java": {
+    "sha256": "14ee0bfffd165bb025ada49c5ecd1d97c8b2ab69e85fd2560381b36eb09b3e4c"
+  },
+  "wide:com/fujifilm/bluetooth/task/e.java": {
+    "sha256": "8a9c428668938ecd1a139462e7a4bbe6adc6590a9b79b2e23815087318e75ff9"
+  },
+  "wide:com/fujifilm/bluetooth/task/FrameSetTask.java": {
+    "sha256": "ae86975f12698c58ca5121ccefc51ca330e76ca10b75be33fbcdf4baa5a478a2"
+  },
+  "wide:com/fujifilm/bluetooth/task/DeviceSettingsTask.java": {
+    "sha256": "53bcf547207202af5099d085580e40dbec6f3189a13dd5cd8ed09a8dc4c8405a"
+  },
+  "wide:com/fujifilm/bluetooth/task/FirmwareUpdateTask.java": {
+    "sha256": "6db5742dd597e3ed4dada6f3d37c4c3e80b7760f38849dcd00550e21a23c5f09"
+  },
+  "wide:com/fujifilm/bluetooth/connection/BaseRequest.java": {
+    "sha256": "17bad364ea9854d87f82775fec54f1066ea3447d41371ed084699f73c1d422d0"
+  },
+  "wide:com/fujifilm/bluetooth/connection/EnableRequest.java": {
+    "sha256": "70f71851280d2d7315ca7ada1d274ebcf5afe35ded7385bd05b19447850b8a5c"
+  },
+  "wide:com/fujifilm/bluetooth/connection/ConnectionRequestKt.java": {
+    "sha256": "548edcdaa9406396813db1562e758a34d8d636fb44594cb9ddcd2f0d6cbd23dc"
+  },
+  "wide:com/fujifilm/bluetooth/connection/a.java": {
+    "sha256": "020d6d60493ef73cba27d2f03d62d21f283ba05b40fbc139731bd3543a366b0c"
+  },
+  "wide:com/fujifilm/bluetooth/connection/ConnectionRequest.java": {
+    "sha256": "ae641299af82ad9b7cf452d6323e2cc13135553dccfc17965678532294f3b2c8"
+  },
+  "wide:com/fujifilm/bluetooth/connection/IEnableRequestListner.java": {
+    "sha256": "8f3c0ab3287efff4b9037ce3aff139d4a237c20eb23eeb605f349d5fdd62b943"
+  },
+  "wide:com/fujifilm/bluetooth/connection/IConnectionRequestListener.java": {
+    "sha256": "cdc79a757a1cb29793745009364eb73ae30a6bf75d0a763e014f9f0359e10e6e"
+  },
+  "wide:com/fujifilm/bluetooth/data/Request.java": {
+    "sha256": "3e1984f31459cd59bc9c7447c7ee1d4642e82f59db23cb88579c4f5c22d00fc9"
+  },
+  "wide:com/fujifilm/bluetooth/data/Response.java": {
+    "sha256": "6d16d36939d708a4aeffca39b28a89a5987b78fe5b6038168cb7c0dbd5e7433b"
+  },
+  "wide:com/fujifilm/bluetooth/data/SyntaxErrorException.java": {
+    "sha256": "1f826da5e242646d550fa4c4ee36cb91357badfca8c2ea90e675fb2c21d5c577"
+  },
+  "wide:com/fujifilm/bluetooth/util/fw/FirmwareMotHex.java": {
+    "sha256": "dcaf4888ce3cb49af09108e056ca5c6ef934a8ac6b8428c36a7eeb156527eb98"
+  },
+  "wide:com/fujifilm/bluetooth/util/fw/b.java": {
+    "sha256": "bb36ffb467ee93767fb79453c37893399f1d04eb5f515b7a01fc29eee0455d4d"
+  },
+  "wide:com/fujifilm/bluetooth/util/fw/c.java": {
+    "sha256": "8e8c4fb4888adfc468ae1eab6753b48213a0005714df6e7bff643c1df9766dc8"
+  },
+  "wide:com/fujifilm/bluetooth/util/fw/d.java": {
+    "sha256": "97813a54781fe5ccbc48e790e52baf62182a80116bd36e216bb57ab8c86fae89"
+  },
+  "wide:com/fujifilm/bluetooth/util/fw/FirmwareIntelHex.java": {
+    "sha256": "76557cb2a13b82014961d29a97c164956dc28b3b18248b68c7ec428b5bb576cb"
+  },
+  "wide:com/fujifilm/bluetooth/util/fw/FirmwareAbsHex.java": {
+    "sha256": "9e164840a896cf020f15521c6b243b23778c21faa1b3fb6b737ea864c8a8d7b4"
+  },
+  "wide:com/fujifilm/bluetooth/util/fw/FirmwareData.java": {
+    "sha256": "00eb56448e9faf2dfcae74895cf9d90cb3ede0f9c410ea7fa827108207c3e7aa"
+  },
+  "wide:com/fujifilm/bluetooth/util/fw/a.java": {
+    "sha256": "513487f7f535cdb184e65d471c6b61e412d228926571b7f9f5d4823a528ebe55"
+  },
+  "wide:com/fujifilm/bluetooth/util/fw/f.java": {
+    "sha256": "4a6a4431b11078536295b738c5c1a41283c81873c9504c424198bbcd772ea253"
+  },
+  "wide:com/fujifilm/bluetooth/util/fw/e.java": {
+    "sha256": "bf318b4079e5bf5178c2108f40735eadd5263e1e7d9d5936cc0162126d053cb5"
+  },
+  "wide:com/fujifilm/bluetooth/util/logger/DebugLogger.java": {
+    "sha256": "cacc1744513221dfef3685020789fc7cd57d4a11e90d660467bb746c10b8899b"
+  },
+  "wide:com/fujifilm/bluetooth/util/logger/BTLog.java": {
+    "sha256": "ce60c30ab6e3ae6cca877a8d98d63a0c9b6945034a9c110ea0758c77769321b6"
+  },
+  "wide:com/fujifilm/bluetooth/util/logger/Logger.java": {
+    "sha256": "d148e7f63c2ebe647d2a8fdb80bdd6b5d25659c208f3d96ba4a4341610c7408e"
+  },
+  "wide:com/fujifilm/bluetooth/util/logger/FileLogger.java": {
+    "sha256": "adb19af859fdbcc47eda8bfabbc1b85c8426a86a203242659b243a36896e3b68"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/FilterLogClearRequest.java": {
+    "sha256": "9a37b76f2dd904de9bcd28d606b11227f19eed77c3ffeaaac7b69db33dc18c35"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/PrintImageStartRequest.java": {
+    "sha256": "454a35f6c73e149e86a87e9ccacbc2a0791c7213d4232e455b8756d4068db5ce"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/PrinterHeadCorrectRequest.java": {
+    "sha256": "960949d58dce1fa1692ff4d1200a7cf0d71f16244a9e094ac9008264280add2c"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/LiveViewTakePictureRequest.java": {
+    "sha256": "41ce274e4714cec93648e84b6bda6940ac37cf79c36c76637e33f2c7bde9ef34"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/UrlAudioUploadDataRequest.java": {
+    "sha256": "fcfebe508b5e0bc17a4201a2ebb289b848be64860a4f9a7f6be84049ed7e5473"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/PowerOnOffLedSettingRequest.java": {
+    "sha256": "cd70205ea1d8e1241799cff5ac469bee48a94798a757dcbe6fa4259c2fe45459"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/DeviceSettingsRequest.java": {
+    "sha256": "f91ea1e06f791827db1bbe9516013873a84df5b01ba3826e30ed258ddd0dc233"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/FrameSetDataRequest.java": {
+    "sha256": "93001b27755fcfff7b84b688598d125189b16ca34ee4f731093c5fc116fae9fe"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/SupportFunctionInfoRequest.java": {
+    "sha256": "974ed0cdbd919fbafd36944d31d9e829287f5c6a6d314d654bd0d86ad5f0f4c1"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/FirmWareUploadDataRequest.java": {
+    "sha256": "a49d1f935fab90bfb367d0062eded9a789a1e5fc42a98dc19c80907a779c80db"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/ColorSettingsDoubleRequest.java": {
+    "sha256": "ed76d103619cb2e12f0c8ad5a4aa06d862fb8a3955c646dc7af472ba3b52dd3e"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/PrintImageRequest.java": {
+    "sha256": "eb193ded45b6fc3383bf57a1a2acc92e7ef3ee62062554d082e2192c2ab6f38a"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/FrameSetNameRequest.java": {
+    "sha256": "660b0f610a53d7456a2f513b8de212138a70c9c0a8e4f48c7e62885ab4442155"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/UrlUploadRequest.java": {
+    "sha256": "432b1db85b1463b531bd08bfc20e6ffc1ac4ae1ca33203e4c13dccb2042f2340"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/FilterLogStartRequest.java": {
+    "sha256": "f0a8cd30b17f41ab1be7f3543ce8f95f854db2764d051840355116a0e37a22ad"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/DeviceLogRequest.java": {
+    "sha256": "6d6ad37002ffed42ac68aea3d986076a15a01b46122228f7084faa12a3316b8f"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/PrinterHeadLightCorrectSettingsRequest.java": {
+    "sha256": "1b60ff30a83bb2b279af421a61767efca50b8bb07d2c7f7e0f8b0489c265d234"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/UrlUploadCompleteRequest.java": {
+    "sha256": "d20f0de5df1af98896f2f488fd52598b8d715ea10409398d16a3c65baddcf44b"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/DateLogDataRequest.java": {
+    "sha256": "b9956459a88af326bbf9b0b183b7d05e9278a0aea0df435bbe853b136f1821f4"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/AdditionalPrinterInfoRequest.java": {
+    "sha256": "a50d337a3fcac92005aa3387427c2939bc180890b6e13c6ecf83368286b6683a"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/DateLogClearRequest.java": {
+    "sha256": "99f81685b438deea2166180c278624f873a1bfa91926bfe1ddf16546264657a0"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/DeviceInfoServiceRequest.java": {
+    "sha256": "b9827f3a3c25b8235a46fdf1d1f6d5c5764b223effaa3a26ec1ebb8eaf0a1dd8"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/CameraSettingsRequest.java": {
+    "sha256": "d7df3fd01b1b559fe2c3ed91cedd48ccdb638a26bbe29dcc7582bd169e0c7c67"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/LiveViewStopRequest.java": {
+    "sha256": "d68974df79e3e5022e4ed4ce0c4d8333b44eec8d63bd30b80251cdb8ba570ea8"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/UrlPictureUploadStartRequest.java": {
+    "sha256": "5c3e8fb2e6bff27162224ccdddd7191474e72d9c85b654ccbc828fd9ee7ce7e1"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/FwUpgradeRequest.java": {
+    "sha256": "0413dcdfed28ff1185ebc34c4ad4edbc770da95a7e8e1a86048196499345d62b"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/FrameSetRequest.java": {
+    "sha256": "7dd0bdb924b5afdda918f77d9868a1504a27c66102144bbc6f726fff79b8eed4"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/FilterLogDataRequest.java": {
+    "sha256": "6cc48387bb85bd6c95217404136f0552dc467862d99422df931f0719534757b7"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/SubTotalLogDataRequest.java": {
+    "sha256": "259d13a134da72c07c1aa2fe205096da64d4383f07cef5685606ea7e23c12ae4"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/DateLogStartRequest.java": {
+    "sha256": "868f94200ff4cc14a33838ca55441f4a0d2781160961141f3e4a1e49fa9d5f6a"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/FrameSetStartRequest.java": {
+    "sha256": "8c31336828dbc37711a66591d6febf153a863d7120406d272d85693660c623bb"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/LiveViewImageDownloadDataRequest.java": {
+    "sha256": "9a4caa2b6b6fee2e6e9c9232df3a233a958526bbe80ab67bbe92ad41d36e057e"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/LiveViewStartRequest.java": {
+    "sha256": "3f0b6bba71641776acd1841be3d56ee58ed935212b8f162845098134c2bc22f4"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/UrlAddressDataRequest.java": {
+    "sha256": "1a7763fc202341ad777b43ee2c0c6875b48c5238d8542a3867531729aaf2ee26"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/PrintImageDataRequest.java": {
+    "sha256": "602137a4012c0b911f8ef5c3ba7c32c340113eaa08d5ba9e3a9209794221adee"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/FirmWareDataUploadStartRequest.java": {
+    "sha256": "ad26f599f348a9253744ca421dc725f8d624c4e5269f7bff7f07773344e2b4c0"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/AutoSleepSettingsRequest.java": {
+    "sha256": "7e70ac7b10fb16f7b8a34c19b935be6c3fa210db29e0f277af762779293cf830"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/LiveViewRequest.java": {
+    "sha256": "9d6f01bd2bc94266edc823ebb2d015e183459a86f6bbd516d1c53b7afb1f3898"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/ColorSettingsRequest.java": {
+    "sha256": "9ca2675ecf2e11472ad201ccd701e588c41070fce85599e585f609c54950c1d5"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/UrlAudioUploadStartRequest.java": {
+    "sha256": "07c246577a3609b21763c1a67a923128e2c58af4e0b2ddd4971c7c86ace6085d"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/CameraSettingsGetRequest.java": {
+    "sha256": "b802b382c2bb51de389173d9ccdff7b49b7b2c0bce269983c4d8769f68b2ee2f"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/UrlPictureUploadDataRequest.java": {
+    "sha256": "3ab92d76e2ed237f793cbf3386fc7a3f339c683433959ea19d74768baa2770f4"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/AudioReceiveStartResponse.java": {
+    "sha256": "7d118b9d6d95f96aa823a12aa56544db3c4bcfdcbe4686a7f4fa5da2e5260af5"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/FilterLogStartResponse.java": {
+    "sha256": "44baf75d83a4fba002084a940c1ead8d53442b1c2d49208c01c12c3c2a23f148"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/ImageReceiveDataResponse.java": {
+    "sha256": "33ca386bbdda20dd3149abfbe9edf00931d0702b939e227baf1495c65f0c342d"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/LiveViewDataResponse.java": {
+    "sha256": "13aac1221e90ad5664f25e5bd44821810d67a2bdf655fd06de9919b487d81a0e"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/SupportFunctionInfoResponse.java": {
+    "sha256": "91ce81d5c4a1955e6cf97332cb4f99f77d0d9a021a40fe874dd66179cff36344"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/FwDataBackupResponse.java": {
+    "sha256": "66bc01737c4cad948a89ec51d597d0462620216bd30a2762ae3609085bec5186"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/AutoSleepSettingsResponse.java": {
+    "sha256": "d74f0ed04af2fe465e9307dee2d5556105d0a2fe1825895b47f1999e904fc12a"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/SubTotalLogStartResponse.java": {
+    "sha256": "c99bb12d76428bda244b1c8eb44bbb3eaedf3e6a84e81a3a1d2ee08dc351fbf3"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/FilterLogClearResponse.java": {
+    "sha256": "31f1704f38217d13e770df2d70125db9768e25660bd513e4595a6b93ad14b247"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/PrintImageCommandResponse.java": {
+    "sha256": "8c2408932968888ff0858b769c750a82dc9ff98a1e2d5fb0a18b0860f1393cdb"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/ImageReceiveStartResponse.java": {
+    "sha256": "3f54840ecdc9f844e5ace7e50c39a5e2da7a0439e624b9b6e71ec06a543b87a2"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/SubTotalLogDataResponse.java": {
+    "sha256": "3e798a0356b34102261d4291827eea46190366b310c790434d07aae577c9afc2"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/FwUpdateCommandResponse.java": {
+    "sha256": "6b6dcf7f8ec82a9a58be464ebc65aacfb3d2f677d12fd02d6ab01223ce61e2b1"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/PowerOnOffLedSettingsResponse.java": {
+    "sha256": "06419b7949d3362cde0d7ece296e9328651bfa26744161cd29fb7b8a1f98b051"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/AdditionalPrinterInfoResponse.java": {
+    "sha256": "912484f053fefbda3738a8332756a8da17937175eb9c63699a0f9ecc51e83f28"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/UrlUploadAddressResponse.java": {
+    "sha256": "17d2c241ad5f3784f46c351f549e09cccf8ab80eec5ca308b0d3d9abbf2aec53"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/DeviceInfoResponse.java": {
+    "sha256": "447848cb00d4fcf015c3cd36b21291d94fa00e99b9487d6191d57b85ff1658ef"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/FwProgramInfoResponse.java": {
+    "sha256": "b4f02e58d87c44c495f735d203d13c0ebe25185373532a5a3582ed8eb1e24c2f"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/DateLogDataResponse.java": {
+    "sha256": "8f9a588f586d1673ccb2c17746fefd215063c7bfaecb80a0722d584cae5bb999"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/CameraSettingsGetResponse.java": {
+    "sha256": "aac1dda18b86e037fd33c7e9088466e8862aaf3c49973eedc1336b1cb15cffc6"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/UrlUploadInfoResponse.java": {
+    "sha256": "034dc5e90898a5216eb794cd0c6485fff747d4c0a0e0f0b50b58d0043a6d18b2"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/DateLogStartResponse.java": {
+    "sha256": "37b3f2248b9223b2258c4db5c51a38d9ca99c30185fce54ada527a9e2f34f55a"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/PrinterHeadLightCorrectInfoResponse.java": {
+    "sha256": "d89d4274beb3ab7041cf5a0ba1a490981631a51f8d1db03cb4e84b112fd6730a"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/DateLogClearResponse.java": {
+    "sha256": "b73c32ea67276c256e26af8f850f3f9ba50e0cb952bcbb08691c5552d67b867e"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/FileTransferDataResponse.java": {
+    "sha256": "e7445a4774be6f9834b2ee8c9ceaad9487c0da628b31b6378d390b42ad157804"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/FilterLogDataResponse.java": {
+    "sha256": "0ac3786235cd4a4af88c6709e9c9d31a5aeae7aceba05616334f10a76521b15c"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/SupportFunctionVersionResponse.java": {
+    "sha256": "da442aac04eb7efba5fc02a0476ccd410caceb1dd89c579db810f4303603edb4"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/AxisInfoResponse.java": {
+    "sha256": "abea11871bdb8a25e7880f2ec50c4efd3b96e86e4cd4248b5be66d7327b0287a"
+  },
+  "wide:com/fujifilm/bluetooth/data/response/FileTransferStartResponse.java": {
+    "sha256": "b5e166ed231bf318f3b4816bf825ee0ccd60f2fef0d1ece5654954755c2c1ff6"
+  },
+  "wide:com/fujifilm/bluetooth/data/request/bo33/BleConnectionRequest.java": {
+    "sha256": "2d1f40da5aef2238504f1e101f4b67a44199cc05130a32e2a41c68486ea37137"
+  },
+  "mini:O1/b.java": {
+    "sha256": "c130767828cc2d5d883556b9c8b05bb354dba63e3d4c99f264d389e03d3dc589"
+  },
+  "mini:O1/a.java": {
+    "sha256": "b6c6eff5cbd078b6400efc3acbc9319d559a53b25681047f9837116a6778f7a3"
+  },
+  "mini:P1/m.java": {
+    "sha256": "4756e3bfe1ae3329191bbe61ee0b64185453e0e49983791d82e5eb9ed07f4e46"
+  },
+  "mini:P1/i.java": {
+    "sha256": "6eafb7e160ede32afa5832d552c6c1827099fb56943cc0383324654b21246fd5"
+  },
+  "mini:P1/p.java": {
+    "sha256": "afc8b10f8900349b078c37c3888dd6808149ecbecf1a3bdc361c5bd3e8a0aa48"
+  },
+  "mini:P1/k.java": {
+    "sha256": "29bc225568adb3a1d7e6b94b6e664f93115c11d4fef85bfeda21c2a95e3217fb"
+  },
+  "mini:P1/b.java": {
+    "sha256": "bf2f2e28f530eb8482b1d7862c44752be106978bdd446cd1a7963adf8456073c"
+  },
+  "mini:P1/q.java": {
+    "sha256": "94ffa870282803d4ece5b2e4c916bcb2d2e38d221d132264eded36aa0e9e54d1"
+  },
+  "mini:P1/c.java": {
+    "sha256": "457d01c05535c84709dea0ba961a23b08f0139675a2b2ac8a0fa6582a9dac0ed"
+  },
+  "mini:P1/r.java": {
+    "sha256": "e8e6d2b4f1b5600f5c3985eb2f358ca4f51b4b319e9ea60e097fc2fe2ca8f049"
+  },
+  "mini:P1/g.java": {
+    "sha256": "7146070e32256cdbcc37d6f2ab7f27a7a78e6ab70eecc95e0192ccad1687de64"
+  },
+  "mini:P1/d.java": {
+    "sha256": "ee9d2208797c3cda1fb0647ecc6d58b78217222f990e547bee80180c4a683485"
+  },
+  "mini:P1/a.java": {
+    "sha256": "4dadd2b2797e9ea5b56f884542b4b272095d0fd64701f11290d30cdb79e88c19"
+  },
+  "mini:P1/s.java": {
+    "sha256": "688bc45fe91fed237686ae38fb8b4ae07151567653d4cd6c9a5af3dc940741f9"
+  },
+  "mini:P1/n.java": {
+    "sha256": "c4717b5571a05f17700f4fd63fb66605bacee6df53815f1ee32b7090b40feb3d"
+  },
+  "mini:P1/f.java": {
+    "sha256": "9349cd12ea99a571c079f1ec562f77db0b1ceb5c89f25a5b31db0c0e6de78c96"
+  },
+  "mini:P1/h.java": {
+    "sha256": "8f595943aea15b3d2cd35edb34c77ed2f1b3f8eefb853ebfade88ddc4df24fe1"
+  },
+  "mini:P1/o.java": {
+    "sha256": "e635120608cdbe42474c91d7599783e7b9d4a38ab0fec31620db3486b05a0b94"
+  },
+  "mini:P1/j.java": {
+    "sha256": "32f5cdaa717112b1228fc717479c2201303486f00f166e3240fb425841d34cad"
+  },
+  "mini:P1/l.java": {
+    "sha256": "a58c1867cc1cbbabae10f571cef235c39a478386a29d89cb12c5cd6777efcce7"
+  },
+  "mini:P1/e.java": {
+    "sha256": "c14e12f98036c4511f991326d8bd3f6f2039944db2e60228b4bd6f6b7effe75b"
+  },
+  "mini:Q1/b.java": {
+    "sha256": "bab60e33014f32e02a165d68957cf398bd7c0911311614c9a4a622a3221a8176"
+  },
+  "mini:Q1/c.java": {
+    "sha256": "1a5b15364374e856728e56b0cd2117f854a1ac15808dc19a2aa512913fb2ae60"
+  },
+  "mini:Q1/d.java": {
+    "sha256": "0eeb99c30b9bc5377825e279f72c0ecfc32f105a30e5b45375b65eb3e61b2a18"
+  },
+  "mini:Q1/a.java": {
+    "sha256": "c14bc4a9a17310e286a27ed7c2ae8e46fb5b1311a8d58ddd0c4f1a78d1c73de4"
+  },
+  "mini:Q1/e.java": {
+    "sha256": "cf953b6b33e3a02be103be83e7745903bfc3928a868e14e7b4257c97c9565df1"
+  },
+  "mini:R1/m.java": {
+    "sha256": "26d7318ed92976339c56780334186cdbf0aa23ab467d498cad5688082f38ee79"
+  },
+  "mini:R1/i.java": {
+    "sha256": "20fbe19526daf7526ad706db62581e422890e9d4c50a6f19c7be70cd16211329"
+  },
+  "mini:R1/p.java": {
+    "sha256": "5f0ff9fc33ccd44e4402b4121ba9d646c6e95768d17ff0c44b989dd244b350ff"
+  },
+  "mini:R1/k.java": {
+    "sha256": "d30a9acf4e20f2e533821d10bacacc7fbbb9d37d68db938eee2221017511a302"
+  },
+  "mini:R1/b.java": {
+    "sha256": "f9155ecb3e72970b500d68a37f3f494cc66e10c3cce7d8a1751a815fa8b2cbf7"
+  },
+  "mini:R1/q.java": {
+    "sha256": "c146b19775df9e332af14158ebfb2ed57f7c45bb5614cfb6493bcabd27522f7f"
+  },
+  "mini:R1/c.java": {
+    "sha256": "e4c642384b071a635c5fb2a2dee9784e90f46a27324f1822256ad253aa504438"
+  },
+  "mini:R1/r.java": {
+    "sha256": "875dfc8ae8b4159e876fec2b93fed9587550d557bc20ca789c809c4bdaa049df"
+  },
+  "mini:R1/g.java": {
+    "sha256": "692cb9fb258483f5a267e6402845a213f1baa5c85051277c991903a1c856b8b3"
+  },
+  "mini:R1/d.java": {
+    "sha256": "2303168d9190e4738b4d6e732ceba94298aebe5618f73ed0fdcc8484c61601f5"
+  },
+  "mini:R1/a.java": {
+    "sha256": "75cd3be7f5d623729e2b4282ae194fe18de81239fe6a697f8d3e65e1dc45aa24"
+  },
+  "mini:R1/s.java": {
+    "sha256": "f96c326077c9bae72a6757d88f1bc2cdcccf1967ec717b118006fa68130e4530"
+  },
+  "mini:R1/n.java": {
+    "sha256": "4764dd47fff2177009f8961d784f2e57c0f58730bf8d6cf063a68b58d06cbe2d"
+  },
+  "mini:R1/f.java": {
+    "sha256": "6e4291b930e396797e21f123354a535171fd7b79c1d5742edd7b1ba54a5d5e24"
+  },
+  "mini:R1/h.java": {
+    "sha256": "9ac64e988b4a66f009b79e7d3cbeefefbee6b0fac68c6123ab75977e08c16b7b"
+  },
+  "mini:R1/o.java": {
+    "sha256": "569aa8b393f8a9632b3a901d24b40284ef1d14c04e83d3a2624cee6dd7ed2173"
+  },
+  "mini:R1/j.java": {
+    "sha256": "a76517db5c2a125470579b632c515206071afeb50b7c430cd18ae7e60445f985"
+  },
+  "mini:R1/l.java": {
+    "sha256": "5d62cc15e41a56ea3aab536781b0c940b9a64a0ae376c77a6d24d8f4ee31b901"
+  },
+  "mini:R1/e.java": {
+    "sha256": "690ff18718be94a8d67a7b581e5907f97f30e204be83b07c2e971ed3a8d54140"
+  },
+  "mini:S1/a.java": {
+    "sha256": "89ecb89f6a2220668cff7128fe1b1bce7742f338609c3c727da5cf537efe2c6b"
+  },
+  "mini:T1/m.java": {
+    "sha256": "64f517e12a5c0bd6c0b09e6e69036fafc81afb2b02ea8c58bea93e209e60da06"
+  },
+  "mini:T1/i.java": {
+    "sha256": "8a17b767024b0df185de5b1ea95ba1b174f4734a867e43a2d2790d7fa5a98f4d"
+  },
+  "mini:T1/p.java": {
+    "sha256": "c335557be9545f8f8b4f1d593029dff581e8502642bc4aeb53d5605ec2364f31"
+  },
+  "mini:T1/C.java": {
+    "sha256": "f3d8a2b2205131c1ee9d82db20d0ec2aba6e0ca28253ea1dff433e615fe0c103"
+  },
+  "mini:T1/k.java": {
+    "sha256": "b86d78178c22fc1f8c55f44259279b012024f77a9e89b655d75004ae9063acd8"
+  },
+  "mini:T1/u.java": {
+    "sha256": "8cac1280f1e26c83ad76e350683a4be00855b76aa6e678be4427d048dc8edb65"
+  },
+  "mini:T1/q.java": {
+    "sha256": "a05cedb2fbaac4c84174fb45110784434c9cd321f35ea436cc4021840e323288"
+  },
+  "mini:T1/x.java": {
+    "sha256": "2a620d8c7b70e7bbb75180d9817a36f8372537ccec32634d6fcfa9de26d98c13"
+  },
+  "mini:T1/C1868c.java": {
+    "sha256": "6e958b77ac5cf3760abb69b6219a888d73748c40574b3582fc1ae40a4e72883a"
+  },
+  "mini:T1/t.java": {
+    "sha256": "fca47b1fbf53e3fced9eb181866fbc9146f54266690418de6a97fd234388992a"
+  },
+  "mini:T1/r.java": {
+    "sha256": "77b72a8eab7b784a0e13ab4599729041575f286baa208b3cc5c73c973bdcb683"
+  },
+  "mini:T1/y.java": {
+    "sha256": "204e1c2648dcceef9c12cde80483e92368931eaedf7f944b7f641f1282d8bc57"
+  },
+  "mini:T1/g.java": {
+    "sha256": "870585eae65ff3c84afa3199ce549259d7734565b5c020f28e1ad7bac5e65516"
+  },
+  "mini:T1/v.java": {
+    "sha256": "a7b6581264dc524da59dcd66467e37803e4bd998cc3bbcc29c73c350882de240"
+  },
+  "mini:T1/s.java": {
+    "sha256": "c4872f8cade967d07fb980d1e304f5c5b0bd8beb3c344ce0f9a9f71267ac778e"
+  },
+  "mini:T1/w.java": {
+    "sha256": "98b39be20b7a458e4904f2210736ac7a4335fab7afef5e7a0e459ea2d1583ccc"
+  },
+  "mini:T1/D.java": {
+    "sha256": "d037bdbccec98a2fda177a5de3af9a63a0554affb0a8e42f582ad0bac7cd1c55"
+  },
+  "mini:T1/n.java": {
+    "sha256": "1b5206e1168d03da7db420a5e0b824cae14bac7209391673f4952081ef030f4d"
+  },
+  "mini:T1/f.java": {
+    "sha256": "e301b52e5da66d4b945705fb795b513ced551475540db650b259987891d67187"
+  },
+  "mini:T1/B.java": {
+    "sha256": "bca676d06b498fcffc8724bc666035698d7485914aafed4c086ae7410c91a168"
+  },
+  "mini:T1/h.java": {
+    "sha256": "4ee4722056edd6a33fd0135c4e8f6749108bb4548cb54b23d9ef56ded82f5207"
+  },
+  "mini:T1/o.java": {
+    "sha256": "c56d19b4407c7370c0615b062091acd782293510f62ad702728055f9cc489737"
+  },
+  "mini:T1/C1866a.java": {
+    "sha256": "85aa8cd86acfe7bc17921f20541e341d1e4b373379a3c21ee29a789532942580"
+  },
+  "mini:T1/j.java": {
+    "sha256": "e12bdecc677067b3c5b0728b0bc72c916dfbb5fb780e8209a524b2ba3503bb56"
+  },
+  "mini:T1/l.java": {
+    "sha256": "cef60d1d6e2b15498fcfcf7203ffdceff98c2cd3e1b279bf9c863ee9fe7b8954"
+  },
+  "mini:T1/A.java": {
+    "sha256": "01f6c009a9547b632bbc3459549417b5839ae0a86be45eb651eac04046de0df0"
+  },
+  "mini:T1/AbstractC1869d.java": {
+    "sha256": "d802988c8165d8af38dae89136657029cc104296a9545b7fd78f81683fd28193"
+  },
+  "mini:T1/AbstractC1867b.java": {
+    "sha256": "4d226b6478220d75305a8ba2a8827e0392f06011ac34e9ae339f64f508980aeb"
+  },
+  "mini:T1/z.java": {
+    "sha256": "aa824064f40db4c94f0338c23e281a820949d54af8672671ba7cc0486f793fa3"
+  },
+  "mini:T1/e.java": {
+    "sha256": "56d8c0d79fa6ececb0fd94a2e9c4eb00fdaaef4197084817facbf86116576dd1"
+  },
+  "mini:U1/b.java": {
+    "sha256": "cf2e4f8ff39c06084d65ee005f2ba8a80836634e8f49fdef989e366b030c2cc6"
+  },
+  "mini:U1/c.java": {
+    "sha256": "7e46bd590a3740131e029ffd88daddc3675595f93dc118387aa18cc69a844244"
+  },
+  "mini:U1/d.java": {
+    "sha256": "3f12088604a80b294a29337c9bd9c9cd7ce120fa0e70836b45f055ef238855b1"
+  },
+  "mini:U1/a.java": {
+    "sha256": "7ad3e0a018eca7e6eff767d55bdfbcfb740eafc2d0d05aa13781f78c4da3150d"
+  },
+  "mini:V1/b.java": {
+    "sha256": "6a942e0297eb830ad272c3a0b00d51b7f95bd56d60cf5daa9c9bdc7120867a63"
+  },
+  "mini:V1/a.java": {
+    "sha256": "d5885bd091898290e9f5ccb55caa5c7cef7b36fd14ea21862f1d94e1c7843df1"
+  },
+  "mini:W1/m.java": {
+    "sha256": "f27dd11b345ebb3ff6b27a5de84d7fb0f50a28cf878e70b8ad043d05816e97e6"
+  },
+  "mini:W1/EnumC1883b.java": {
+    "sha256": "473c855e23085e7edfdf9accb27084fabf35b0fa467d4bda75be7164a9bcf4cb"
+  },
+  "mini:W1/i.java": {
+    "sha256": "b2015fe53e6145d3cea3cf60857f1d3ace0e044f3cdfcee58e4d5a9a5994a345"
+  },
+  "mini:W1/EnumC1888g.java": {
+    "sha256": "505d4677f76344361c7ff42930a5bc29c72359d17151396aa5ed38e511039d65"
+  },
+  "mini:W1/p.java": {
+    "sha256": "799b21084bceb13c8f9013e79f60b0cec246ef1e4089fba6a91030027f17de7f"
+  },
+  "mini:W1/C.java": {
+    "sha256": "55e8f8175513508a3df59b7e18ef963ed3942da06bb1bd3828dff133e66108d5"
+  },
+  "mini:W1/G.java": {
+    "sha256": "5075fc1a1d9d941c203b35c32690b385edba2ef9c93c8aea6b6bdebf3d34d6d8"
+  },
+  "mini:W1/k.java": {
+    "sha256": "5eb453fae7fc8490091bd174cf8ff0cebc5f8eccd3df0bccf13a384a2e5c788d"
+  },
+  "mini:W1/u.java": {
+    "sha256": "46f0c24433b009a27735fad24ffa727d2e2cc9259c6da96d45662adc32695456"
+  },
+  "mini:W1/q.java": {
+    "sha256": "2d405e83ca319109c3b5bcdd6289e17b7d5151a643e0620107efd9ab6e6f8a30"
+  },
+  "mini:W1/x.java": {
+    "sha256": "ed369b6e2d6c2003d0acc5eb219f5222a6b9dbcf0a6998d0c28ad93a6e76997a"
+  },
+  "mini:W1/t.java": {
+    "sha256": "663060e47ef0ab6210ce8ac366f8fdcd08fa8abfe8cf097672ac140f173235e5"
+  },
+  "mini:W1/EnumC1884c.java": {
+    "sha256": "dec193c43083d8faf8a2ab3c1a904e4f3b6aaaa45f3454c18efad37d2c23f9ff"
+  },
+  "mini:W1/C1887f.java": {
+    "sha256": "bc395a053b41a392e9aa0c4fd613aac6bd1af03001a4b6d24b48d830949f8a8f"
+  },
+  "mini:W1/r.java": {
+    "sha256": "c458076d62da3e3c90d42ab718ec9fb38ae5d1461f42698c0212f7d7e1bac924"
+  },
+  "mini:W1/y.java": {
+    "sha256": "a8dfeba148f9a9d3ac21e43281323061a2fb557151cf3595a0816214336f9180"
+  },
+  "mini:W1/v.java": {
+    "sha256": "361ebdcbec6a629feb290f21e1268f7874dc1796cd5a18301eb1a57b705f9423"
+  },
+  "mini:W1/EnumC1885d.java": {
+    "sha256": "0d7f8b4ddf010a388c706908dd73517bb29ca08eb12a86bd13b690212c77e6cf"
+  },
+  "mini:W1/EnumC1882a.java": {
+    "sha256": "8d092d182e9ffcdec96c66cda6ccd214eef60e6370caa0ac66dbdf905ced1281"
+  },
+  "mini:W1/s.java": {
+    "sha256": "03e0c443bc9bb257741cf3cf4048b77c8d944ce8e120118ee3a68eea3b29ae16"
+  },
+  "mini:W1/w.java": {
+    "sha256": "a53f1911558670968c6bdc485633373985bc886734c4cbd298fd74f21a055204"
+  },
+  "mini:W1/AbstractC1886e.java": {
+    "sha256": "df177dbdf53431ce14b67534ba213d2997c7ac416da61a4263c159e894c0e88c"
+  },
+  "mini:W1/D.java": {
+    "sha256": "5160120ce347b96e4d799cc6bf877618cba6213f2f0ce4039d990d182df35901"
+  },
+  "mini:W1/n.java": {
+    "sha256": "a8ac78941eb9c6262b4750bd2987b837517e582abb81f735a40c415a70c0e7b5"
+  },
+  "mini:W1/B.java": {
+    "sha256": "8a11f94ca71c57bd16d2d062d457f4d4b733a361ee4a3d96d02bc8ba1c67224e"
+  },
+  "mini:W1/h.java": {
+    "sha256": "1182a89d6a59f2e295b012fb48ec7b940104ffd2b43d877b40c735b04bdd87ab"
+  },
+  "mini:W1/F.java": {
+    "sha256": "c6044bc409e74399ad67027def89b4b0c41cf365e5e04138ea957864aea76628"
+  },
+  "mini:W1/o.java": {
+    "sha256": "ec6f53abf310f82a130122f14e53053ea3ef976bd92c89aa95d7ae72a06afc31"
+  },
+  "mini:W1/j.java": {
+    "sha256": "adb03ff5586b372be9ccb6cd0ffadddb8e747bad4b05ea8a7b9957825afadd68"
+  },
+  "mini:W1/l.java": {
+    "sha256": "44dcaad5c2353d2efcce8959726e2243fae5ff2ae18542795217b26f85de3750"
+  },
+  "mini:W1/E.java": {
+    "sha256": "d15dcec06d00763a2056194ea0a0fa4f8d468fd15231cf350297b63dfad20fb8"
+  },
+  "mini:W1/A.java": {
+    "sha256": "45b1214c02bef113f3823816783797aef6feebf409522766ed4d392c6da76c39"
+  },
+  "mini:W1/z.java": {
+    "sha256": "c9463a3867193ba199bfbb02507539ec5c35ddd560ad7847ab090dd045debb41"
+  },
+  "mini:com/fujifilm/bluetooth/models/InstaxPrinterInfo.java": {
+    "sha256": "b0968b558f4b48c1c58b03bdc9fc4109555e5f38c51a6e7845660788149184c6"
+  },
+  "mini:com/fujifilm/bluetooth/models/InstaxCameraInfo.java": {
+    "sha256": "665918b5d89cb8d0afb558e00d6087e7f8f43b2b19a3fd0aab9516c30b7253a6"
+  },
+  "mini:com/fujifilm/bluetooth/models/InstaxInfo.java": {
+    "sha256": "671420a47217b60300f11dc6d1d17973120b311054816f2e9a9ea1ba068f9a19"
+  },
+  "mini:com/fujifilm/bluetooth/models/ParameterCommand.java": {
+    "sha256": "ab66f1cda2ac0c3858e527f9c3a88a0c015851bbe79fb5487097ad0bcfb5d067"
+  },
+  "mini:com/fujifilm/bluetooth/models/SubTotalLogInfoBo19.java": {
+    "sha256": "28c8e10efe544ca2134235c6fc02a8ac6062566aa0d9ec3784133058c5b47af3"
+  },
+  "mini:com/fujifilm/bluetooth/models/SoundChekiInfo.java": {
+    "sha256": "4723d24959c10ae2900f8ed1abdd2a5965aaeebef05b63ab26b1c06b5c952b6a"
+  },
+  "mini:com/fujifilm/bluetooth/models/PrinterHeadLightCorrectKt.java": {
+    "sha256": "f6f6fb4b9496fd74f7190616c465f72dd0029cb19c247328fb756fd6d4b0999c"
+  },
+  "mini:com/fujifilm/bluetooth/models/DateLogInfo.java": {
+    "sha256": "0c32560f3dc61142e0421e34b7e271f7c054388c206f048d283b5d8807a6092b"
+  },
+  "mini:com/fujifilm/bluetooth/models/InstaxClientInfo.java": {
+    "sha256": "3a992995e6d52f5ffc49da2cf9abda40f10beeb662e001e92f9d1e2711ca1f5a"
+  },
+  "mini:com/fujifilm/bluetooth/models/InstaxAxisInfo.java": {
+    "sha256": "bc7c014c61f82149cf554eac958800d9485ae0539af5d1de1fc3f4dab99192ff"
+  },
+  "mini:com/fujifilm/bluetooth/models/SwIntelligence.java": {
+    "sha256": "0c78dede35419ac0da861bb6e4a5df29979f7d16941a0e554ecf4e05d720bf35"
+  },
+  "mini:com/fujifilm/bluetooth/models/PrinterHeadLightCorrect.java": {
+    "sha256": "5dfe29dbe17339ae7d350a063689124e5b7654c4dcbdf67baac11465cad5516a"
+  },
+  "mini:com/fujifilm/bluetooth/models/SubTotalLogInfoDm1.java": {
+    "sha256": "58ed5567ffddeb314d37b038f03cece4acfeb4eb325e4172285d384b8e512738"
+  },
+  "mini:com/fujifilm/bluetooth/models/FilterLogInfo.java": {
+    "sha256": "e3dc6b1391cbc352c02e6485ba64f72f51ff5b217f5b2dc5bc05a1ca6dcf52a3"
+  },
+  "mini:com/fujifilm/bluetooth/models/SubTotalLogInfo.java": {
+    "sha256": "5487a22ced2828a1a6bc9e7c1d6f557f83f8959fc6f52da6afc5c1b755d3dd10"
+  },
+  "mini:com/fujifilm/bluetooth/models/SettingsLog.java": {
+    "sha256": "5af5155e3305a97f9812c69b2e450639c2cebbd9eed51c47b10af86e02a72c14"
+  },
+  "mini:com/fujifilm/bluetooth/models/InstaxAdditionalPrinterInfo.java": {
+    "sha256": "41df8936c40f495a1d7facf0c2efe2ca2b3c98fecfd42a969c2ec6d46f28fcc6"
+  },
+  "mini:com/fujifilm/bluetooth/models/AutoSleepInfo.java": {
+    "sha256": "21cbe02ffcef2f7e45a795139cf92b5e9d012a94871b584f5ccb34c69d0df44c"
+  },
+  "mini:com/fujifilm/bluetooth/data/SyntaxErrorException.java": {
+    "sha256": "3360d60e4bf8a9d10421cf36c107edb9d68af71fdedf6388353be7de234a4a80"
+  },
+  "mini:com/fujifilm/bluetooth/models/bo33/BtFirmwareFilePathModel.java": {
+    "sha256": "9dbb7dd8daf01fa312fae8d9bba21ffb90559a87127c07ab9948ac2008bffa81"
+  },
+  "square:L1/m.java": {
+    "sha256": "5f08d79a332d41ff63795aa98d1ae91802f89dbd870bd802cd65e2ca4ec3f842"
+  },
+  "square:L1/i.java": {
+    "sha256": "fc92ab74ed64cae7a280e7914e22332b987a2b743e5d94895e2eceac1c43e908"
+  },
+  "square:L1/k.java": {
+    "sha256": "b0a754c6ed956a4f8cecb6ecb6d45baabf1a9b86a510cbb3ae8ce0f0194ef051"
+  },
+  "square:L1/b.java": {
+    "sha256": "b7822e884e5ab5cea5bcfb82adb477fb7f055da2a0dcd31ecb8fbee4d4cc6841"
+  },
+  "square:L1/c.java": {
+    "sha256": "8637e90e3974446a3726a0ebbf414ec8a48deb7821332699c719aa55b266cfdb"
+  },
+  "square:L1/g.java": {
+    "sha256": "4d03ffe03b97454e2267672c01704cfa66cbf1aeb8dc23b30bc6c07ac08ad827"
+  },
+  "square:L1/d.java": {
+    "sha256": "23ac3f8b9d0d7266b976a999dbbc5441029d94cc68709b415e5c587a06d969e2"
+  },
+  "square:L1/a.java": {
+    "sha256": "0739a419cdbf5440ba03da601a35ba054c7c23c6974ecc8af5bcb4ccaec96752"
+  },
+  "square:L1/n.java": {
+    "sha256": "68346eed5d7dee4a527757c0bf4e074bc03b45a001022085d853a4105a007278"
+  },
+  "square:L1/f.java": {
+    "sha256": "16ba568bf2412d31f3b4741e7ce7952043dacd01c6a77a9b0a504ffab7e6cad1"
+  },
+  "square:L1/h.java": {
+    "sha256": "a49c67b65ece80a2ba4e51a117bfc76a0b99e14983f5c8f686018469bfd4d4d2"
+  },
+  "square:L1/j.java": {
+    "sha256": "167b3e9683cfb1557d1c05b4f8c3b6053c7559fb572ae7eee2195ad03868e6e7"
+  },
+  "square:L1/l.java": {
+    "sha256": "2559cf5168849ad9354e517c7c2b4cef15ea8cd7e0bb3e6d197906573c9bc858"
+  },
+  "square:L1/e.java": {
+    "sha256": "add0bbf903cfa24b1a7b0dcbc7369214c0097cde15b0fbb7f3162c799dcb326b"
+  },
+  "square:Q1/i.java": {
+    "sha256": "e2fb482dff5a97dfc65465b9e466d72570e0382d79948ac5e488215605650e08"
+  },
+  "square:Q1/b.java": {
+    "sha256": "11e41eccbde9eeb0fe274b6a098404fc21c8d26f898c1c72b4013062979e0e9b"
+  },
+  "square:Q1/c.java": {
+    "sha256": "4c0dbf620628edcc2d95498344735ea6aac88ecee5e3fd5e0fc9173c36cb6122"
+  },
+  "square:Q1/g.java": {
+    "sha256": "6a27b0e2bcab8170e3e675f2f7cfae139cee6e87e40fb60dbb0cb5ec99f00259"
+  },
+  "square:Q1/d.java": {
+    "sha256": "f77bbf862e85c93c2cb53e053366c9d421c754384a843be6c010c082d900f2c2"
+  },
+  "square:Q1/a.java": {
+    "sha256": "d362d258b079e25f5c6e87637d665035fa2b6edcc65e1fc66e2ffb63d793bc81"
+  },
+  "square:Q1/f.java": {
+    "sha256": "93943e22bb8146b64494666e448bb9cf0dfd8d9c1c841930470fa5af8ffb23ee"
+  },
+  "square:Q1/h.java": {
+    "sha256": "123ab268b788bf497d829994b2495a802a2d39f376110f198e4381f8dd9b3a09"
+  },
+  "square:Q1/e.java": {
+    "sha256": "ed8daef15ccc0139fcd6b832c7c0e918dc6c9f5844c8969d094f158194e62aab"
+  },
+  "square:R1/b.java": {
+    "sha256": "e05bd99ebc53f17e980c6c314432398da52c254d2c39ca1b70417a1f457a451e"
+  },
+  "square:R1/a.java": {
+    "sha256": "d1b667e1bf9840e91c254cdc7c65ac5ef6c4be677d8686573edce6b81a2e2eca"
+  },
+  "square:S1/a.java": {
+    "sha256": "9ac566afeaccfa51545820c313b53c67ff8e084edf74c6ebf64fb47f1c683be2"
+  },
+  "square:T1/b.java": {
+    "sha256": "68d2033deba402436dfd26467b2853c0782c476407d50c2a9a98da5552af3aa9"
+  },
+  "square:T1/c.java": {
+    "sha256": "ed014658cf8e8d31f5bcce7bb1dfad97bb67d2e1774eae5cb73eabbe13c38e3a"
+  },
+  "square:T1/g.java": {
+    "sha256": "c3a225ffd6e442a830342f23a794a9b29f8b7113cc0cf2211803b2db16e9b183"
+  },
+  "square:T1/d.java": {
+    "sha256": "359cbb2f0af0c38971d7f198c4c0817358892692da13388eb14d1fe5da48bd07"
+  },
+  "square:T1/a.java": {
+    "sha256": "6f47c86644fe9add9a0107c88934ab365880469fdec32eea6fa65fcd48b98622"
+  },
+  "square:T1/f.java": {
+    "sha256": "5a59c9aec5013d3793c0731e505bd8d69e660474030467afc5fcd258c68df577"
+  },
+  "square:T1/h.java": {
+    "sha256": "4bb02f9906d6394955ec00991e2a49cd9d073b25f784d5ee94134b2755312e53"
+  },
+  "square:T1/e.java": {
+    "sha256": "8eb4895db977be6e6d38d0d5623ac1a73fba545f35785844a0a15dd5d537ad27"
+  },
+  "square:U1/b.java": {
+    "sha256": "2b3162a4fd2ad70d551ff7444236f1097d21921392dd7b9a1829f9724ab3815d"
+  },
+  "square:U1/c.java": {
+    "sha256": "a62a30a6d400e3a99905ea5a600ec18388976136ec79bfdb5e1f77b0303f6ef3"
+  },
+  "square:U1/d.java": {
+    "sha256": "a516f46f3cbaa5cecccc6b768f1a49b07ca1ebf6a5920f21d066f386329b33b6"
+  },
+  "square:U1/a.java": {
+    "sha256": "33e80913e32e005a1dc14ca4e45f7df82969a2a04a2005e5cd060f1bf8418e17"
+  },
+  "square:U1/e.java": {
+    "sha256": "2f6985ff4d9debec5eda0fe72854c7d45b7ee4f4d867940d06880b63cc1934e5"
+  },
+  "square:V1/b.java": {
+    "sha256": "b5fb82adfa9d139c91c8bbec457de2b2a268ee34d9c47fe86b5feab5b7305125"
+  },
+  "square:V1/c.java": {
+    "sha256": "04b2877bb3160251ff683111b996973720ed7e2fd4c30117c834d39e6fc33671"
+  },
+  "square:V1/d.java": {
+    "sha256": "2bb3fcdd18443a7353a6bdcd2d44e5b0920219e4de6208820b2e7a4662ae91a1"
+  },
+  "square:V1/a.java": {
+    "sha256": "3f6f7172f54d83f378ec50a1e72d383e02e6d0738efb330b9e1267872c1ec917"
+  },
+  "square:V1/e.java": {
+    "sha256": "1597b8ee03d6f59ff869265ad6cbe8a4ec2107e62e91284eab0d18bf618ba84b"
+  },
+  "square:W1/i.java": {
+    "sha256": "db4c873cf8336f4afac9df7bde76e3563b14f48e5c7075090b23e284a1887118"
+  },
+  "square:W1/b.java": {
+    "sha256": "e6079d355ae5dad96859643234b1b11cfce70fe6ba7a708512fdfc1d4e253778"
+  },
+  "square:W1/c.java": {
+    "sha256": "3508e728124db296504f2a75cfa637621cdd2a58652d1ac9949ff565df8ed271"
+  },
+  "square:W1/g.java": {
+    "sha256": "17ddf694af7eb3a2d73dd7adcd226002275169926b1742da52f1330cce53d9e3"
+  },
+  "square:W1/d.java": {
+    "sha256": "3420be8bdef130104433a57f1367ce8c6096f0ba6d9193b4fcb41f5518462d88"
+  },
+  "square:W1/a.java": {
+    "sha256": "4266072344675be4b36a02b86582e812a380454497e019d1a4646fab8a0e2c73"
+  },
+  "square:W1/f.java": {
+    "sha256": "999ef3039149781695db9ff3edb766e8c558644a68920d35753ae500c16fc22c"
+  },
+  "square:W1/h.java": {
+    "sha256": "3aea02f1c816746b5f79772cb8d0f04d79060e7d6bb66daaa3617ddf148b5568"
+  },
+  "square:W1/j.java": {
+    "sha256": "e89fe21c5a764405fc94b8e930e499494676f79fb81e8cb85c1f334d0301ba32"
+  },
+  "square:W1/e.java": {
+    "sha256": "066cca02c92eefdc0702d0ce08c640affff3246f8818f1c7a9679bd050a3b10a"
+  },
+  "square:X1/b.java": {
+    "sha256": "895ea8fe227d9ca0cfd37f3a951e433a89310960f42214f273b9bd57cede5797"
+  },
+  "square:X1/c.java": {
+    "sha256": "1680029657c3d5b5c26703336f27800a6f6da7ab96cfbe186f9316bfff917aef"
+  },
+  "square:X1/a.java": {
+    "sha256": "d1835d6c2944b0e5d2a3927af1aab21c53266118c9025b838b5362be973cea5c"
+  },
+  "mini:X3/W.java": {
+    "sha256": "f76279ad808cadd480008cb7bc58fe8800f390169a0c7280abe502410eb77079"
+  },
+  "mini:X3/Q.java": {
+    "sha256": "c97e114c0a323e91894984c77b24c97361e8a7accef9b64496b4530a1b83926e"
+  },
+  "mini:X3/G.java": {
+    "sha256": "f92fe961f3ec61d83d01501e885826b75df13d449f2d0c794d4333e9facea75b"
+  },
+  "mini:X3/C1893e.java": {
+    "sha256": "6a6008155b407dc096055935678eaea6b384d76217bcf76572fc50ee45910d9c"
+  },
+  "mini:X3/C1898j.java": {
+    "sha256": "416a0001a44cb42329098e02c05897e44938c159ad4ab0be30a032339cf94b0f"
+  },
+  "mini:ib/r.java": {
+    "sha256": "1384708dfbf103db7ae03038e7cede2a1030d4099fe721bf3d1b29fab1e229cf"
+  },
+  "mini:Fa/o.java": {
+    "sha256": "80696f769aeb85f0b493aa611be97ee2e766211a29b099f74c6fd2fba73a868d"
+  },
+  "mini:com/fujifilm/instaxshare/i2fdia/ImageEnhancement.java": {
+    "sha256": "9d9b48560bcb743ec0c9e26712eca6bdcb95c14a921edd19c2b7916d3b691364"
+  },
+  "square:y5/W.java": {
+    "sha256": "10cae2cf7d9ee474a8a523758a318e44c71e2468f5b80e67b4ad2bfe17b066ca"
+  }
+}

@@ -1,0 +1,1189 @@
+{
+  "attribution": "Cleaned copy of report/multi/renesas-mini3.json from the external multi-firmware analysis, 2026-11-12 (package instax-multi-firmware-analysis, kept outside the project and verified against its SHA256SUMS). Facts are that analysis's static findings; paths are relative to that package. Removed: first_64_bytes, last_128_bytes and per-descriptor raw_hex (firmware bytes). See docs/re/firmware/renesas-mini2-mini3.md.",
+  "profile": "mini3",
+  "label": "LINK3 / mini Link 3",
+  "source": "research/multi/inputs/mini3/0102.hex",
+  "source_sha256": "81de808fe0a0fa58f6b3426365848fda68de8a5e6792da4ec758fca36ad7e724",
+  "binary_sha256": "7c384d92a7e420b5f74707974ab0af9d147ba47bc04551d4f8b5c14058fcb84a",
+  "base": "0xfff00000",
+  "end_exclusive": "0xfffe0000",
+  "binary_bytes": 917504,
+  "record_types": {
+    "4": 3357,
+    "0": 3623
+  },
+  "identical_overlaps": 0,
+  "table_va": "0xfff1d3ec",
+  "record_count": 46,
+  "unique_opcode_count": 43,
+  "descriptors": [
+    {
+      "record_va": "0xfff1d3ec",
+      "opcode": "0x0000",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "handler": "0xfff6a01a",
+      "continuation": "0x00000000",
+      "interpretation": "handshake"
+    },
+    {
+      "record_va": "0xfff1d3fc",
+      "opcode": "0x0001",
+      "request_frame_bytes": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "handler": "0xfff6a070",
+      "continuation": "0x00000000",
+      "interpretation": "identity selectors"
+    },
+    {
+      "record_va": "0xfff1d40c",
+      "opcode": "0x0002",
+      "request_frame_bytes": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "handler": "0xfff6a362",
+      "continuation": "0x00000000",
+      "interpretation": "capability/status selectors"
+    },
+    {
+      "record_va": "0xfff1d41c",
+      "opcode": "0x0010",
+      "request_frame_bytes": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "handler": "0xfff6a6ea",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d42c",
+      "opcode": "0x0100",
+      "request_frame_bytes": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "handler": "0xfff6aa17",
+      "continuation": "0xfff6aacb",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d43c",
+      "opcode": "0x0101",
+      "request_frame_bytes": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "handler": "0xfff6aafe",
+      "continuation": "0xfff6abba",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d44c",
+      "opcode": "0x0102",
+      "request_frame_bytes": 19,
+      "flags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "handler": "0xfff6abda",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d45c",
+      "opcode": "0x0103",
+      "request_frame_bytes": 15,
+      "flags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "handler": "0xfff6ae6c",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d46c",
+      "opcode": "0x1000",
+      "request_frame_bytes": 15,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff6af88",
+      "continuation": "0x00000000",
+      "interpretation": "image setup"
+    },
+    {
+      "record_va": "0xfff1d47c",
+      "opcode": "0x1001",
+      "request_frame_bytes": 911,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff6b203",
+      "continuation": "0x00000000",
+      "interpretation": "image block"
+    },
+    {
+      "record_va": "0xfff1d48c",
+      "opcode": "0x1001",
+      "request_frame_bytes": 911,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff6b203",
+      "continuation": "0x00000000",
+      "interpretation": "image block"
+    },
+    {
+      "record_va": "0xfff1d49c",
+      "opcode": "0x1002",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff6b382",
+      "continuation": "0x00000000",
+      "interpretation": "image finalize"
+    },
+    {
+      "record_va": "0xfff1d4ac",
+      "opcode": "0x1003",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff6b4e4",
+      "continuation": "0x00000000",
+      "interpretation": "image cancel"
+    },
+    {
+      "record_va": "0xfff1d4bc",
+      "opcode": "0x1010",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff6b568",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d4cc",
+      "opcode": "0x1011",
+      "request_frame_bytes": 11,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff6b6e2",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d4dc",
+      "opcode": "0x1012",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff6b888",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d4ec",
+      "opcode": "0x1080",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff6b955",
+      "continuation": "0xfff6bb75",
+      "interpretation": "print operation"
+    },
+    {
+      "record_va": "0xfff1d4fc",
+      "opcode": "0x1081",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff6bc29",
+      "continuation": "0xfff6bddd",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d50c",
+      "opcode": "0x2000",
+      "request_frame_bytes": 15,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff6bed5",
+      "continuation": "0x00000000",
+      "interpretation": "firmware transfer setup"
+    },
+    {
+      "record_va": "0xfff1d51c",
+      "opcode": "0x2001",
+      "request_frame_bytes": 911,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff6c0de",
+      "continuation": "0x00000000",
+      "interpretation": "firmware transfer block"
+    },
+    {
+      "record_va": "0xfff1d52c",
+      "opcode": "0x2001",
+      "request_frame_bytes": 911,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff6c0de",
+      "continuation": "0x00000000",
+      "interpretation": "firmware transfer block"
+    },
+    {
+      "record_va": "0xfff1d53c",
+      "opcode": "0x2002",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff6c274",
+      "continuation": "0x00000000",
+      "interpretation": "firmware transfer finalize"
+    },
+    {
+      "record_va": "0xfff1d54c",
+      "opcode": "0x2010",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "handler": "0xfff6be7d",
+      "continuation": "0x00000000",
+      "interpretation": "update metadata query"
+    },
+    {
+      "record_va": "0xfff1d55c",
+      "opcode": "0x2080",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff6c36a",
+      "continuation": "0xfff6c69c",
+      "interpretation": "update operation"
+    },
+    {
+      "record_va": "0xfff1d56c",
+      "opcode": "0x2081",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff6c5ab",
+      "continuation": "0xfff6c7d8",
+      "interpretation": "update operation"
+    },
+    {
+      "record_va": "0xfff1d57c",
+      "opcode": "0x20a0",
+      "request_frame_bytes": 19,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff95aa7",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d58c",
+      "opcode": "0x20a1",
+      "request_frame_bytes": 911,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff95c68",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d59c",
+      "opcode": "0x20a1",
+      "request_frame_bytes": 911,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff95c68",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d5ac",
+      "opcode": "0x20a2",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff95df5",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d5bc",
+      "opcode": "0x20a3",
+      "request_frame_bytes": 11,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff95eec",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d5cc",
+      "opcode": "0x20a4",
+      "request_frame_bytes": 11,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff96083",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d5dc",
+      "opcode": "0x20a5",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff9624c",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d5ec",
+      "opcode": "0x20a6",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "handler": "0xfff9632c",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d5fc",
+      "opcode": "0x20a7",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff96417",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d60c",
+      "opcode": "0x20a8",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "handler": "0xfff9647e",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d61c",
+      "opcode": "0x20b0",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff964d9",
+      "continuation": "0xfff967a3",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d62c",
+      "opcode": "0x20b1",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff967cd",
+      "continuation": "0xfff9688c",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d63c",
+      "opcode": "0x3000",
+      "request_frame_bytes": 7,
+      "flags": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff6c802",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d64c",
+      "opcode": "0x3001",
+      "request_frame_bytes": 0,
+      "flags": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff6c8ae",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d65c",
+      "opcode": "0x3002",
+      "request_frame_bytes": 9,
+      "flags": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff6caf6",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d66c",
+      "opcode": "0x3003",
+      "request_frame_bytes": 0,
+      "flags": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff704cf",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d67c",
+      "opcode": "0x3004",
+      "request_frame_bytes": 23,
+      "flags": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff7b309",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d68c",
+      "opcode": "0x3005",
+      "request_frame_bytes": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "handler": "0xfff7074b",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d69c",
+      "opcode": "0x3008",
+      "request_frame_bytes": 9,
+      "flags": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff7abde",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d6ac",
+      "opcode": "0x3010",
+      "request_frame_bytes": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "handler": "0xfff707bc",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    },
+    {
+      "record_va": "0xfff1d6bc",
+      "opcode": "0x3020",
+      "request_frame_bytes": 17,
+      "flags": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "handler": "0xfff7a699",
+      "continuation": "0x00000000",
+      "interpretation": "unassigned"
+    }
+  ],
+  "sentinel": {
+    "record_va": "0xfff1d6cc",
+    "opcode": "0xffff",
+    "request_frame_bytes": 0,
+    "flags": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "handler": "0x00000000",
+    "continuation": "0x00000000",
+    "interpretation": "unassigned"
+  },
+  "selected_strings": [
+    {
+      "address": "0xfff00000",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff0788c",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff078b8",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff07bbf",
+      "value": "INSTAX-"
+    },
+    {
+      "address": "0xfff07bcf",
+      "value": "INSTAX-"
+    },
+    {
+      "address": "0xfff07f38",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff07f4c",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff07f64",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff07f78",
+      "value": "B-oBB-oBAB00000000"
+    },
+    {
+      "address": "0xfff07f98",
+      "value": "B-oBB-oB4156A000000000"
+    },
+    {
+      "address": "0xfff07fb8",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff07fe8",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff08018",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff08028",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff08048",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff0805c",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff0806c",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff0807c",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff0808c",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff080ac",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff080bc",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff080dc",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff080ec",
+      "value": "B-oBB-oB"
+    },
+    {
+      "address": "0xfff0810c",
+      "value": "B-oBPMOC"
+    },
+    {
+      "address": "0xfff08715",
+      "value": "FUJIFILM"
+    },
+    {
+      "address": "0xfff1be7c",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff1c588",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff2291a",
+      "value": "ID_TOPLV_TASK"
+    },
+    {
+      "address": "0xfff22928",
+      "value": "ID_INCAP_TASK"
+    },
+    {
+      "address": "0xfff22936",
+      "value": "ID_PRINT_TASK"
+    },
+    {
+      "address": "0xfff22944",
+      "value": "ID_BT_DRV_TASK"
+    },
+    {
+      "address": "0xfff22953",
+      "value": "ID_BT_TASK"
+    },
+    {
+      "address": "0xfff2295e",
+      "value": "ID_BT_ANA_TASK"
+    },
+    {
+      "address": "0xfff2296d",
+      "value": "ID_USBD_TASK"
+    },
+    {
+      "address": "0xfff2297a",
+      "value": "ID_I2C_TASK"
+    },
+    {
+      "address": "0xfff22986",
+      "value": "ID_I2C_SUB_TASK"
+    },
+    {
+      "address": "0xfff22996",
+      "value": "ID_T1MS_TASK"
+    },
+    {
+      "address": "0xfff229a3",
+      "value": "ID_T10MS_TASK"
+    },
+    {
+      "address": "0xfff229b1",
+      "value": "ID_MENT_TASK"
+    },
+    {
+      "address": "0xfff229be",
+      "value": "ID_MENTRCV_TASK"
+    },
+    {
+      "address": "0xfff229ce",
+      "value": "ID_SPI_TASK"
+    },
+    {
+      "address": "0xfff229da",
+      "value": "ID_BG_TASK"
+    },
+    {
+      "address": "0xfff229e5",
+      "value": "ID_BOTTOM_TASK"
+    },
+    {
+      "address": "0xfff229f4",
+      "value": "ID_USBD_DRV_TASK"
+    },
+    {
+      "address": "0xfff22a05",
+      "value": "ID_USBD_FLG"
+    },
+    {
+      "address": "0xfff22a11",
+      "value": "ID_SPI_FLG"
+    },
+    {
+      "address": "0xfff22a1c",
+      "value": "ID_I2C_FLG"
+    },
+    {
+      "address": "0xfff22a42",
+      "value": "ID_EVT_PRINT"
+    },
+    {
+      "address": "0xfff22a6b",
+      "value": "ID_I2C_DTQ"
+    },
+    {
+      "address": "0xfff22a76",
+      "value": "ID_SPI_DTQ"
+    },
+    {
+      "address": "0xfff22a81",
+      "value": "ID_I2CS_DTQ"
+    },
+    {
+      "address": "0xfff22aa5",
+      "value": "ID_USBD_DTQ"
+    },
+    {
+      "address": "0xfff22b56",
+      "value": "ID_USBD_MBX"
+    },
+    {
+      "address": "0xfff22b62",
+      "value": "ID_I2C_MBX"
+    },
+    {
+      "address": "0xfff22b6d",
+      "value": "ID_SPI_MBX"
+    },
+    {
+      "address": "0xfff22b78",
+      "value": "ID_USBD_MPF"
+    },
+    {
+      "address": "0xfff22b84",
+      "value": "ID_I2C_MPF"
+    },
+    {
+      "address": "0xfff22b8f",
+      "value": "ID_SPI_MPF"
+    },
+    {
+      "address": "0xfff22b9a",
+      "value": "ID_I2CS_MPF"
+    },
+    {
+      "address": "0xfff23e1c",
+      "value": "INSTAX-"
+    },
+    {
+      "address": "0xfff23f44",
+      "value": "PrintEnd>"
+    },
+    {
+      "address": "0xfff244dc",
+      "value": "unexpected DeviceLink ICC profile class"
+    },
+    {
+      "address": "0xfff503b0",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff503c1",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff503cf",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff503e4",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff56f0f",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff56f21",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff56f58",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff56f6a",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff56fa1",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff56fb3",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff56fea",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff56ffc",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff57033",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff57045",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff5707c",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff5708e",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff570c5",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff570d7",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff5710e",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff57120",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff5713e",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff5715c",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff57186",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff57198",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff571b6",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff571d4",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff57273",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff57285",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff572a3",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff572c1",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff572df",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff572fd",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff57327",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff57339",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff57357",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff57375",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff57393",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff573b1",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff57457",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff57469",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff57487",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff574a5",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff574cf",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff574e1",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff574ff",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff5751d",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff58a12",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff58a20",
+      "value": "B-oBf"
+    },
+    {
+      "address": "0xfff6ac91",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff6ac9e",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff6c543",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff6c570",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff733c1",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff733ce",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff75775",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff757a2",
+      "value": "B-oB="
+    },
+    {
+      "address": "0xfff76483",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff76490",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff7898c",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff78993",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff954d3",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfff95533",
+      "value": "B-oBg"
+    },
+    {
+      "address": "0xfff95561",
+      "value": "B-oB!"
+    },
+    {
+      "address": "0xfff9556b",
+      "value": "B-oB"
+    },
+    {
+      "address": "0xfffdfff0",
+      "value": "B-oB"
+    }
+  ]
+}

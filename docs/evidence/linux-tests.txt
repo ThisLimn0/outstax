@@ -1,0 +1,67 @@
+   Compiling instax-protocol v0.1.0 (/workspace/scratch/1271c279859f/instax-rs/crates/protocol)
+   Compiling clap v4.6.7
+   Compiling instax-client v0.1.0 (/workspace/scratch/1271c279859f/instax-rs/crates/client)
+   Compiling instax v0.1.0 (/workspace/scratch/1271c279859f/instax-rs/crates/cli)
+   Compiling instax-desktop v0.1.0 (/workspace/scratch/1271c279859f/instax-rs/crates/desktop)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.45s
+     Running unittests src/main.rs (instax-rs/target/debug/deps/instax-1e3f195828ecd667)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (instax-rs/target/debug/deps/instax_client-e90ec93306f79f8e)
+
+running 3 tests
+test imaging::tests::alpha_composite_and_contain ... ok
+test imaging::tests::design_preserves_physical_aspect_with_anisotropic_wire_dimensions ... ok
+test imaging::tests::preserves_size_limit_and_checks_input ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests/session.rs (instax-rs/target/debug/deps/session-888cbd98885bc6b0)
+
+running 6 tests
+test fragmented_reply_and_unrelated_event ... ok
+test timeout_poisoning_prevents_retry_of_print ... ok
+test upload_only_never_sends_print_and_negotiates_block_size ... ok
+test wrong_sequence_aborts_before_end_or_print ... ok
+test unavailable_design_and_empty_film_stop_before_upload ... ok
+test commit_once_and_ble_setup_precedes_transfer ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running unittests src/main.rs (instax-rs/target/debug/deps/instax_desktop-329cea1ab5d99e2f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (instax-rs/target/debug/deps/instax_protocol-385e2845456a0f10)
+
+running 10 tests
+test tests::chunk_padding_and_index ... ok
+test tests::corruption_and_truncation ... ok
+test tests::all_fragment_boundaries_and_coalescing ... ok
+test tests::capabilities_keep_advertised_limits ... ok
+test tests::info_selector_and_error_are_checked ... ok
+test tests::mini_link_plus_extension_is_length_gated ... ok
+test tests::real_wide_start_ack ... ok
+test tests::reference_query_bytes ... ok
+test tests::unknown_opcodes_round_trip ... ok
+test tests::oversize_rejected_without_wrapping ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests instax_client
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests instax_protocol
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

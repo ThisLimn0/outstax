@@ -1,0 +1,147 @@
+{
+  "attribution": "Cleaned copy of report/multi/dex-routing.json from the external multi-firmware analysis, 2026-11-12 (package instax-multi-firmware-analysis, kept outside the project and verified against its SHA256SUMS). Facts are that analysis's static findings; paths are relative to that package. Removed: raw DEX code units and instructions that carry no string, field, type or method reference. See docs/re/firmware/renesas-mini2-mini3.md.",
+  "input_sha256": "58a4a55cbe9feb7165e6c90dc35006abfaefd8838cb9d2080e4f47d8e69c8937",
+  "method": "Explicit method DEX instruction/reference decoding, validated method definitions and checksums; no app execution. Published here as call facts only (methods, fields, types and strings each body refers to). Instruction listings were removed so no vendor bytecode is included.",
+  "bodies": [
+    {
+      "method": "Lb4/s;.<clinit>",
+      "method_id": 27720,
+      "access": 65544,
+      "calls": [
+        "Lb4/s$a;.<init>",
+        "Lb4/s;.<init>",
+        "Lb4/s;.f"
+      ],
+      "types": [
+        "Lb4/s$a;",
+        "Lb4/s;"
+      ],
+      "strings": [
+        "INSTAX mini Link",
+        "INSTAX_MINI_LINK",
+        "INSTAX_MINI_LINK2",
+        "INSTAX_MINI_LINK3",
+        "INSTAX_MINI_LINK_PLUS",
+        "Link1",
+        "Link2",
+        "Link3",
+        "LinkPlus",
+        "UNKNOWN",
+        "instax mini Link 2",
+        "instax mini Link 3",
+        "instax mini Link+",
+        "unknown"
+      ]
+    },
+    {
+      "method": "Lcom/fujifilm/instaxbod/ui/t$a;.<clinit>",
+      "method_id": 42204,
+      "access": 65544,
+      "calls": [
+        "Lb4/s;.values",
+        "Ljava/lang/Enum;.ordinal"
+      ]
+    },
+    {
+      "method": "Lcom/fujifilm/instaxbod/ui/t;.L2",
+      "method_id": 42346,
+      "access": 17,
+      "calls": [
+        "LX3/b0;.l",
+        "Lcom/fujifilm/instaxbod/InstaxApplication$a;.h",
+        "Lcom/fujifilm/instaxbod/ui/a;.d1",
+        "Lcom/fujifilm/instaxbod/ui/t$h;.<init>",
+        "Lcom/fujifilm/instaxbod/ui/t$i;.<init>",
+        "Ljava/lang/Enum;.ordinal",
+        "Lwa/p;.q",
+        "Lxa/m;.g"
+      ],
+      "types": [
+        "Lcom/fujifilm/instaxbod/ui/t$h;",
+        "Lcom/fujifilm/instaxbod/ui/t$i;"
+      ],
+      "strings": [
+        "",
+        "completion",
+        "fw/BOD/0104.hex"
+      ]
+    },
+    {
+      "method": "Lcom/fujifilm/instaxbod/ui/t$h;.b",
+      "method_id": 42283,
+      "access": 17,
+      "calls": [
+        "LX3/o;.i0",
+        "Landroid/content/Context;.getString",
+        "Lcom/fujifilm/instaxbod/ui/t$h$a;.<init>",
+        "Ljava/lang/Enum;.ordinal",
+        "Lwa/p;.q",
+        "Lxa/m;.f",
+        "Lxa/m;.g"
+      ],
+      "types": [
+        "Lcom/fujifilm/instaxbod/ui/t$h$a;"
+      ],
+      "strings": [
+        "fw/BO23/RenesasRX/0100.hex",
+        "fw/BO23/STMicro/0100.hex",
+        "getString(R.string.fw_cpu_type_rx)",
+        "getString(R.string.fw_cpu_type_st)",
+        "printerCpuType"
+      ]
+    },
+    {
+      "method": "Lcom/fujifilm/instaxbod/ui/t$i;.b",
+      "method_id": 42290,
+      "access": 17,
+      "calls": [
+        "LX3/o;.i0",
+        "Landroid/content/Context;.getString",
+        "Lcom/fujifilm/instaxbod/ui/t$i$a;.<init>",
+        "Ljava/lang/Enum;.ordinal",
+        "Lwa/p;.q",
+        "Lxa/m;.f",
+        "Lxa/m;.g"
+      ],
+      "types": [
+        "Lcom/fujifilm/instaxbod/ui/t$i$a;"
+      ],
+      "strings": [
+        "fw/LINK3/RenesasRX/0102.hex",
+        "fw/LINK3/STMicro/0102.hex",
+        "getString(R.string.fw_cpu_type_rx)",
+        "getString(R.string.fw_cpu_type_st)",
+        "printerCpuType"
+      ]
+    },
+    {
+      "method": "LW1/u;.<clinit>",
+      "method_id": 9173,
+      "access": 65544,
+      "calls": [
+        "LW1/u$a;.<init>",
+        "LW1/u;.<init>"
+      ],
+      "types": [
+        "LW1/u$a;",
+        "LW1/u;"
+      ],
+      "strings": [
+        "RENESAS",
+        "ST_MICRO",
+        "UNKNOWN"
+      ]
+    },
+    {
+      "method": "Lcom/fujifilm/instaxbod/ui/t$h$b;.<clinit>",
+      "method_id": 42280,
+      "access": 65544,
+      "calls": [
+        "LW1/u;.values",
+        "Ljava/lang/Enum;.ordinal"
+      ]
+    }
+  ],
+  "routing_conclusion": "Model enum Link2 maps through ui/t factory to callback t$h, selecting BO23; Link3 maps to t$i selecting LINK3. CPU enum RENESAS versus ST_MICRO selects RenesasRX versus STMicro directory.",
+  "limitation": "This establishes the bundled host routing; it does not prove exact physical MCU part or Bluetooth behavior."
+}

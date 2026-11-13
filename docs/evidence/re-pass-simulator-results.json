@@ -1,0 +1,29 @@
+[
+  {
+    "format": "mini",
+    "status": "PrinterInfo {\n    image: ImageSupport {\n        width: 600,\n        height: 800,\n        picture_types: 2,\n        options: 8,\n        max_bytes: 409600,\n        options2: None,\n    },\n    battery: Battery {\n        state: 2,\n        percent: 80,\n        charger_type: 0,\n        charger_state: 0,\n    },\n    status: PrinterStatus {\n        film_remaining: 10,\n        charging: false,\n        battery_level: 3,\n        cover_open: false,\n        busy: false,\n        error: false,\n        operation: 0,\n        print_result: 0,\n        wait_seconds: 0,\n        error_code: 0,\n        raw: [\n            58,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n        ],\n    },\n}",
+    "upload_only": "passed",
+    "trace_reassembly": "passed",
+    "committed_simulated_print": "passed",
+    "received_jpeg_bytes": 52911,
+    "received_sha256": "129679a9c52721659e3226159d0f084e0be758d14544c0a0b0e180ab2b7dde9b"
+  },
+  {
+    "format": "square",
+    "status": "PrinterInfo {\n    image: ImageSupport {\n        width: 800,\n        height: 800,\n        picture_types: 2,\n        options: 8,\n        max_bytes: 409600,\n        options2: None,\n    },\n    battery: Battery {\n        state: 2,\n        percent: 80,\n        charger_type: 0,\n        charger_state: 0,\n    },\n    status: PrinterStatus {\n        film_remaining: 10,\n        charging: false,\n        battery_level: 3,\n        cover_open: false,\n        busy: false,\n        error: false,\n        operation: 0,\n        print_result: 0,\n        wait_seconds: 0,\n        error_code: 0,\n        raw: [\n            58,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n        ],\n    },\n}",
+    "upload_only": "passed",
+    "trace_reassembly": "passed",
+    "committed_simulated_print": "passed",
+    "received_jpeg_bytes": 69772,
+    "received_sha256": "7caf77f5f6669aac546b0d106eb3ac67b04f678bcb4e5219a7cee69826ddcc84"
+  },
+  {
+    "format": "wide",
+    "status": "PrinterInfo {\n    image: ImageSupport {\n        width: 1260,\n        height: 840,\n        picture_types: 2,\n        options: 8,\n        max_bytes: 409600,\n        options2: None,\n    },\n    battery: Battery {\n        state: 2,\n        percent: 80,\n        charger_type: 0,\n        charger_state: 0,\n    },\n    status: PrinterStatus {\n        film_remaining: 10,\n        charging: false,\n        battery_level: 3,\n        cover_open: false,\n        busy: false,\n        error: false,\n        operation: 0,\n        print_result: 0,\n        wait_seconds: 0,\n        error_code: 0,\n        raw: [\n            58,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0,\n        ],\n    },\n}",
+    "upload_only": "passed",
+    "trace_reassembly": "passed",
+    "committed_simulated_print": "passed",
+    "received_jpeg_bytes": 108552,
+    "received_sha256": "ea908835f7c057b515ba684279c62c962743f362c9d545c2718aa664bf71c357"
+  }
+]

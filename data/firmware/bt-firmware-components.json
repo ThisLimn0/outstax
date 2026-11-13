@@ -1,0 +1,80 @@
+{
+  "model": "FI033",
+  "cfg_header_lines": [
+    "FI033,0x10000000",
+    "0x1012,0x00010012"
+  ],
+  "header_usage": "The UI skips the first two lines; file paths are read from column 2 of the remaining ten rows. Task component IDs come from enum order, not from parsing the cfg IDs.",
+  "components": [
+    {
+      "component_id": "0100",
+      "file": "CFG_RTL8753BFR_10018-6fca37cb0f04da5b4202bc4b4f8ef56b.bin",
+      "bytes": 5244,
+      "sha256": "8031306201fc533bca81f02f1fa4743ef1420566eea090a3299e0d81c1a446ac",
+      "transfer_checksum": "ffef77a6"
+    },
+    {
+      "component_id": "0200",
+      "file": "Patch_MP-v2.0.596.fca0560f_Sign-1cb3f88f8c6385f4840f84e3bc9b867d.bin",
+      "bytes": 107812,
+      "sha256": "361a7fda3c91f3f5062e9600c7566d9fbf43c626f89c8ec819258b44dbec094c",
+      "transfer_checksum": "ff54c4de"
+    },
+    {
+      "component_id": "0300",
+      "file": "audio_MP-v2.0.0.1911.de64aa45_Sign-78ba5d26b5518e9ce1774bc768c1f5b6.bin",
+      "bytes": 292260,
+      "sha256": "7804f6e87dc50b363e6036ae970c9b5547aa7210a06a819ba5e9195da088713e",
+      "transfer_checksum": "fe1cdd73"
+    },
+    {
+      "component_id": "0400",
+      "file": "APP_RTL8753BFR_10018-dccf4a5775c58dfa3b28616a0cd8baed.bin",
+      "bytes": 48580,
+      "sha256": "acbbb4be933cc19efed380024af44335f00a9d9e00897ae05820c2ecee41c183",
+      "transfer_checksum": "ff99e0c7"
+    },
+    {
+      "component_id": "0410",
+      "file": "dsp_config_image_MT-1.0.2.18-25550-RTL8753BFR_MP-1189dd681a7e5336bd505335273e9744.bin",
+      "bytes": 12800,
+      "sha256": "950ef285a1ee60c313c9eab129e0a9b1a941b3e07addd5a3821574fd83f9b805",
+      "transfer_checksum": "ffd68fa7"
+    },
+    {
+      "component_id": "0500",
+      "file": "dsp_sys_image-RTL8753BFR-25907_Encrypted-Sign-cc0cb294309500f4d5e31405175c4bda.bin",
+      "bytes": 40416,
+      "sha256": "55e419ca222616ade6770b31c95a87ce8707caf8c98ff4c44d7990ba45cc3c43",
+      "transfer_checksum": "ffad088c"
+    },
+    {
+      "component_id": "0602",
+      "file": "dsp_app_image-RTL8753BFR-25907_Encrypted-Sign-fd23e688d68d986c5ad579bf364e11e1.bin",
+      "bytes": 77020,
+      "sha256": "b32a2eac27f4d8cb638c443ba456efa209114adc71feea9b22bb402b5b091609",
+      "transfer_checksum": "ff65c40c"
+    },
+    {
+      "component_id": "0700",
+      "file": "fsbl_MP-v2.0.594.94260815_Sign-282bb6462017d9168b284bce69020ad1.bin",
+      "bytes": 5888,
+      "sha256": "325bedaad7676573bf96a6654f371b10b811ec9ae4496747ab05c115ab725e5e",
+      "transfer_checksum": "fffbd423"
+    },
+    {
+      "component_id": "0800",
+      "file": "OTAHeader_Bank0_Sign-b2c0fd9aa4cdd585e3ccd4e38363ff26.bin",
+      "bytes": 4608,
+      "sha256": "6119ba837ff303d3451f6d0549da2d7c201f508168ecb272f9c34ee88737eac5",
+      "transfer_checksum": "fff17bb8"
+    },
+    {
+      "component_id": "0a01",
+      "file": "boot_patch_MP-v2.0.583.3de550df_Sign-7d331a1d972c307147f90ff782b5ab8c.bin",
+      "bytes": 6832,
+      "sha256": "4d9fc234330ea90de93e1e915c6669193c958c4f2d802376b6d6677abcde71f6",
+      "transfer_checksum": "fff9e038"
+    }
+  ]
+}

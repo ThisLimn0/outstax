@@ -1,0 +1,22 @@
+[package]
+name = "outstax-desktop"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+desktop = ["dep:eframe", "dep:outstax-client", "dep:tokio", "dep:anyhow", "dep:image", "dep:rfd", "dep:log"]
+
+[[bin]]
+name = "outstax-desktop"
+path = "src/main.rs"
+required-features = ["desktop"]
+
+[dependencies]
+eframe = { version = "0.33", default-features = false, features = ["glow", "x11", "wayland", "default_fonts"], optional = true }
+outstax-client = { path = "../client", optional = true }
+tokio = { workspace = true, optional = true }
+anyhow = { workspace = true, optional = true }
+image = { workspace = true, optional = true }
+rfd = { version = "0.17", optional = true }
+log = { workspace = true, optional = true }

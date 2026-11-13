@@ -1,0 +1,147 @@
+{
+  "attribution": "Cleaned copy of report/multi/square-protocol-evidence.json from the external multi-firmware analysis, 2026-11-12 (package instax-multi-firmware-analysis, kept outside the project and verified against its SHA256SUMS). Facts are that analysis's static findings; paths are relative to that package. Removed: instruction bytes and disassembly in instruction_regions (only their address ranges are kept; the full windows are in the package's *-code-windows files). See docs/re/firmware/square.md.",
+  "model": "square",
+  "code_mapping": {
+    "file_offset": "0x3b2b20",
+    "va": "0x80000000"
+  },
+  "magic": {
+    "file_offset": "0x6b1a10",
+    "request_bytes": "4162",
+    "response_bytes": "6142",
+    "confidence": "confirmed by receive comparison and response two-byte copy"
+  },
+  "frame": {
+    "header_bytes": 6,
+    "magic_bytes": 2,
+    "total_length_offset": 2,
+    "total_length_type": "big-endian uint16",
+    "group_offset": 4,
+    "subtype_offset": 5,
+    "payload_offset": 6,
+    "checksum_bytes": 1,
+    "checksum_rule": "byte sum of complete packet modulo 256 equals 255"
+  },
+  "download_start": {
+    "command_hex": "1000",
+    "request_payload_bytes": 8,
+    "request_total_bytes": 15,
+    "fields": [
+      {
+        "payload_offset": 0,
+        "bytes": 1,
+        "name": "picture type"
+      },
+      {
+        "payload_offset": 1,
+        "bytes": 1,
+        "name": "print option"
+      },
+      {
+        "payload_offset": 2,
+        "bytes": 1,
+        "name": "print option 2"
+      },
+      {
+        "payload_offset": 3,
+        "bytes": 1,
+        "name": "reserved or unassigned; copied only in WIDE2 path"
+      },
+      {
+        "payload_offset": 4,
+        "bytes": 4,
+        "name": "image byte count",
+        "encoding": "big-endian uint32"
+      }
+    ],
+    "success_response_total_bytes": 12,
+    "success_response_fields": [
+      "one-byte result",
+      "big-endian uint32 segment size"
+    ]
+  },
+  "image_block": {
+    "command_hex": "1001",
+    "sequence_bytes": 4,
+    "sequence_encoding": "big-endian uint32",
+    "image_data_packet_offset": 10,
+    "total_packet_bytes_formula": "image chunk bytes + 11",
+    "success_response_total_bytes": 12,
+    "success_response_fields": [
+      "one-byte result",
+      "big-endian uint32 received sequence"
+    ],
+    "confidence": "direct parser/endian-helper and response code in both; not all sequence-error paths traced"
+  },
+  "geometry": {
+    "width": 800,
+    "height": 800,
+    "scope": "processing/default target, not universal wire-input validation",
+    "confidence": "immediate constants in executable instructions"
+  },
+  "instruction_regions": {
+    "receive_magic_compare": {
+      "first_file_offset": "0x575508",
+      "last_file_offset": "0x575548",
+      "first_va": "0x801c29e8",
+      "last_va": "0x801c2a28",
+      "instructions": 17
+    },
+    "response_header_builder": {
+      "first_file_offset": "0x570af8",
+      "last_file_offset": "0x570b58",
+      "first_va": "0x801bdfd8",
+      "last_va": "0x801be038",
+      "instructions": 25
+    },
+    "download_start_fields_and_reply": {
+      "first_file_offset": "0x570e34",
+      "last_file_offset": "0x570f64",
+      "first_va": "0x801be314",
+      "last_va": "0x801be444",
+      "instructions": 77
+    },
+    "image_block_response": {
+      "first_file_offset": "0x570f68",
+      "last_file_offset": "0x57100c",
+      "first_va": "0x801be448",
+      "last_va": "0x801be4ec",
+      "instructions": 42
+    },
+    "stream_receive_sequence": {
+      "first_file_offset": "0x5756ac",
+      "last_file_offset": "0x5758f8",
+      "first_va": "0x801c2b8c",
+      "last_va": "0x801c2dd8",
+      "instructions": 148
+    },
+    "processing_geometry": {
+      "first_file_offset": "0x54ef74",
+      "last_file_offset": "0x54efd4",
+      "first_va": "0x8019c454",
+      "last_va": "0x8019c4b4",
+      "instructions": 25
+    },
+    "checksum": {
+      "first_file_offset": "0x5706d8",
+      "last_file_offset": "0x570894",
+      "first_va": "0x801bdbb8",
+      "last_va": "0x801bdd74",
+      "instructions": 112
+    },
+    "be32_helper": {
+      "first_file_offset": "0x5a7fb8",
+      "last_file_offset": "0x5a7fe8",
+      "first_va": "0x801f5498",
+      "last_va": "0x801f54c8",
+      "instructions": 13
+    },
+    "dimension_allocator": {
+      "first_file_offset": "0x54f1a4",
+      "last_file_offset": "0x54f1d8",
+      "first_va": "0x8019c684",
+      "last_va": "0x8019c6b8",
+      "instructions": 14
+    }
+  }
+}

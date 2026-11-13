@@ -1,0 +1,77 @@
+Windows x86-64/MSVC native verification
+Date: 2026-11-11
+OS: Microsoft Windows 11 Pro [Version 10.0.26300.9711]
+Toolchain (rustc -vV):
+  rustc 1.99.1 (58cf8f9c3 2026-10-13)
+  host: x86_64-pc-windows-msvc
+  release: 1.99.1
+  LLVM version: 23.1.1
+  cargo 1.99.1 (5f94df478 2026-08-27)
+CARGO_TARGET_DIR=<target> (outside the project folder)
+Source changes required for Windows: none
+
+Summary
+  cargo fmt --all -- --check                                         PASS
+  cargo test --workspace --locked                                    PASS (21 passed, 0 failed)
+  cargo test --workspace --all-features --locked                     PASS (21 passed, 0 failed)
+  cargo clippy --workspace --all-targets --all-features -- -D warnings PASS (no warnings)
+  cargo build --release --locked -p instax                           PASS, linked instax.exe (3,399,680 bytes)
+  cargo build --release --locked -p instax-desktop --features desktop PASS, linked instax-desktop.exe (6,881,280 bytes)
+  instax commands                                                    PASS (74 opcode entries)
+  instax decode 6142000c10000000000384b9                             PASS
+  instax prepare examples/test-pattern.png --format mini             PASS
+  instax simulate --format wide + --tcp status / print (upload only) PASS
+  instax scan                                                        BACKEND INIT ONLY: scan start refused, radio off
+  instax-desktop.exe launch                                          PASS (window created, responding)
+  scripts/smoke_test.py (simulator only, Mini/Square/Wide)            PASS (status, upload-only, trace, simulated PRINT)
+  Hardware print, installer, code signing                            NOT DONE
+
+Tests (all-features run, trimmed)
+  instax_client unit: 3 passed
+  tests\session.rs: 8 passed (incl. upload_only_never_sends_print_and_negotiates_block_size,
+    timeout_poisoning_prevents_retry_of_print, completion_handles_c2_busy_and_last_exposure_without_reprinting)
+  instax_protocol unit: 10 passed
+  test result: ok. 3 + 8 + 10 = 21 passed; 0 failed
+
+CLI (release instax.exe)
+> instax decode 6142000c10000000000384b9
+{"command":"1000","direction":"Response","payload_hex":"0000000384"}
+[exit 0]
+> instax prepare examples/test-pattern.png --format mini --output <scratch>/p.jpg
+600x800 JPEG, 52911 bytes, quality 95 -> <scratch>/p.jpg
+[exit 0]
+
+Simulator round trip (loopback TCP only, no radio)
+> instax simulate --format wide            (background)
+Simulator listening on 127.0.0.1:7878
+> instax --tcp 127.0.0.1:7878 status
+PrinterInfo { image: ImageSupport { width: 1260, height: 840, picture_types: 2, options: 8,
+  max_bytes: 409600, options2: None }, battery: Battery { state: 2, percent: 80, ... },
+  status: PrinterStatus { film_remaining: 10, cover_open: false, busy: false, error: false, ... } }
+[exit 0]
+> instax --tcp 127.0.0.1:7878 print examples/test-pattern.png
+Printer Wide, firmware simulator
+Transferring 108565 bytes; physical print disabled
+Uploaded
+[exit 0]
+Simulator stopped afterwards.
+
+Bluetooth (WinRT backend)
+  Adapter present (PnP): Intel(R) Wireless Bluetooth(R), status OK; bthserv Running
+  WinRT Windows.Devices.Radios: Bluetooth radio state = Off (left unchanged)
+> instax --scan-seconds 5 scan
+Error: Error { code: HRESULT(0x800710DF), message: "<localized: device not ready>" }
+[exit 1, after ~1.1 s]
+  0x800710DF = ERROR_DEVICE_NOT_READY. The CLI did not report "no Bluetooth adapters
+  available", so the WinRT manager started and listed an adapter; starting the
+  advertisement scan was refused because the radio is switched off. No device was
+  discovered and no scan with the radio on was performed.
+
+GUI (release instax-desktop.exe)
+  Started via Start-Process, checked after 6 s:
+  HasExited: False; MainWindowTitle: 'Instax'; MainWindowHandle non-zero; Responding: True;
+  working set ~144 MB. Process was then killed. No interactive use, no screenshot.
+
+Not verified here
+  Scan with the Bluetooth radio on, connection to any printer, hardware upload/print,
+  MSI/installer packaging, Authenticode signing.

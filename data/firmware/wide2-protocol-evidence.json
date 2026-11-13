@@ -1,0 +1,147 @@
+{
+  "attribution": "Cleaned copy of report/multi/wide2-protocol-evidence.json from the external multi-firmware analysis, 2026-11-12 (package instax-multi-firmware-analysis, kept outside the project and verified against its SHA256SUMS). Facts are that analysis's static findings; paths are relative to that package. Removed: instruction bytes and disassembly in instruction_regions (only their address ranges are kept; the full windows are in the package's *-code-windows files). See docs/re/firmware/wide2.md.",
+  "model": "wide2",
+  "code_mapping": {
+    "file_offset": "0x3b2b20",
+    "va": "0x80000000"
+  },
+  "magic": {
+    "file_offset": "0x74d700",
+    "request_bytes": "4162",
+    "response_bytes": "6142",
+    "confidence": "confirmed by receive comparison and response two-byte copy"
+  },
+  "frame": {
+    "header_bytes": 6,
+    "magic_bytes": 2,
+    "total_length_offset": 2,
+    "total_length_type": "big-endian uint16",
+    "group_offset": 4,
+    "subtype_offset": 5,
+    "payload_offset": 6,
+    "checksum_bytes": 1,
+    "checksum_rule": "byte sum of complete packet modulo 256 equals 255"
+  },
+  "download_start": {
+    "command_hex": "1000",
+    "request_payload_bytes": 8,
+    "request_total_bytes": 15,
+    "fields": [
+      {
+        "payload_offset": 0,
+        "bytes": 1,
+        "name": "picture type"
+      },
+      {
+        "payload_offset": 1,
+        "bytes": 1,
+        "name": "print option"
+      },
+      {
+        "payload_offset": 2,
+        "bytes": 1,
+        "name": "print option 2"
+      },
+      {
+        "payload_offset": 3,
+        "bytes": 1,
+        "name": "reserved or unassigned; copied only in WIDE2 path"
+      },
+      {
+        "payload_offset": 4,
+        "bytes": 4,
+        "name": "image byte count",
+        "encoding": "big-endian uint32"
+      }
+    ],
+    "success_response_total_bytes": 12,
+    "success_response_fields": [
+      "one-byte result",
+      "big-endian uint32 segment size"
+    ]
+  },
+  "image_block": {
+    "command_hex": "1001",
+    "sequence_bytes": 4,
+    "sequence_encoding": "big-endian uint32",
+    "image_data_packet_offset": 10,
+    "total_packet_bytes_formula": "image chunk bytes + 11",
+    "success_response_total_bytes": 12,
+    "success_response_fields": [
+      "one-byte result",
+      "big-endian uint32 received sequence"
+    ],
+    "confidence": "direct parser/endian-helper and response code in both; not all sequence-error paths traced"
+  },
+  "geometry": {
+    "width": 1260,
+    "height": 840,
+    "scope": "processing/default target, not universal wire-input validation",
+    "confidence": "immediate constants in executable instructions"
+  },
+  "instruction_regions": {
+    "receive_magic_compare": {
+      "first_file_offset": "0x57d714",
+      "last_file_offset": "0x57d754",
+      "first_va": "0x801cabf4",
+      "last_va": "0x801cac34",
+      "instructions": 17
+    },
+    "response_header_builder": {
+      "first_file_offset": "0x578828",
+      "last_file_offset": "0x578888",
+      "first_va": "0x801c5d08",
+      "last_va": "0x801c5d68",
+      "instructions": 25
+    },
+    "download_start_fields_and_reply": {
+      "first_file_offset": "0x579248",
+      "last_file_offset": "0x5793d0",
+      "first_va": "0x801c6728",
+      "last_va": "0x801c68b0",
+      "instructions": 99
+    },
+    "image_block_response": {
+      "first_file_offset": "0x579410",
+      "last_file_offset": "0x57961c",
+      "first_va": "0x801c68f0",
+      "last_va": "0x801c6afc",
+      "instructions": 132
+    },
+    "stream_receive_sequence": {
+      "first_file_offset": "0x57d8cc",
+      "last_file_offset": "0x57db24",
+      "first_va": "0x801cadac",
+      "last_va": "0x801cb004",
+      "instructions": 151
+    },
+    "processing_geometry": {
+      "first_file_offset": "0x55c098",
+      "last_file_offset": "0x55c0b8",
+      "first_va": "0x801a9578",
+      "last_va": "0x801a9598",
+      "instructions": 9
+    },
+    "checksum": {
+      "first_file_offset": "0x578408",
+      "last_file_offset": "0x5785c4",
+      "first_va": "0x801c58e8",
+      "last_va": "0x801c5aa4",
+      "instructions": 112
+    },
+    "be32_helper": {
+      "first_file_offset": "0x5b25b0",
+      "last_file_offset": "0x5b25e0",
+      "first_va": "0x801ffa90",
+      "last_va": "0x801ffac0",
+      "instructions": 13
+    },
+    "dimension_allocator": {
+      "first_file_offset": "0x553f50",
+      "last_file_offset": "0x553f7c",
+      "first_va": "0x801a1430",
+      "last_va": "0x801a145c",
+      "instructions": 12
+    }
+  }
+}

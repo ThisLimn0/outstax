@@ -1,0 +1,8 @@
+libarchive-c==5.3
+olefile==0.47
+dnfile==0.18.0
+dncil==1.0.2
+pyelftools==0.33
+capstone==5.0.9
+apkutils2==1.0.0
+cryptography==50.0.2

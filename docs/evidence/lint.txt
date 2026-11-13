@@ -1,0 +1,51 @@
+    Checking wayland-protocols-wlr v0.3.12
+    Checking x11rb v0.13.2
+    Checking calloop-wayland-source v0.3.0
+    Checking instax-protocol v0.1.0 (/workspace/scratch/1271c279859f/instax-rs/crates/protocol)
+    Checking epaint_default_fonts v0.33.3
+    Checking profiling v1.0.18
+    Checking calloop-wayland-source v0.4.1
+    Checking idna v1.1.0
+    Checking xkbcommon-dl v0.4.2
+    Checking form_urlencoded v1.2.2
+    Checking wayland-protocols-misc v0.3.12
+    Checking wayland-protocols-experimental v20250721.0.1
+    Checking epaint v0.33.3
+    Checking wayland-protocols-plasma v0.3.12
+    Checking dpi v0.1.2
+    Checking utf8parse v0.2.2
+    Checking unicode-segmentation v1.13.3
+    Checking smol_str v0.2.2
+    Checking anstyle-parse v1.0.0
+    Checking url v2.5.8
+    Checking instax-client v0.1.0 (/workspace/scratch/1271c279859f/instax-rs/crates/client)
+    Checking glutin_glx_sys v0.6.1
+    Checking glutin_egl_sys v0.7.1
+    Checking is_terminal_polyfill v1.70.2
+    Checking colorchoice v1.0.5
+    Checking anstyle v1.0.14
+    Checking anstyle-query v1.1.5
+    Checking glutin v0.32.3
+    Checking memoffset v0.9.1
+    Checking clap_lex v1.1.1
+    Checking anstream v1.0.0
+    Checking strsim v0.11.1
+    Checking webbrowser v1.2.5
+    Checking glow v0.16.0
+    Checking web-time v1.1.0
+    Checking clap_builder v4.6.7
+   Compiling clap_derive v4.6.7
+    Checking smithay-client-toolkit v0.19.2
+    Checking egui v0.33.3
+    Checking smithay-client-toolkit v0.20.0
+    Checking arboard v3.7.0
+    Checking smithay-clipboard v0.7.3
+    Checking winit v0.30.13
+    Checking clap v4.6.7
+    Checking instax v0.1.0 (/workspace/scratch/1271c279859f/instax-rs/crates/cli)
+    Checking egui_glow v0.33.3
+    Checking egui-winit v0.33.3
+    Checking glutin-winit v0.5.0
+    Checking eframe v0.33.3
+    Checking instax-desktop v0.1.0 (/workspace/scratch/1271c279859f/instax-rs/crates/desktop)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.91s

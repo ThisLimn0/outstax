@@ -1,0 +1,156 @@
+[
+  {
+    "app": "com.fujifilm.instaxSquareLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/Firmware/FW_0102.DAT",
+    "bytes": 2486908,
+    "sha256": "9f6e1315e7d822bb8810e34ae691ffa93138043d8d6240ce378bd20d43ddac94"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/BO23/RenesasRX/0100.hex",
+    "bytes": 1932140,
+    "sha256": "12a678b575f1f6356a594bc7a2a07faa3aeec269e685ce4c8b95cbfa2018f6ed"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/BO23/STMicro/0100.hex",
+    "bytes": 2523416,
+    "sha256": "334fc7c9af1c938573b49d445a369bba6c31c8d246f21dbfb87065b6d45ef698"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/BOD/0104.hex",
+    "bytes": 2580791,
+    "sha256": "f3d3e5d2b981555c6aa6b059504bc1416d17303dede8e07c2fec057fce91b0f7"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/APP_RTL8753BFR_10018-dccf4a5775c58dfa3b28616a0cd8baed.bin",
+    "bytes": 48580,
+    "sha256": "acbbb4be933cc19efed380024af44335f00a9d9e00897ae05820c2ecee41c183"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/CFG_RTL8753BFR_10018-6fca37cb0f04da5b4202bc4b4f8ef56b.bin",
+    "bytes": 5244,
+    "sha256": "8031306201fc533bca81f02f1fa4743ef1420566eea090a3299e0d81c1a446ac"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/OTAHeader_Bank0_Sign-b2c0fd9aa4cdd585e3ccd4e38363ff26.bin",
+    "bytes": 4608,
+    "sha256": "6119ba837ff303d3451f6d0549da2d7c201f508168ecb272f9c34ee88737eac5"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/Patch_MP-v2.0.596.fca0560f_Sign-1cb3f88f8c6385f4840f84e3bc9b867d.bin",
+    "bytes": 107812,
+    "sha256": "361a7fda3c91f3f5062e9600c7566d9fbf43c626f89c8ec819258b44dbec094c"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/RTL8753BFR_10018.rcfg",
+    "bytes": 43584,
+    "sha256": "b689409b33dea076654890661e6bcec9f3781188054d830c8806e0e7c2df72fa"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/audio_MP-v2.0.0.1911.de64aa45_Sign-78ba5d26b5518e9ce1774bc768c1f5b6.bin",
+    "bytes": 292260,
+    "sha256": "7804f6e87dc50b363e6036ae970c9b5547aa7210a06a819ba5e9195da088713e"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/boot_patch_MP-v2.0.583.3de550df_Sign-7d331a1d972c307147f90ff782b5ab8c.bin",
+    "bytes": 6832,
+    "sha256": "4d9fc234330ea90de93e1e915c6669193c958c4f2d802376b6d6677abcde71f6"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/cfg_Ver1012.cfg",
+    "bytes": 813,
+    "sha256": "1593eca7ab8a36168be76f6d9c9c0a8046070f9a53729d799a0af3ce68b249fd"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/dsp_app_image-RTL8753BFR-25907_Encrypted-Sign-fd23e688d68d986c5ad579bf364e11e1.bin",
+    "bytes": 77020,
+    "sha256": "b32a2eac27f4d8cb638c443ba456efa209114adc71feea9b22bb402b5b091609"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/dsp_config_image-1.0.2.18-25550-RTL8753BFR_MP-1189dd681a7e5336bd505335273e9744.bin",
+    "bytes": 14848,
+    "sha256": "d1da419076150b59a98a0e6208fc245aa76b12c793b94f16a8cdc7b29643a729"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/dsp_config_image_MT-1.0.2.18-25550-RTL8753BFR_MP-1189dd681a7e5336bd505335273e9744.bin",
+    "bytes": 12800,
+    "sha256": "950ef285a1ee60c313c9eab129e0a9b1a941b3e07addd5a3821574fd83f9b805"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/dsp_sys_image-RTL8753BFR-25907_Encrypted-Sign-cc0cb294309500f4d5e31405175c4bda.bin",
+    "bytes": 40416,
+    "sha256": "55e419ca222616ade6770b31c95a87ce8707caf8c98ff4c44d7990ba45cc3c43"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/BTFW/V1012/fsbl_MP-v2.0.594.94260815_Sign-282bb6462017d9168b284bce69020ad1.bin",
+    "bytes": 5888,
+    "sha256": "325bedaad7676573bf96a6654f371b10b811ec9ae4496747ab05c115ab725e5e"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/RenesasRX/0102.hex",
+    "bytes": 1932196,
+    "sha256": "81de808fe0a0fa58f6b3426365848fda68de8a5e6792da4ec758fca36ad7e724"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINK3/STMicro/0102.hex",
+    "bytes": 2523428,
+    "sha256": "9dd80bb78106df3b5e247b1597a07735c99d322bb054280267dfbb4ba580675b"
+  },
+  {
+    "app": "com.fujifilm.instaxminiLink",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/fw/LINKPLUS/STMicro/0100.hex",
+    "bytes": 2523416,
+    "sha256": "4bd399c6a4477fff83bca961724033a7bb594a178f6d6bff816fd4c5ee9bb63f"
+  },
+  {
+    "app": "com.fujifilm.instaxLinkWide",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/Firmware/BO22/0101.hex",
+    "bytes": 2523428,
+    "sha256": "8503723303489b28763f417194db6dd9e780378f41321e356719d615f856ed79"
+  },
+  {
+    "app": "com.fujifilm.instaxLinkWide",
+    "apk": "SharedAssets.apk",
+    "asset": "assets/Firmware/BO49/F100.DAT",
+    "bytes": 3734383,
+    "sha256": "16187d3f6434e3157b7ca42e919ddb505dc4bdba3527d21ad408f43291519bb4"
+  }
+]

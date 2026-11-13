@@ -1,0 +1,172 @@
+{
+  "analysis_date": "2026-10-25",
+  "release_freshness": "mirror-current, not independently verified against a live Google Play installation",
+  "android_apps": [
+    {
+      "package": "com.fujifilm.instaxLinkWide",
+      "version": "2.0.0",
+      "version_code": 204,
+      "source": "https://d.apkpure.com/b/XAPK/com.fujifilm.instaxLinkWide?version=latest",
+      "status": "retrieved",
+      "acquired_utc": "2026-10-25",
+      "apk_signature_verified": true,
+      "signer_certificate_sha256": "165adc6adfcc0803715d92d5e39e4e08fed4cfc1652efef172e6a00740b9bad0",
+      "schemes": "v1=false v2=true v3=true",
+      "publisher_authentication": "embedded signer verified; trusted official installation comparison pending",
+      "files": [
+        {
+          "name": "manifest.json",
+          "size": 3063,
+          "sha256": "f0a7ba349fba691ca45b27dc2a87c1322456db1a795d3230c1cc916663e45ce0"
+        },
+        {
+          "name": "com.fujifilm.instaxLinkWide.apk",
+          "size": 118817388,
+          "sha256": "9fb432c02742d9945110706eaa5469b1e342f411f02b23c92ed043ff9bbcdcf3",
+          "apk_signature_verified": true,
+          "signer_matches_base": true
+        },
+        {
+          "name": "SharedAssets.apk",
+          "size": 110387113,
+          "sha256": "692da0afcb789963c41d4203e5e1096adaf3f9b2d114688c5d543ac88ff54358",
+          "apk_signature_verified": true,
+          "signer_matches_base": true
+        },
+        {
+          "name": "config.arm64_v8a.apk",
+          "size": 48368575,
+          "sha256": "6051903aea5160240cebbf08a86baadb8f469d5a6babd02603a39faecd908243",
+          "apk_signature_verified": true,
+          "signer_matches_base": true
+        }
+      ]
+    },
+    {
+      "package": "com.fujifilm.instaxSquareLink",
+      "version": "1.6.2",
+      "version_code": 60,
+      "source": "https://d.apkpure.com/b/XAPK/com.fujifilm.instaxSquareLink?version=latest",
+      "status": "retrieved",
+      "acquired_utc": "2026-10-25",
+      "apk_signature_verified": true,
+      "signer_certificate_sha256": "bb4f23c9229b4d0e4608e531e876f3d3b1b594f05dfc85931979664945e5d227",
+      "schemes": "v1=false v2=true v3=true",
+      "publisher_authentication": "embedded signer verified; trusted official installation comparison pending",
+      "files": [
+        {
+          "name": "manifest.json",
+          "size": 3901,
+          "sha256": "cdb064f76811d1e47edcb79445b9243aef61f25f73a9667f7e9f1b6df984c107"
+        },
+        {
+          "name": "com.fujifilm.instaxSquareLink.apk",
+          "size": 121734428,
+          "sha256": "f5a7c8127b175e1a1f20d2aaa20e653204edfb7d2cdfaff182e5552121eba8dd",
+          "apk_signature_verified": true,
+          "signer_matches_base": true
+        },
+        {
+          "name": "SharedAssets.apk",
+          "size": 16609599,
+          "sha256": "d0c11bdf68938a668b4bb0f5c6f1c589259a89974b121b43dd316136944d15fc",
+          "apk_signature_verified": true,
+          "signer_matches_base": true
+        },
+        {
+          "name": "config.arm64_v8a.apk",
+          "size": 114797602,
+          "sha256": "5417b6037d011e2dfdd34a88390ad0de826df8d3aba84715303329e85fe609f3",
+          "apk_signature_verified": true,
+          "signer_matches_base": true
+        }
+      ]
+    },
+    {
+      "package": "com.fujifilm.instaxminiLink",
+      "version": "7.0.6",
+      "version_code": 336,
+      "source": "https://d.apkpure.com/b/XAPK/com.fujifilm.instaxminiLink?version=latest",
+      "status": "retrieved",
+      "acquired_utc": "2026-10-25",
+      "apk_signature_verified": true,
+      "signer_certificate_sha256": "aa343d75ac4ec4f47deea94a115502722877bd7acdf39fe3a62c251940b46adf",
+      "schemes": "v1=false v2=false v3=true",
+      "publisher_authentication": "embedded signer verified; trusted official installation comparison pending",
+      "files": [
+        {
+          "name": "manifest.json",
+          "size": 3658,
+          "sha256": "5b3003b2cdb7a02731478801f561dfe3c7995029539a899ab12b195d9bcbe8e5"
+        },
+        {
+          "name": "com.fujifilm.instaxminiLink.apk",
+          "size": 116484772,
+          "sha256": "95785e4cea57085904e1e112aff9578e05ca320a22f6b5a4b7862078f0e6090c",
+          "apk_signature_verified": true,
+          "signer_matches_base": true
+        },
+        {
+          "name": "SharedAssets.apk",
+          "size": 291461536,
+          "sha256": "01a1847c6a959b094287be3cfa4813f6a2c7e151b1ee6aff022a44666822ef8f",
+          "apk_signature_verified": true,
+          "signer_matches_base": true
+        },
+        {
+          "name": "config.arm64_v8a.apk",
+          "size": 256393274,
+          "sha256": "07af723e94013e5f142257d52ffde99bb8cd41b2ff5ee21df894aeac7c5cd3b3",
+          "apk_signature_verified": true,
+          "signer_matches_base": true
+        }
+      ]
+    }
+  ],
+  "official_drivers": [
+    {
+      "url": "https://www.instax.com/link_print/common/driver/link_wide/Win/Fujifilm.Instax.PrinterDriver.Setup.x64.msi",
+      "size": 49557504,
+      "sha256": "6904444efaee2bf3576958ce5c45036c765c7f4d17ac75eef231109c18b1a96c",
+      "status": "retrieved"
+    },
+    {
+      "url": "https://www.instax.com/link_print/common/driver/link_wide/Mac/Fujifilm.InstaxPrinterDriver.pkg",
+      "size": 34847950,
+      "sha256": "ede61bb17b6b0b6d020eade16826feee438b2049b7f1ff713de80fcc9690d26a",
+      "status": "retrieved"
+    },
+    {
+      "url": "https://www.instax.com/link_print/common/driver/link_wide_2/Win/Fujifilm.Instax.LinkWIDE2.PrinterDriver.Setup.x64.msi",
+      "size": 86183936,
+      "sha256": "9a12fe1317a18dcbbec0cd9796ca596c186355732a8b222a0e03bbcf54b378d5",
+      "status": "retrieved"
+    },
+    {
+      "url": "https://www.instax.com/link_print/common/driver/link_wide_2/Mac/Fujifilm.InstaxLinkWIDE2PrinterDriver.pkg",
+      "size": 49649054,
+      "sha256": "03ce94213a400b57d3e081e350a3d0a12d85b92b7c20cd04c0032121e692e877",
+      "status": "retrieved"
+    }
+  ],
+  "color_tables": [
+    {
+      "package": "com.fujifilm.instaxSquareLink",
+      "entry": "assets/20210701_3DLUT.bin",
+      "bytes": 67108864,
+      "sha256": "9bc33b49082d9359f677094d8fa10343da54b3c07654c24d88a6f5a039f82092"
+    },
+    {
+      "package": "com.fujifilm.instaxminiLink",
+      "entry": "assets/20210701_3DLUT.bin",
+      "bytes": 67108864,
+      "sha256": "9bc33b49082d9359f677094d8fa10343da54b3c07654c24d88a6f5a039f82092"
+    },
+    {
+      "package": "com.fujifilm.instaxLinkWide",
+      "entry": "assets/20210701_3DLUT.bin",
+      "bytes": 67108864,
+      "sha256": "9bc33b49082d9359f677094d8fa10343da54b3c07654c24d88a6f5a039f82092"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+ "analysis_date": "2026-11-11",
+ "scope": "hybrid instant cameras (mini Evo / mini Evo Cinema, mini LiPlay / LiPlay+, WIDE Evo)",
+ "release_freshness": "mirror-current (APKPure 'latest'), not independently verified against a live Google Play installation",
+ "evidence": "outside the project (material/apk/extraction-instaxBo19-instaxminiLiPlay.json and material/apk/extraction-instaxWideEvo.json; local extraction records)",
+ "android_apps": [
+  {
+   "package": "com.fujifilm.instaxBo19",
+   "version": "2.0.5",
+   "version_code": 209,
+   "source": "https://d.apkpure.com/b/XAPK/com.fujifilm.instaxBo19?version=latest",
+   "source_container": "instax+mini+Evo_2.0.5_APKPure.xapk",
+   "status": "retrieved",
+   "acquired_utc": "2026-11-11",
+   "acquired_by": "user, browser download",
+   "apk_signature_verified": false,
+   "signer_certificate_sha256": "6a869d43ad9fa42e630e6b3fb757d73ba738bc2ca49d8762dc656ed6bd11b3cd",
+   "schemes": "v2 block=True v3 block=True (read, not verified)",
+   "publisher_authentication": "signer certificate identity read from APK signing block only; signatures not cryptographically verified; trusted official installation comparison pending",
+   "files": [
+    {
+     "name": "manifest.json",
+     "size": 3005,
+     "sha256": "9ec43c8d0f65c0ced33c2315c97d67b649b70d94d0d977d31608db4054ecc6b1"
+    },
+    {
+     "name": "com.fujifilm.instaxBo19.apk",
+     "size": 82819119,
+     "sha256": "0b680c35fdcd5bb96a4f0fc698c1fccfa8e4d18d8526145c7d420fdb3bfd33f7",
+     "apk_signature_verified": false,
+     "signer_certificate_sha256": "6a869d43ad9fa42e630e6b3fb757d73ba738bc2ca49d8762dc656ed6bd11b3cd",
+     "signer_matches_base": true
+    },
+    {
+     "name": "SharedAssets.apk",
+     "size": 51557783,
+     "sha256": "35ce4ad716f18e0bf0ef4509dd5a5c734da84656ea89eedd83cde2c863254ae4",
+     "apk_signature_verified": false,
+     "signer_certificate_sha256": "6a869d43ad9fa42e630e6b3fb757d73ba738bc2ca49d8762dc656ed6bd11b3cd",
+     "signer_matches_base": true
+    },
+    {
+     "name": "config.arm64_v8a.apk",
+     "size": 234895983,
+     "sha256": "439c81c13bf50024a50166318b42155d56286b862698a29e27f888ad7c3c8987",
+     "apk_signature_verified": false,
+     "signer_certificate_sha256": "6a869d43ad9fa42e630e6b3fb757d73ba738bc2ca49d8762dc656ed6bd11b3cd",
+     "signer_matches_base": true
+    }
+   ]
+  },
+  {
+   "package": "com.fujifilm.instaxminiLiPlay",
+   "version": "7.2.0",
+   "version_code": 194,
+   "source": "https://d.apkpure.com/b/XAPK/com.fujifilm.instaxminiLiPlay?version=latest",
+   "source_container": "instax+mini+LiPlay_7.2.0_APKPure.xapk",
+   "status": "retrieved",
+   "acquired_utc": "2026-11-11",
+   "acquired_by": "user, browser download",
+   "apk_signature_verified": false,
+   "signer_certificate_sha256": "ad4f4423feda2277053b4e5795bbb6fbb7fac455640579ed6b6c35b8c5e61d62",
+   "schemes": "v2 block=True v3 block=True (read, not verified)",
+   "publisher_authentication": "signer certificate identity read from APK signing block only; signatures not cryptographically verified; trusted official installation comparison pending",
+   "files": [
+    {
+     "name": "manifest.json",
+     "size": 1602,
+     "sha256": "51a65f7f2079108e36a799f7a8e95395dc557c7e08f49dea0a0cfe45f8657cf1"
+    },
+    {
+     "name": "com.fujifilm.instaxminiLiPlay.apk",
+     "size": 88916969,
+     "sha256": "8ed65c08d3c5da2e1787d1c63b6363d5b5a42a10884b1520ab7cf35e166cb678",
+     "apk_signature_verified": false,
+     "signer_certificate_sha256": "ad4f4423feda2277053b4e5795bbb6fbb7fac455640579ed6b6c35b8c5e61d62",
+     "signer_matches_base": true
+    },
+    {
+     "name": "SharedAssets.apk",
+     "size": 109369734,
+     "sha256": "1c8198ab9627cb1fe38664e518ce74f919abc1c94ba826a40402316ccee5e4f0",
+     "apk_signature_verified": false,
+     "signer_certificate_sha256": "ad4f4423feda2277053b4e5795bbb6fbb7fac455640579ed6b6c35b8c5e61d62",
+     "signer_matches_base": true
+    },
+    {
+     "name": "config.arm64_v8a.apk",
+     "size": 100416217,
+     "sha256": "684cbc86dfa922bd0528fe5621c7da3e60966b28448bc890bdb23ddca1733a4d",
+     "apk_signature_verified": false,
+     "signer_certificate_sha256": "ad4f4423feda2277053b4e5795bbb6fbb7fac455640579ed6b6c35b8c5e61d62",
+     "signer_matches_base": true
+    }
+   ]
+  },
+  {
+   "package": "com.fujifilm.instaxWideEvo",
+   "version": "1.1.3",
+   "version_code": 108,
+   "source": "https://d.apkpure.com/b/XAPK/com.fujifilm.instaxWideEvo?version=latest",
+   "source_container": "instax+WIDE+Evo_1.1.3_APKPure.xapk",
+   "status": "retrieved",
+   "acquired_utc": "2026-11-11",
+   "acquired_by": "user, browser download",
+   "apk_signature_verified": false,
+   "signer_certificate_sha256": "6a86c7fa5eb41c9bba8e91071094903cb46834ca8898a3abc4ce5aa2da8c65e3",
+   "schemes": "v2 block=True v3 block=True (read, not verified)",
+   "publisher_authentication": "signer certificate identity read from APK signing block only; signatures not cryptographically verified; trusted official installation comparison pending",
+   "files": [
+    {
+     "name": "manifest.json",
+     "size": 1336,
+     "sha256": "113c441f47f56a4f7a6dbab88eb637596232c19413a5cbd33c160e71abaca526"
+    },
+    {
+     "name": "com.fujifilm.instaxWideEvo.apk",
+     "size": 44085768,
+     "sha256": "d058f4600eb4cb981087e62b09fb21632ead74761aa17eb9abe6a1337e8578af",
+     "apk_signature_verified": false,
+     "signer_certificate_sha256": "6a86c7fa5eb41c9bba8e91071094903cb46834ca8898a3abc4ce5aa2da8c65e3",
+     "signer_matches_base": true
+    },
+    {
+     "name": "SharedAssets.apk",
+     "size": 141355719,
+     "sha256": "627d0a1b39592e32d822385e6561242a819f80b6a55c8c6858c8f2bd4509d9d5",
+     "apk_signature_verified": false,
+     "signer_certificate_sha256": "6a86c7fa5eb41c9bba8e91071094903cb46834ca8898a3abc4ce5aa2da8c65e3",
+     "signer_matches_base": true
+    },
+    {
+     "name": "config.arm64_v8a.apk",
+     "size": 81467172,
+     "sha256": "2c48e3374540e0ada99a93075b885f36ffc3718a590a711cc2fcfe1cdebdfb98",
+     "apk_signature_verified": false,
+     "signer_certificate_sha256": "6a86c7fa5eb41c9bba8e91071094903cb46834ca8898a3abc4ce5aa2da8c65e3",
+     "signer_matches_base": true
+    }
+   ]
+  }
+ ]
+}

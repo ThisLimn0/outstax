@@ -1,0 +1,17 @@
+[
+  {
+    "description": "Image support query",
+    "hex": "4162000800020052",
+    "origin": "independently encoded from app-verified layout"
+  },
+  {
+    "description": "PRINT request",
+    "hex": "416200071080c5",
+    "origin": "independently encoded from app-verified layout"
+  },
+  {
+    "description": "WIDE START acknowledgement, block size 900",
+    "hex": "6142000c10000000000384b9",
+    "origin": "public reference capture quoted by ESP32-Instax-Bridge; not captured in this environment"
+  }
+]

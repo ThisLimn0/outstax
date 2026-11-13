@@ -1,0 +1,12 @@
+[
+  {
+    "target": "x86_64-pc-windows-msvc",
+    "type": "cargo check; no linking, launch or Bluetooth hardware test",
+    "exit_code": 0
+  },
+  {
+    "target": "aarch64-apple-darwin",
+    "type": "cargo check; no linking, launch or Bluetooth hardware test",
+    "exit_code": 0
+  }
+]

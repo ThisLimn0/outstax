@@ -1,0 +1,5 @@
+    Checking instax-protocol v0.1.0 (/workspace/scratch/1271c279859f/instax-rs/crates/protocol)
+    Checking instax-client v0.1.0 (/workspace/scratch/1271c279859f/instax-rs/crates/client)
+    Checking instax-desktop v0.1.0 (/workspace/scratch/1271c279859f/instax-rs/crates/desktop)
+    Checking instax v0.1.0 (/workspace/scratch/1271c279859f/instax-rs/crates/cli)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.57s

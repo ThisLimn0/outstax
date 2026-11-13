@@ -1,0 +1,1807 @@
+[
+  {
+    "app": "mini",
+    "class": "AnalyticStatusRequestModel",
+    "source": "com/fujifilm/instaxbod/api/requestmodel/AnalyticStatusRequestModel.java",
+    "sha256": "37d0a6e9a84ad16e12ecda6183540efa9aa07050630220e8df34d01d433505ef",
+    "fields": [
+      {
+        "name": "analyticsStatus",
+        "type": "Boolean",
+        "candidate_serialized_name": "analyticsStatus"
+      },
+      {
+        "name": "country",
+        "type": "String",
+        "candidate_serialized_name": "country"
+      },
+      {
+        "name": "lastConnectedPrinterId",
+        "type": "String",
+        "candidate_serialized_name": "cameraId"
+      },
+      {
+        "name": "platform",
+        "type": "String",
+        "candidate_serialized_name": "platform"
+      },
+      {
+        "name": "smartphoneId",
+        "type": "String",
+        "candidate_serialized_name": "smartphoneId"
+      }
+    ]
+  },
+  {
+    "app": "mini",
+    "class": "InstaxAirImageUploadRequestModel",
+    "source": "com/fujifilm/instaxbod/api/requestmodel/InstaxAirImageUploadRequestModel.java",
+    "sha256": "dd0a4c0cf74b3623efae86f4e418639447962f180463d1122bafab650d8d0522",
+    "fields": [
+      {
+        "name": "checksum",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "uid",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "mini",
+    "class": "AuthorizeSmartPhoneRequestModel",
+    "source": "com/fujifilm/instaxbod/api/requestmodel/AuthorizeSmartPhoneRequestModel.java",
+    "sha256": "82b9fdf3c3debb6f913f45ba13c5119e5a195d44636083a35b9af92318683073",
+    "fields": [
+      {
+        "name": "country",
+        "type": "String",
+        "candidate_serialized_name": "country"
+      },
+      {
+        "name": "productId",
+        "type": "String",
+        "candidate_serialized_name": "productId"
+      },
+      {
+        "name": "smartPhoneId",
+        "type": "String",
+        "candidate_serialized_name": "smartphoneId"
+      }
+    ]
+  },
+  {
+    "app": "mini",
+    "class": "RegisterPrinterRequestModel",
+    "source": "com/fujifilm/instaxbod/api/requestmodel/RegisterPrinterRequestModel.java",
+    "sha256": "adf26fc129e2a8d32214f8002d24c62696878a8703accf59fa91930a06d7312f",
+    "fields": [
+      {
+        "name": "country",
+        "type": "String",
+        "candidate_serialized_name": "country"
+      },
+      {
+        "name": "firmwareVersion",
+        "type": "String",
+        "candidate_serialized_name": "firmwareVersion"
+      },
+      {
+        "name": "printerColor",
+        "type": "String",
+        "candidate_serialized_name": "cameraColor"
+      },
+      {
+        "name": "printerId",
+        "type": "String",
+        "candidate_serialized_name": "cameraId"
+      },
+      {
+        "name": "productId",
+        "type": "String",
+        "candidate_serialized_name": "productId"
+      }
+    ]
+  },
+  {
+    "app": "mini",
+    "class": "InstaxAirVideoUploadRequestModel",
+    "source": "com/fujifilm/instaxbod/api/requestmodel/InstaxAirVideoUploadRequestModel.java",
+    "sha256": "ea0811be4cf50c09aa125b7cdd5941e5060ebd5f3638dd78cc6387c38e634e26",
+    "fields": [
+      {
+        "name": "applicationVersion",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "checksum",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "firmwareVersion",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "password",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "printerColor",
+        "type": "String",
+        "candidate_serialized_name": "cameraColor"
+      },
+      {
+        "name": "printerId",
+        "type": "String",
+        "candidate_serialized_name": "cameraId"
+      },
+      {
+        "name": "retentionPeriod",
+        "type": "int",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "uid",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "videoDownloadStatus",
+        "type": "int",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "videoType",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "mini",
+    "class": "DownloadCountRequestModel",
+    "source": "com/fujifilm/instaxbod/api/requestmodel/DownloadCountRequestModel.java",
+    "sha256": "42abd698898089a90273a35940d76f18ddf1a910b5938d50044dae0a47503a70",
+    "fields": [
+      {
+        "name": "uid",
+        "type": "String",
+        "candidate_serialized_name": "uid"
+      }
+    ]
+  },
+  {
+    "app": "mini",
+    "class": "ServerResponseModel",
+    "source": "com/fujifilm/instaxbod/api/responsemodel/ServerResponseModel.java",
+    "sha256": "1f9f002f41a147736d505f26af07ffad70a0b5ebedbbe7df71b3a24d6b6c2652",
+    "fields": [
+      {
+        "name": "message",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "responseData",
+        "type": "String",
+        "candidate_serialized_name": "data"
+      },
+      {
+        "name": "status",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "mini",
+    "class": "GetUploadUrlsResponseModel",
+    "source": "com/fujifilm/instaxbod/api/responsemodel/GetUploadUrlsResponseModel.java",
+    "sha256": "a37ab55ca6a3ff52c43636f5d290b691ca8ac3cf4c4924d72d9a94f151d10334",
+    "fields": [
+      {
+        "name": "instaxAirUploadUrlModel",
+        "type": "InstaxAirUploadUrlModel",
+        "candidate_serialized_name": "data"
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "status",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "mini",
+    "class": "InstaxAirUploadUrlModel",
+    "source": "com/fujifilm/instaxbod/api/responsemodel/InstaxAirUploadUrlModel.java",
+    "sha256": "2e07cb3fa3ea3bb31be876000f646577e79acdedb040a91adbe1397c1bb3564a",
+    "fields": [
+      {
+        "name": "imageUrl",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "videoType",
+        "type": "int",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "videoUrl",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "AnalyticStatusRequestModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/requestmodel/AnalyticStatusRequestModel.java",
+    "sha256": "3d7cacfc5aab089be6fa2665ac9a49fb3434cc480e0fceb7123b1c58074f681b",
+    "fields": [
+      {
+        "name": "analyticsStatus",
+        "type": "Boolean",
+        "candidate_serialized_name": "analyticsStatus"
+      },
+      {
+        "name": "country",
+        "type": "String",
+        "candidate_serialized_name": "country"
+      },
+      {
+        "name": "lastConnectedPrinterId",
+        "type": "String",
+        "candidate_serialized_name": "cameraId"
+      },
+      {
+        "name": "platform",
+        "type": "String",
+        "candidate_serialized_name": "platform"
+      },
+      {
+        "name": "smartphoneId",
+        "type": "String",
+        "candidate_serialized_name": "smartphoneId"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "UpdateNetworkPrintRequestModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/requestmodel/UpdateNetworkPrintRequestModel.java",
+    "sha256": "85885da8bfb003698b88cc1ca432821cc95107cd6d14527bbaff8e9fd58f6313",
+    "fields": [
+      {
+        "name": "applicationVersion",
+        "type": "String",
+        "candidate_serialized_name": "applicationVersion"
+      },
+      {
+        "name": "baiduUserId",
+        "type": "String",
+        "candidate_serialized_name": "baiduUserId"
+      },
+      {
+        "name": "cameraColor",
+        "type": "String",
+        "candidate_serialized_name": "cameraColor"
+      },
+      {
+        "name": "cameraId",
+        "type": "String",
+        "candidate_serialized_name": "cameraId"
+      },
+      {
+        "name": "channelId",
+        "type": "String",
+        "candidate_serialized_name": "channelId"
+      },
+      {
+        "name": "firmwareVersion",
+        "type": "String",
+        "candidate_serialized_name": "firmwareVersion"
+      },
+      {
+        "name": "imageDetailArray",
+        "type": "List<ImageDetailArray>",
+        "candidate_serialized_name": "imageDetailArray"
+      },
+      {
+        "name": "isBorderVisible",
+        "type": "Boolean",
+        "candidate_serialized_name": "isBorderVisible"
+      },
+      {
+        "name": "notificationToken",
+        "type": "String",
+        "candidate_serialized_name": "notificationToken"
+      },
+      {
+        "name": "osPlatform",
+        "type": "String",
+        "candidate_serialized_name": "osPlatform"
+      },
+      {
+        "name": "password",
+        "type": "String",
+        "candidate_serialized_name": "password"
+      },
+      {
+        "name": "reactionDetailArray",
+        "type": "List<ReactionDetailArray>",
+        "candidate_serialized_name": "reactionDetailArray"
+      },
+      {
+        "name": "templateName",
+        "type": "String",
+        "candidate_serialized_name": "templateName"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "ShortLinkRequestModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/requestmodel/ShortLinkRequestModel.java",
+    "sha256": "c7b3038f9799466bb21002b3f2244f1ec65d34c4e1c01e7cf791dbcdd42c2802",
+    "fields": [
+      {
+        "name": "longUrl",
+        "type": "String",
+        "candidate_serialized_name": "LongUrl"
+      },
+      {
+        "name": "validity",
+        "type": "String",
+        "candidate_serialized_name": "TermOfValidity"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "RegisterPrinterRequestModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/requestmodel/RegisterPrinterRequestModel.java",
+    "sha256": "0458dd3d407fd7929aa5483ef26e9cd233efff462b8e2d2fcbc78d734919e9b4",
+    "fields": [
+      {
+        "name": "country",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "firmwareVersion",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "printerColor",
+        "type": "String",
+        "candidate_serialized_name": "cameraColor"
+      },
+      {
+        "name": "printerId",
+        "type": "String",
+        "candidate_serialized_name": "cameraId"
+      },
+      {
+        "name": "productId",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "GetARUploadURLsRequestModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/requestmodel/GetARUploadURLsRequestModel.java",
+    "sha256": "d62e37aae82e740938f0871280a4a59f9a841e00b989449f07a64b86fe14c2be",
+    "fields": [
+      {
+        "name": "arType",
+        "type": "int",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "printerId",
+        "type": "String",
+        "candidate_serialized_name": "cameraId"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "UpdateARUploadRequestModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/requestmodel/UpdateARUploadRequestModel.java",
+    "sha256": "5dfd64417723fe339176bdb86c317713bcd2e6ed67d74da49f356dccf64b1dd8",
+    "fields": [
+      {
+        "name": "applicationVersion",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "arDetails",
+        "type": "Object",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "arType",
+        "type": "int",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "arTypeImageChecksum",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "arTypeImageSavedPath",
+        "type": "transient String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "firmwareVersion",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "isARTypeImageUploaded",
+        "type": "transient boolean",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "isRefImageUploaded",
+        "type": "transient boolean",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "printerColor",
+        "type": "String",
+        "candidate_serialized_name": "cameraColor"
+      },
+      {
+        "name": "printerId",
+        "type": "String",
+        "candidate_serialized_name": "cameraId"
+      },
+      {
+        "name": "refImageChecksum",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "refImageSavedPath",
+        "type": "transient String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "retentionPeriod",
+        "type": "int",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "uid",
+        "type": "transient String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "GenerateShortURLRequestModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/requestmodel/GenerateShortURLRequestModel.java",
+    "sha256": "3b7fcd60344c13a3bc060ed4a48aaf59166665faef505927de656bbfa306117c",
+    "fields": [
+      {
+        "name": "productId",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "redirectUrl",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "shortCodeLength",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "ReactionDetailArray",
+    "source": "com/fujifilm/p014instaxsquarelink/api/requestmodel/ReactionDetailArray.java",
+    "sha256": "83df3f4fb8ea1e076abd48308877995be86b12596448f7442ee8dd45412940ac",
+    "fields": [
+      {
+        "name": "balloonTailDirection",
+        "type": "Integer",
+        "candidate_serialized_name": "balloonTailDirection"
+      },
+      {
+        "name": "content",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "coordinates",
+        "type": "List<Float>",
+        "candidate_serialized_name": "coordinates"
+      },
+      {
+        "name": "id",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "reactionCreatedBy",
+        "type": "String",
+        "candidate_serialized_name": "reactionCreatedBy"
+      },
+      {
+        "name": "reactionFromApp",
+        "type": "Boolean",
+        "candidate_serialized_name": "reactionFromApp"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "RegisterNotificationRequestModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/requestmodel/RegisterNotificationRequestModel.java",
+    "sha256": "89c30c51af54704ac29a70cc3a9b3a50f57972f37bcd61e935fd466ef76d9250",
+    "fields": [
+      {
+        "name": "baiduUserId",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "channelId",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "osPlatform",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "pushNotificationToken",
+        "type": "String",
+        "candidate_serialized_name": "token"
+      },
+      {
+        "name": "smartphoneId",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "ImageDetailArray",
+    "source": "com/fujifilm/p014instaxsquarelink/api/requestmodel/ImageDetailArray.java",
+    "sha256": "86b7ec6d9ec9cc701c45c9f51743b229578f64c8ce1eab98f487040e97b640ee",
+    "fields": [
+      {
+        "name": "imageChecksum",
+        "type": "String",
+        "candidate_serialized_name": "imageChecksum"
+      },
+      {
+        "name": "imageUid",
+        "type": "String",
+        "candidate_serialized_name": "imageUid"
+      },
+      {
+        "name": "imageUploadedBy",
+        "type": "String",
+        "candidate_serialized_name": "imageUploadedBy"
+      },
+      {
+        "name": "positionInTemplate",
+        "type": "Integer",
+        "candidate_serialized_name": "positionInTemplate"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "SmartPhoneAuthRequestModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/requestmodel/SmartPhoneAuthRequestModel.java",
+    "sha256": "7bdc8c87cd3f03a33e7d380461f2770a67629276f60521b1f8948177d89e16e0",
+    "fields": [
+      {
+        "name": "country",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "productId",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "smartPhoneId",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "NetworkPrintUrlRequestModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/requestmodel/NetworkPrintUrlRequestModel.java",
+    "sha256": "2a04d9e7544aa9a9bc720598b69d2f89c091ab5117e479d4bebbb510276a5a0f",
+    "fields": [
+      {
+        "name": "cameraId",
+        "type": "String",
+        "candidate_serialized_name": "cameraId"
+      },
+      {
+        "name": "numberOfImages",
+        "type": "Integer",
+        "candidate_serialized_name": "numberOfImages"
+      },
+      {
+        "name": "smartphoneId",
+        "type": "String",
+        "candidate_serialized_name": "smartphoneId"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "ARUploadUrlsDataModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/ARUploadUrlsDataModel.java",
+    "sha256": "6923db37e5afc19ea17e54e73d3aaa96213db2ecc93d62391de3fc0dfb647ca0",
+    "fields": [
+      {
+        "name": "arTypeImageUploadUrl",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "refImageUploadUrl",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "DownloadARPrintResponseModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/DownloadARPrintResponseModel.java",
+    "sha256": "34280498436e24c9d8d369c17dd3ef05f36a41939f2c3f1209270d428700edcc",
+    "fields": [
+      {
+        "name": "arPrintDataModel",
+        "type": "DownloadARPrintDataModel",
+        "candidate_serialized_name": "data"
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "status",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "ImageDetailArrayItem",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/ImageDetailArrayItem.java",
+    "sha256": "2253f74029cc6cb8e12db69c230e28045d179c59ca4217c01b1955ff8effcb61",
+    "fields": [
+      {
+        "name": "id",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "imageUid",
+        "type": "String",
+        "candidate_serialized_name": "imageUid"
+      },
+      {
+        "name": "imageUploadedBy",
+        "type": "String",
+        "candidate_serialized_name": "imageUploadedBy"
+      },
+      {
+        "name": "imageUrl",
+        "type": "String",
+        "candidate_serialized_name": "imageUrl"
+      },
+      {
+        "name": "positionInTemplate",
+        "type": "int",
+        "candidate_serialized_name": "positionInTemplate"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "ServerResponseModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/ServerResponseModel.java",
+    "sha256": "f9b7318a11b83b1e0d24e8bbee94e7df51bfb417313ea3b9216099e05a6dda4e",
+    "fields": [
+      {
+        "name": "message",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "responseData",
+        "type": "String",
+        "candidate_serialized_name": "data"
+      },
+      {
+        "name": "status",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "ResponseData",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/ResponseData.java",
+    "sha256": "a42ddda31874716f5e60a647b2c7efc14eb3cd2545c78018d89b8fecdd568de3",
+    "fields": [
+      {
+        "name": "deeplink",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "shortlink",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "ReactionDetailArrayItem",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/ReactionDetailArrayItem.java",
+    "sha256": "655993b8ed9567cc02bb1cdd617ea7b06558f1c13cba6115ca4a25494c340c1f",
+    "fields": [
+      {
+        "name": "content",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "coordinates",
+        "type": "List<Float>",
+        "candidate_serialized_name": "coordinates"
+      },
+      {
+        "name": "id",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "reactionCreatedBy",
+        "type": "String",
+        "candidate_serialized_name": "reactionCreatedBy"
+      },
+      {
+        "name": "reactionFromApp",
+        "type": "boolean",
+        "candidate_serialized_name": "reactionFromApp"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "GetURLResponseModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/GetURLResponseModel.java",
+    "sha256": "33cce4d487b87610c63ac4f394a6226380b0a8c10d17c2f322ffd6f1c176d16f",
+    "fields": [
+      {
+        "name": "responseData",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "responseMessage",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "statusCode",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "ShortLinkResponseModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/ShortLinkResponseModel.java",
+    "sha256": "447482a00db8461566a5195809e3ce96d5206b58c0f5e90f2b39f5d198bca88c",
+    "fields": [
+      {
+        "name": "code",
+        "type": "int",
+        "candidate_serialized_name": "Code"
+      },
+      {
+        "name": "errorMessage",
+        "type": "String",
+        "candidate_serialized_name": "ErrMsg"
+      },
+      {
+        "name": "shortUrls",
+        "type": "ArrayList<ShortUrl>",
+        "candidate_serialized_name": "ShortUrls"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "ShortUrl",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/ShortUrl.java",
+    "sha256": "93f49c7ec7705ea1b29e3f540f5428e33bd2439eb7bdd0ef1a5d6e77d76f08e8",
+    "fields": [
+      {
+        "name": "longUrl",
+        "type": "String",
+        "candidate_serialized_name": "LongUrl"
+      },
+      {
+        "name": "shortUrl",
+        "type": "String",
+        "candidate_serialized_name": "ShortUrl"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "DownloadData",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/DownloadData.java",
+    "sha256": "f5ebc5d7cab20a3dd6f5dbe7b9092903c745f272a16383535c4af4ddad7e5edd",
+    "fields": [
+      {
+        "name": "collageImageUrl",
+        "type": "String",
+        "candidate_serialized_name": "collageImageUrl"
+      },
+      {
+        "name": "downloadCount",
+        "type": "int",
+        "candidate_serialized_name": "downloadCount"
+      },
+      {
+        "name": "imageDetailArray",
+        "type": "List<ImageDetailArrayItem>",
+        "candidate_serialized_name": "imageDetailArray"
+      },
+      {
+        "name": "lastUpdatedOn",
+        "type": "String",
+        "candidate_serialized_name": "lastUpdatedOn"
+      },
+      {
+        "name": "productId",
+        "type": "String",
+        "candidate_serialized_name": "productId"
+      },
+      {
+        "name": "reactionDetailArray",
+        "type": "List<ReactionDetailArrayItem>",
+        "candidate_serialized_name": "reactionDetailArray"
+      },
+      {
+        "name": "reactionImageUrl",
+        "type": "String",
+        "candidate_serialized_name": "reactionImageUrl"
+      },
+      {
+        "name": "templateName",
+        "type": "String",
+        "candidate_serialized_name": "templateName"
+      },
+      {
+        "name": "uid",
+        "type": "String",
+        "candidate_serialized_name": "uid"
+      },
+      {
+        "name": "uploadDate",
+        "type": "String",
+        "candidate_serialized_name": "uploadDate"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "ImageUploadUrlAndUid",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/ImageUploadUrlAndUid.java",
+    "sha256": "dab1718151406eb3f4f4aa2b4c5f34739c58168254ab677fabc873c3fdc5a6ae",
+    "fields": [
+      {
+        "name": "imageUid",
+        "type": "String",
+        "candidate_serialized_name": "imageUid"
+      },
+      {
+        "name": "imageUploadUrl",
+        "type": "String",
+        "candidate_serialized_name": "imageUploadUrl"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "Data",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/Data.java",
+    "sha256": "1bf9f941c1bd7a6243c9cece156161eb7ffd925ca83ca7ed569c0d5855cb2b8f",
+    "fields": [
+      {
+        "name": "imageUploadUrlAndUid",
+        "type": "List<ImageUploadUrlAndUid>",
+        "candidate_serialized_name": "imageUploadUrlAndUid"
+      },
+      {
+        "name": "uid",
+        "type": "String",
+        "candidate_serialized_name": "uid"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "UpdateNetworkDownloadResponse",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/UpdateNetworkDownloadResponse.java",
+    "sha256": "0ae7f460d97066fe29216d401cee208a20378d4cc4360400a7a31b63bdcd0eb5",
+    "fields": [
+      {
+        "name": "data",
+        "type": "Boolean",
+        "candidate_serialized_name": "data"
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "candidate_serialized_name": "message"
+      },
+      {
+        "name": "status",
+        "type": "int",
+        "candidate_serialized_name": "status"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "GenerateShortURLResponseModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/GenerateShortURLResponseModel.java",
+    "sha256": "1092845961b9fec81a4260fd89226669ca531791feb2942643e4fdc46be12c58",
+    "fields": [
+      {
+        "name": "responseData",
+        "type": "ResponseData",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "responseMessage",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "statusCode",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "GetNetworkPrintUploadUrlResponse",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/GetNetworkPrintUploadUrlResponse.java",
+    "sha256": "b56d01488a99183099bb5c750d30f588c2d5027253e1d4ec785a2f787fe1c3c6",
+    "fields": [
+      {
+        "name": "data",
+        "type": "Data",
+        "candidate_serialized_name": "data"
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "candidate_serialized_name": "message"
+      },
+      {
+        "name": "status",
+        "type": "Integer",
+        "candidate_serialized_name": "status"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "DownloadARPrintDataModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/DownloadARPrintDataModel.java",
+    "sha256": "d56c44b852420bcf042ae2595b7d97a4a7efcc5dd74ca9c768d44b563b95d6c7",
+    "fields": [
+      {
+        "name": "ar3DModel",
+        "type": "transient ThreeDInfoModel",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "arDetails",
+        "type": "Object",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "arSketch",
+        "type": "transient SketchInfoModel",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "arType",
+        "type": "int",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "bgFilterInfo",
+        "type": "transient BgFilterInfoModel",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "bubbleInfo",
+        "type": "transient BubbleInfoModel",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "doodleInfo",
+        "type": "transient DoodleInfoModel",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "expirationDate",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "refImageUrl",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "textInfo",
+        "type": "transient TextInfoModel",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "NetworkPrintDownloadResponse",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/NetworkPrintDownloadResponse.java",
+    "sha256": "e966aa61706afbc1f16fa7c1bb28abcdbcd6d4cba2e428ea9f43e7c8933dd9ef",
+    "fields": [
+      {
+        "name": "downloadData",
+        "type": "DownloadData",
+        "candidate_serialized_name": "data"
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "candidate_serialized_name": "message"
+      },
+      {
+        "name": "status",
+        "type": "int",
+        "candidate_serialized_name": "status"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "GetUpdateNetworkPrintUrlResponse",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/GetUpdateNetworkPrintUrlResponse.java",
+    "sha256": "f3a5207c0fbbd84c869c3ba512666f94c8592f378acc07c447f10880ec7c7fec",
+    "fields": [
+      {
+        "name": "data",
+        "type": "String",
+        "candidate_serialized_name": "data"
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "candidate_serialized_name": "message"
+      },
+      {
+        "name": "status",
+        "type": "Integer",
+        "candidate_serialized_name": "status"
+      }
+    ]
+  },
+  {
+    "app": "square",
+    "class": "GetARUploadUrlsResponseModel",
+    "source": "com/fujifilm/p014instaxsquarelink/api/responsemodel/GetARUploadUrlsResponseModel.java",
+    "sha256": "7f2ee5f451873927b7d5f2ae64f6afa226cf70b6234cf4c8c5779c90d9540cb0",
+    "fields": [
+      {
+        "name": "arUploadUrlsDataModel",
+        "type": "ARUploadUrlsDataModel",
+        "candidate_serialized_name": "data"
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "status",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "GetRestoreKeyFileRequestModel",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/GetRestoreKeyFileRequestModel.java",
+    "sha256": "978b92e41de31ab89a3ae6607811d606ede7dc92290cfe953aad715589a05372",
+    "fields": [
+      {
+        "name": "key",
+        "type": "String",
+        "candidate_serialized_name": "key"
+      },
+      {
+        "name": "restoreToken",
+        "type": "String",
+        "candidate_serialized_name": "restoreToken"
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "CompleteStoreRequestModel",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/CompleteStoreRequestModel.java",
+    "sha256": "17af6342f380619b32ba1922634f16f1b9c5f27a5f18ce256780f82e4d8e9aad",
+    "fields": [
+      {
+        "name": "mailAddress",
+        "type": "String",
+        "candidate_serialized_name": "mailAddress"
+      },
+      {
+        "name": "storeToken",
+        "type": "String",
+        "candidate_serialized_name": "storeToken"
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "AnalyticStatusRequestModel",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/AnalyticStatusRequestModel.java",
+    "sha256": "baf1fc3f087f68bf048efdcfe5b38906efde396d96cdcaa6bc79ae2e3059e8a2",
+    "fields": [
+      {
+        "name": "analyticsStatus",
+        "type": "Boolean",
+        "candidate_serialized_name": "analyticsStatus"
+      },
+      {
+        "name": "country",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "lastConnectedPrinterId",
+        "type": "String",
+        "candidate_serialized_name": "cameraId"
+      },
+      {
+        "name": "platform",
+        "type": "String",
+        "candidate_serialized_name": "platform"
+      },
+      {
+        "name": "smartphoneId",
+        "type": "String",
+        "candidate_serialized_name": "smartphoneId"
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "LoginRequestModel",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/LoginRequestModel.java",
+    "sha256": "66b8a6b6a6de97604b6680a21e2545ef770b8ccd1ef4732713049caef0699d8b",
+    "fields": [
+      {
+        "name": "hashedPassword",
+        "type": "String",
+        "candidate_serialized_name": "hashedPassword"
+      },
+      {
+        "name": "smartPhoneId",
+        "type": "String",
+        "candidate_serialized_name": "deviceId"
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "RegisterRequestModel",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/RegisterRequestModel.java",
+    "sha256": "8b239be6d4e1261c3ab5f31a4bb2240cc822769b9b028d049d2396a32d23bcc9",
+    "fields": [
+      {
+        "name": "country",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "hashedPassword",
+        "type": "String",
+        "candidate_serialized_name": "hashedPassword"
+      },
+      {
+        "name": "productId",
+        "type": "String",
+        "candidate_serialized_name": "productId"
+      },
+      {
+        "name": "smartPhoneId",
+        "type": "String",
+        "candidate_serialized_name": "deviceId"
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "ShortLinkRequestModel",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/ShortLinkRequestModel.java",
+    "sha256": "887bdadcdb2d5ae90ca22d48aca951e3f658c94498b070614721d41acdbad97d",
+    "fields": [
+      {
+        "name": "longUrl",
+        "type": "String",
+        "candidate_serialized_name": "LongUrl"
+      },
+      {
+        "name": "validity",
+        "type": "String",
+        "candidate_serialized_name": "TermOfValidity"
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "RegisterPrinterRequestModel",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/RegisterPrinterRequestModel.java",
+    "sha256": "d0a5f1bf9d9bac7f175132d5240cea36ae34e70c0ac43bc0577d410bc1aef87b",
+    "fields": [
+      {
+        "name": "cameraColor",
+        "type": "String",
+        "candidate_serialized_name": "cameraColor"
+      },
+      {
+        "name": "country",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "firmwareVersion",
+        "type": "String",
+        "candidate_serialized_name": "firmwareVersion"
+      },
+      {
+        "name": "printerId",
+        "type": "String",
+        "candidate_serialized_name": "cameraId"
+      },
+      {
+        "name": "productId",
+        "type": "String",
+        "candidate_serialized_name": "productId"
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "ValidateBackupFilesRequestModel",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/ValidateBackupFilesRequestModel.java",
+    "sha256": "e3b3917a7b0e5d6cc08d4be7e822c3c8d90736364527cbe7f9c1d41ab118aa10",
+    "fields": [
+      {
+        "name": "fileDetails",
+        "type": "List<FileDetail>",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "pageIndex",
+        "type": "int",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "productID",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "storeToken",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "totalCount",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "FileDetail",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/FileDetail.java",
+    "sha256": "bdcfa1199bd2a20258ce22294062b2eefc46a03ee97f7d1740275037b58346a4",
+    "fields": [
+      {
+        "name": "fileChecksum",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "fileName",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "GetRestoreFileRequestModel",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/GetRestoreFileRequestModel.java",
+    "sha256": "51cc9ab045159c63104bbc61556854fcf225984def64c42f5e06362803a7ce42",
+    "fields": [
+      {
+        "name": "key",
+        "type": "String",
+        "candidate_serialized_name": "key"
+      },
+      {
+        "name": "restoreToken",
+        "type": "String",
+        "candidate_serialized_name": "restoreToken"
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "UploadedFileDetails",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/UploadedFileDetails.java",
+    "sha256": "ae2ee80684649412a23232fd99b7842eaff0699ade3bd9b48d70185d5265c35f",
+    "fields": [
+      {
+        "name": "fileName",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "filePath",
+        "type": "File",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "DownloadCountRequestModel",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/DownloadCountRequestModel.java",
+    "sha256": "349e4a512dcb3f94c8f350b6290235186004da45b0423714c6d5872515598887",
+    "fields": [
+      {
+        "name": "uid",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "GenerateRestoreTokenRequestModel",
+    "source": "com/fujifilm/instaxwide/api/requestmodel/GenerateRestoreTokenRequestModel.java",
+    "sha256": "e910d472509eb2598c750dd69df00ed1eb0b21d54d70d55d70805e19c0d6fb33",
+    "fields": [
+      {
+        "name": "mailAddress",
+        "type": "String",
+        "candidate_serialized_name": "mailAddress"
+      },
+      {
+        "name": "restorePassword",
+        "type": "String",
+        "candidate_serialized_name": "restorePassword"
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "ServerResponseModel",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/ServerResponseModel.java",
+    "sha256": "47f4492cf07fe6f74717f80593c6d1a7210224048c5869e18770c8b67b47bfd7",
+    "fields": [
+      {
+        "name": "responseData",
+        "type": "String",
+        "candidate_serialized_name": "data"
+      },
+      {
+        "name": "responseMessage",
+        "type": "String",
+        "candidate_serialized_name": "message"
+      },
+      {
+        "name": "statusCode",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "ResponseData",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/ResponseData.java",
+    "sha256": "3165818fc84c1cc20e93a03c4874c7d0e15ce19a97b4e591a0e6847f5c7fdf60",
+    "fields": [
+      {
+        "name": "deeplink",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "shortlink",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "BackUpTokenResponseModel",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/BackUpTokenResponseModel.java",
+    "sha256": "49e793934f53d15970a746866c29a228119d598315479a4ed30a658290db8d28",
+    "fields": [
+      {
+        "name": "storeToken",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "GetURLResponseModel",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/GetURLResponseModel.java",
+    "sha256": "c8c430f98024ffa6cb149e7ca4b01968f6775d53bc20eed3b7322e3bfb6c46ff",
+    "fields": [
+      {
+        "name": "responseData",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "responseMessage",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "statusCode",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "ShortLinkResponseModel",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/ShortLinkResponseModel.java",
+    "sha256": "8f1ad22068e8080fa45bbcb783822902d446ea147c27c11d3590ce8e2b4b192a",
+    "fields": [
+      {
+        "name": "code",
+        "type": "int",
+        "candidate_serialized_name": "Code"
+      },
+      {
+        "name": "errorMessage",
+        "type": "String",
+        "candidate_serialized_name": "ErrMsg"
+      },
+      {
+        "name": "shortUrls",
+        "type": "ArrayList<ShortUrl>",
+        "candidate_serialized_name": "ShortUrls"
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "RestoreResponse",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/RestoreResponse.java",
+    "sha256": "3b1aebf38c4a9c5ca3b31a5590d539a04bbde2e096aa0b2dbade5e63bcd589ad",
+    "fields": [
+      {
+        "name": "data",
+        "type": "RestoreData",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "status",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "ShortUrl",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/ShortUrl.java",
+    "sha256": "d31351170cf8ad1b6db00f94af223f4dc5fb682edd3c88ecd6fa532d2dc80147",
+    "fields": [
+      {
+        "name": "longUrl",
+        "type": "String",
+        "candidate_serialized_name": "LongUrl"
+      },
+      {
+        "name": "shortUrl",
+        "type": "String",
+        "candidate_serialized_name": "ShortUrl"
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "RestoreData",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/RestoreData.java",
+    "sha256": "414fb7d848bff9fc85336e02a8e92747f21c60b691a762d01ba580ad90a6dbdf",
+    "fields": [
+      {
+        "name": "directoryUrl",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "metaDataFileUrl",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "sasToken",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "FileInfoJsonModel",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/FileInfoJsonModel.java",
+    "sha256": "2198f51a1bb55231c94c83d1bde4b12b169952da41e1e49ae671ad73b8bed4c7",
+    "fields": [
+      {
+        "name": "file_keys",
+        "type": "List<BackupDataModel>",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "primary_file_key",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "BackupCompletedResponse",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/BackupCompletedResponse.java",
+    "sha256": "2c18e5e5b5c555998701a3f3148fdf0ef864cf704e26d7a9ff7000f33065933c",
+    "fields": [
+      {
+        "name": "expiredDateTime",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "restorePassword",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "ValidateFileResponseModel",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/ValidateFileResponseModel.java",
+    "sha256": "64b0a6f1b4cf9cbc3e2451e26da1a949603433f20a78fc990a762f7530be85c1",
+    "fields": [
+      {
+        "name": "data",
+        "type": "ValidationData",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "status",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "Data",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/Data.java",
+    "sha256": "34cdba65fe391c8c2032f1e9c101ec1ae1f4c4d52b8cd912fb5b268d664b21e5",
+    "fields": [
+      {
+        "name": "directoryUrl",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "sasToken",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "storeToken",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "GenerateShortURLResponseModel",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/GenerateShortURLResponseModel.java",
+    "sha256": "f173d5f01e29f3c5c051e4d6a7e241c10476d5c484cbc4bf816ea58400d80659",
+    "fields": [
+      {
+        "name": "responseData",
+        "type": "ResponseData",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "responseMessage",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "statusCode",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "BackupUrlResponseModel",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/BackupUrlResponseModel.java",
+    "sha256": "380e52b9622ecde359b87366c7376859835efcc1d0fcc09db11b78a5a3744762",
+    "fields": [
+      {
+        "name": "data",
+        "type": "Data",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "status",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "GenerateShortURLRequestModel",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/GenerateShortURLRequestModel.java",
+    "sha256": "25312e2f3e7b9046bc78136b06726e07e953b72b437477e39f8628c6507cec0a",
+    "fields": [
+      {
+        "name": "productId",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "redirectUrl",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "shortCodeLength",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "ValidationData",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/ValidationData.java",
+    "sha256": "7e65015161cd42c27c742a20e2dd9ad3faaacb8877d9146bae0db2cfff94d416",
+    "fields": [
+      {
+        "name": "restoreToken",
+        "type": "String",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "validationCompletedTotalFileCount",
+        "type": "int",
+        "candidate_serialized_name": null
+      },
+      {
+        "name": "validationPendingTotalFileCount",
+        "type": "int",
+        "candidate_serialized_name": null
+      }
+    ]
+  },
+  {
+    "app": "wide",
+    "class": "RestoreTokenResponseModel",
+    "source": "com/fujifilm/instaxwide/api/responsemodel/RestoreTokenResponseModel.java",
+    "sha256": "af01e206ee30d4476ea5e2b5d8a7f086c8f7cbaa4e0331cfe60a67520bfd8f05",
+    "fields": [
+      {
+        "name": "restoreToken",
+        "type": "String",
+        "candidate_serialized_name": null
+      }
+    ]
+  }
+]

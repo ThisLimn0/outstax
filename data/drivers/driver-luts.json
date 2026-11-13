@@ -1,0 +1,12 @@
+[
+  {
+    "package": "Fujifilm.InstaxLinkWIDE2PrinterDriver",
+    "bytes": 67108864,
+    "sha256": "9bc33b49082d9359f677094d8fa10343da54b3c07654c24d88a6f5a039f82092"
+  },
+  {
+    "package": "Fujifilm.InstaxPrinterDriver",
+    "bytes": 67108864,
+    "sha256": "9bc33b49082d9359f677094d8fa10343da54b3c07654c24d88a6f5a039f82092"
+  }
+]

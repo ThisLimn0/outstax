@@ -1,0 +1,38 @@
+[
+  {
+    "file": "Firmware/BO22/0101.hex",
+    "result": "917504 bytes, start 0x08020000, 57347 records, contiguous: true, HEX EOF: Some(true)"
+  },
+  {
+    "file": "Firmware/BO49/F100.DAT",
+    "result": "3734383 bytes, start 0x00000000, 1 records, contiguous: true, HEX EOF: None"
+  },
+  {
+    "file": "Firmware/FW_0102.DAT",
+    "result": "2486908 bytes, start 0x00000000, 1 records, contiguous: true, HEX EOF: None"
+  },
+  {
+    "file": "fw/BO23/RenesasRX/0100.hex",
+    "result": "917504 bytes, start 0xfff00000, 3621 records, contiguous: true, HEX EOF: Some(false)"
+  },
+  {
+    "file": "fw/BO23/STMicro/0100.hex",
+    "result": "917504 bytes, start 0x08020000, 57346 records, contiguous: true, HEX EOF: Some(true)"
+  },
+  {
+    "file": "fw/BOD/0104.hex",
+    "result": "917504 bytes, start 0x08020000, 57347 records, contiguous: true, HEX EOF: Some(true)"
+  },
+  {
+    "file": "fw/LINK3/RenesasRX/0102.hex",
+    "result": "917504 bytes, start 0xfff00000, 3623 records, contiguous: true, HEX EOF: Some(false)"
+  },
+  {
+    "file": "fw/LINK3/STMicro/0102.hex",
+    "result": "917504 bytes, start 0x08020000, 57347 records, contiguous: true, HEX EOF: Some(true)"
+  },
+  {
+    "file": "fw/LINKPLUS/STMicro/0100.hex",
+    "result": "917504 bytes, start 0x08020000, 57346 records, contiguous: true, HEX EOF: Some(true)"
+  }
+]
