@@ -1,0 +1,32 @@
+Hardware result: test upload (no film) on an original mini Link
+Date: 2026-11-13
+Source: the user's report and the desktop app's log of the first run (log not copied here)
+OS: Windows 11
+Program: desktop app, "Test upload (no film)" (at the time still named instax-desktop)
+Printer: original mini Link, model SP-4, firmware 0104
+BLE name: INSTAX-1xxxxxxx(IOS) (serial digits removed)
+BLE address: XX:XX:XX:XX:XX:XX (removed)
+Transport: Bluetooth LE
+
+First run (from the log)
+  MTU 247, write fragment 244 bytes, write without response
+  Image: 148,901 JPEG bytes in 900-byte blocks, sent in 10.6 s (14.1 KB/s)
+  END was accepted. The CANCEL sent after END was then rejected with 0x82.
+  Fix: the test upload now sends CANCEL before END.
+
+Retest after the fix (same day)
+  "Test upload (no film)" succeeded (user report, no log copied).
+
+Physical print (same day, 06:44 UTC, from the desktop log, sanitized)
+  Build: outstax-desktop 0.1.0 after the rename. Data folder migrated to %APPDATA%\outstax.
+  The first status attempt found no printer (it was off or asleep). The next scan found
+  INSTAX-1xxxxxxx(IOS), RSSI -40.
+  Connected: MTU 247, fragment 244 bytes, WithoutResponse.
+  Identified Mini (SP-4), firmware 0104. Battery 80 %, film 7, cover closed, no error.
+  Upload: 148,932 JPEG bytes, options [02 00 00 00], 900-byte blocks, 10.4 s (14.4 KB/s).
+  PRINT accepted, printer estimate 15 s. Completion reported after 12 s, film left 6.
+  Whole job 30.4 s. The user reports the print came out and looks right.
+
+What this shows
+  Test upload and a physical print both work on this printer over BLE from Windows 11.
+  Natural mode only. Rich mode, Design Print, other models and Linux/macOS are untested.

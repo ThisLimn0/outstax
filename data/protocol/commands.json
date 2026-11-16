@@ -1,0 +1,1432 @@
+[
+  {
+    "opcode": "0000",
+    "name": "SUPPORT_FUNCTION_AND_VERSION_INFO",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "typed parser implemented; no hardware qualification",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/InstaxInfoTask.java",
+      "mini:T1/n.java",
+      "mini:T1/o.java"
+    ],
+    "request": "empty",
+    "success_body": "functions:u8, versions:u8[7]",
+    "scope": "initialization",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "0001",
+    "name": "DEVICE_INFO_SERVICE",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "implemented; simulator tested; hardware pending",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/InstaxInfoTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/DeviceInfoServiceRequest.java",
+      "mini:P1/g.java",
+      "mini:T1/o.java"
+    ],
+    "request": "selector:u8",
+    "success_body": "selector:u8, length:u8, text:bytes[length]",
+    "scope": "initialization",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "0002",
+    "name": "SUPPORT_FUNCTION_INFO",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "implemented; simulator tested; hardware pending",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/InstaxInfoTask.java",
+      "wide:com/fujifilm/bluetooth/task/PrinterInfoTask.java",
+      "wide:com/fujifilm/bluetooth/task/SendPrintImageTask.java",
+      "wide:com/fujifilm/bluetooth/task/PrintTask.java",
+      "wide:com/fujifilm/bluetooth/task/URLUploadTask.java",
+      "wide:com/fujifilm/bluetooth/task/CameraInfoTask.java",
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateCameraTask.java",
+      "wide:com/fujifilm/bluetooth/task/LiveViewTask.java",
+      "wide:com/fujifilm/bluetooth/task/FrameSetTask.java",
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/SupportFunctionInfoRequest.java",
+      "mini:P1/s.java",
+      "mini:T1/y.java",
+      "mini:T1/s.java",
+      "mini:T1/w.java",
+      "mini:T1/o.java",
+      "mini:T1/j.java",
+      "mini:U1/b.java"
+    ],
+    "request": "selector:u8",
+    "success_body": "selector:u8, selector-specific fields; see PROTOCOL.md",
+    "scope": "status",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "0010",
+    "name": "IDENTIFY_INFORMATION",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "mini:P1/l.java",
+      "mini:T1/o.java"
+    ],
+    "request": "selector:u8",
+    "success_body": "selector:u8, length:u8, text:bytes[length]",
+    "scope": "identity",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "0100",
+    "name": "SHUT_DOWN",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateCameraTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FwUpgradeRequest.java",
+      "mini:Q1/d.java",
+      "mini:U1/b.java"
+    ],
+    "request": "type:u8; firmware abort sends 0",
+    "success_body": "no fields consumed",
+    "scope": "power",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "0101",
+    "name": "RESET",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [],
+    "request": null,
+    "success_body": null,
+    "scope": "library enum",
+    "re_status": "enum only; no emitting request builder/call site identified; do not guess payload",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "0102",
+    "name": "AUTO_SLEEP_SETTINGS",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "typed builder/parser implemented as applicable; no complete application UX",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/AutoSleepTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/AutoSleepSettingsRequest.java",
+      "mini:P1/c.java",
+      "mini:T1/AbstractC1867b.java"
+    ],
+    "request": "mode:u8, reserved:zero[3], timers:u16be[4]",
+    "success_body": "timers:u16be[4]",
+    "scope": "settings",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "0103",
+    "name": "BLE_CONNECT",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/SendPrintImageTask.java",
+      "wide:com/fujifilm/bluetooth/task/o.java",
+      "wide:com/fujifilm/bluetooth/data/request/bo33/BleConnectionRequest.java",
+      "mini:Q1/a.java",
+      "mini:T1/x.java",
+      "mini:T1/y.java"
+    ],
+    "request": "min_interval:u16be=12,max_interval:u16be=12,latency:u16be=0,timeout:u16be=400",
+    "success_body": "no fields consumed",
+    "scope": "BLE upload setup",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "1000",
+    "name": "PRINT_IMAGE_DOWNLOAD_START",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "implemented; simulator tested; hardware pending",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/SendPrintImageTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/PrintImageStartRequest.java",
+      "mini:P1/p.java",
+      "mini:T1/y.java"
+    ],
+    "request": "picture_type:u8=2,option1:u8,option2:u8,reserved:u8=0,image_length:u32be",
+    "success_body": "block_size:u32be",
+    "scope": "image upload",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "1001",
+    "name": "PRINT_IMAGE_DOWNLOAD_DATA",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "implemented; simulator tested; hardware pending",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/SendPrintImageTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/PrintImageDataRequest.java",
+      "mini:P1/n.java",
+      "mini:T1/y.java"
+    ],
+    "request": "sequence:u32be, data:bytes[block_size]; final block zero-padded",
+    "success_body": "sequence:u32be",
+    "scope": "image upload",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "1002",
+    "name": "PRINT_IMAGE_DOWNLOAD_END",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "implemented; simulator tested; hardware pending",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/SendPrintImageTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/PrintImageRequest.java",
+      "mini:P1/o.java",
+      "mini:T1/y.java"
+    ],
+    "request": "empty",
+    "success_body": "no fields consumed",
+    "scope": "image upload",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "1003",
+    "name": "PRINT_IMAGE_DOWNLOAD_CANCEL",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "implemented; simulator tested; hardware pending",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/SendPrintImageTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/PrintImageRequest.java",
+      "mini:P1/o.java",
+      "mini:T1/y.java"
+    ],
+    "request": "empty",
+    "success_body": "no fields consumed",
+    "scope": "image upload",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "1080",
+    "name": "PRINT_IMAGE",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "implemented; simulator tested; hardware pending",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/TaskType.java",
+      "wide:com/fujifilm/bluetooth/task/SendPrintImageTask.java",
+      "wide:com/fujifilm/bluetooth/task/BaseTask.java",
+      "wide:com/fujifilm/bluetooth/task/PrintTask.java",
+      "wide:com/fujifilm/bluetooth/task/j.java",
+      "wide:com/fujifilm/bluetooth/task/LiveViewTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/PrintImageStartRequest.java",
+      "wide:com/fujifilm/bluetooth/data/request/PrintImageRequest.java",
+      "wide:com/fujifilm/bluetooth/data/request/PrintImageDataRequest.java",
+      "mini:P1/p.java",
+      "mini:P1/n.java",
+      "mini:P1/o.java",
+      "mini:T1/x.java",
+      "mini:T1/r.java",
+      "mini:T1/y.java",
+      "mini:T1/s.java",
+      "mini:T1/D.java",
+      "mini:T1/e.java"
+    ],
+    "request": "empty",
+    "success_body": "estimated_seconds:u8",
+    "scope": "physical print",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "1081",
+    "name": "REJECT_FILM_COVER",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/data/request/PrintImageRequest.java"
+    ],
+    "request": "empty",
+    "success_body": "estimated_seconds:u8; same PrintTask completion path",
+    "scope": "cover ejection",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "2000",
+    "name": "FW_DOWNLOAD_START",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateCameraTask.java",
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FirmWareDataUploadStartRequest.java",
+      "mini:P1/i.java",
+      "mini:Q1/b.java",
+      "mini:T1/j.java",
+      "mini:U1/b.java"
+    ],
+    "request": "file_length:u32be, start_address:u32be",
+    "success_body": "block_size:u32be",
+    "scope": "main firmware",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "2001",
+    "name": "FW_DOWNLOAD_DATA",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateCameraTask.java",
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FirmWareUploadDataRequest.java",
+      "mini:P1/j.java",
+      "mini:Q1/c.java",
+      "mini:T1/j.java",
+      "mini:U1/b.java"
+    ],
+    "request": "sequence:u32be,data:bytes[block_size]; final block zero-padded",
+    "success_body": "sequence:u32be",
+    "scope": "main firmware",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "2002",
+    "name": "FW_DOWNLOAD_END",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateCameraTask.java",
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FwUpgradeRequest.java",
+      "mini:P1/k.java",
+      "mini:Q1/d.java",
+      "mini:T1/j.java",
+      "mini:U1/b.java"
+    ],
+    "request": "empty",
+    "success_body": "no fields consumed",
+    "scope": "main firmware",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "2003",
+    "name": "FW_UPGRADE_EXIT",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [],
+    "request": null,
+    "success_body": null,
+    "scope": "library enum",
+    "re_status": "enum only; no emitting request builder/call site identified; do not guess payload",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "2010",
+    "name": "FW_PROGRAM_INFO",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/InstaxInfoTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FwUpgradeRequest.java",
+      "mini:T1/n.java",
+      "mini:T1/o.java"
+    ],
+    "request": "empty",
+    "success_body": "program:u16be",
+    "scope": "initialization / main firmware",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "2080",
+    "name": "FW_DATA_BACKUP",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/g.java",
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateCameraTask.java",
+      "wide:com/fujifilm/bluetooth/task/f.java",
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FwUpgradeRequest.java",
+      "mini:P1/k.java",
+      "mini:Q1/d.java",
+      "mini:T1/i.java",
+      "mini:T1/j.java",
+      "mini:U1/b.java",
+      "mini:U1/a.java"
+    ],
+    "request": "empty",
+    "success_body": "estimated_seconds:u8",
+    "scope": "main firmware backup",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "2081",
+    "name": "FW_UPDATE_REQUEST",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateCameraTask.java",
+      "wide:com/fujifilm/bluetooth/task/FirmwareUpdateTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FwUpgradeRequest.java",
+      "mini:P1/k.java",
+      "mini:Q1/d.java",
+      "mini:T1/j.java",
+      "mini:U1/b.java"
+    ],
+    "request": "empty",
+    "success_body": "program:u16be,estimated_seconds:u8",
+    "scope": "main firmware activation",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "20a0",
+    "name": "BT_FW_DOWNLOAD_START",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "mini:Q1/b.java",
+      "mini:U1/b.java"
+    ],
+    "request": "component:u16be,file_length:u32be,checksum:u32be,reserved:u16be=0",
+    "success_body": "block_size:u32be",
+    "scope": "Link 3 Bluetooth firmware",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "20a1",
+    "name": "BT_FW_DOWNLOAD_DATA",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "mini:Q1/c.java",
+      "mini:U1/b.java"
+    ],
+    "request": "sequence:u32be,data:bytes[block_size]; final block zero-padded",
+    "success_body": "sequence:u32be",
+    "scope": "Link 3 Bluetooth firmware",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "20a2",
+    "name": "BT_FW_DOWNLOAD_END",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "mini:Q1/d.java",
+      "mini:U1/b.java"
+    ],
+    "request": "empty",
+    "success_body": "no fields consumed",
+    "scope": "Link 3 Bluetooth firmware",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "20a6",
+    "name": "BT_FW_UPGRADE_EXIT",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "catalogued",
+    "references": [],
+    "request": null,
+    "success_body": null,
+    "scope": "library enum",
+    "re_status": "enum only; no emitting request builder/call site identified; do not guess payload",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "20a7",
+    "name": "BT_FW_DOWNLOAD_END_INFO",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "mini:Q1/d.java",
+      "mini:U1/b.java"
+    ],
+    "request": "empty",
+    "success_body": "component_completion_mask:u32be; app requires 0x3ff",
+    "scope": "Link 3 Bluetooth firmware",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "20a8",
+    "name": "BT_FW_PROGRAM_INFO",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "mini:T1/n.java",
+      "mini:T1/o.java"
+    ],
+    "request": "empty",
+    "success_body": "program:u16be",
+    "scope": "Link 3 initialization",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "20a9",
+    "name": "BT_FW_PROGRAM_EXIT",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "catalogued",
+    "references": [],
+    "request": null,
+    "success_body": null,
+    "scope": "library enum",
+    "re_status": "enum only; no emitting request builder/call site identified; do not guess payload",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "20b0",
+    "name": "BT_FW_DATA_BACKUP",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "mini:Q1/d.java",
+      "mini:U1/b.java",
+      "mini:U1/a.java"
+    ],
+    "request": "empty",
+    "success_body": "estimated_seconds:u8",
+    "scope": "Link 3 Bluetooth firmware backup",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "20b1",
+    "name": "BT_FW_UPDATE_REQUEST",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "packet builder or layout documented; offline firmware inspection; no updater UI or recovery qualification",
+    "references": [
+      "mini:Q1/d.java",
+      "mini:U1/b.java"
+    ],
+    "request": "empty",
+    "success_body": "program:u16be,estimated_seconds:u8",
+    "scope": "Link 3 Bluetooth firmware activation",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "3000",
+    "name": "XYZ_AXIS_INFO",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "typed parser implemented; no hardware qualification",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/AxisInfoTask.java",
+      "mini:T1/C1868c.java",
+      "mini:T1/AbstractC1869d.java"
+    ],
+    "request": "empty",
+    "success_body": "x:i16be,y:i16be,z:i16be,switches:u8",
+    "scope": "axes / remote shutter",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "3001",
+    "name": "LED_PATTERN_SETTINGS",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "typed builder/parser implemented as applicable; no complete application UX",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/SetColorDoubleTask.java",
+      "wide:com/fujifilm/bluetooth/task/SetColorTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/ColorSettingsDoubleRequest.java",
+      "wide:com/fujifilm/bluetooth/data/request/ColorSettingsRequest.java",
+      "mini:P1/d.java",
+      "mini:P1/f.java",
+      "mini:P1/e.java",
+      "mini:T1/C.java",
+      "mini:T1/A.java",
+      "mini:V1/b.java"
+    ],
+    "request": "mode:u8,count:u8,step_time_10ms:u8,repeat:u8,BGR:u8[count][3]",
+    "success_body": "no fields consumed",
+    "scope": "LED",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "3002",
+    "name": "AXIS_ACTION_SETTINGS",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "typed builder/parser implemented as applicable; no complete application UX",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/DeviceSettingsTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/DeviceSettingsRequest.java",
+      "mini:P1/h.java",
+      "mini:T1/h.java"
+    ],
+    "request": "constant:u8=2,flags:u8; bit0 power-off, bit1 reprint",
+    "success_body": "no fields consumed",
+    "scope": "axis actions",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "3003",
+    "name": "LED_PATTERN_SETTINGS_DOUBLE",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "typed builder/parser implemented as applicable; no complete application UX",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/SetColorDoubleTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/ColorSettingsDoubleRequest.java",
+      "mini:P1/f.java",
+      "mini:P1/e.java",
+      "mini:T1/C.java",
+      "mini:V1/b.java"
+    ],
+    "request": "mode:u8,count:u8,step_time_10ms:u8,repeat:u8,steps:BGR[count][channels][3]",
+    "success_body": "no fields consumed",
+    "scope": "model-specific LED; channels 1/2/3",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "3004",
+    "name": "POWER_ONOFF_LED_SETTING",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "typed builder/parser implemented as applicable; no complete application UX",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/TaskType.java",
+      "wide:com/fujifilm/bluetooth/task/PowerOnOffLedSettingsTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/PowerOnOffLedSettingRequest.java",
+      "mini:P1/m.java",
+      "mini:T1/p.java",
+      "mini:T1/q.java",
+      "mini:T1/D.java"
+    ],
+    "request": "mode:u8=1(read)/5(write),reserved:zero[3],value:u8,reserved:zero[11]",
+    "success_body": "current_pattern:u8; app requires total response >=20 bytes, ignores remaining bytes",
+    "scope": "power LED",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "3006",
+    "name": "AR_LED_VIBRARTION_SETTING",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "typed builder/parser implemented as applicable; no complete application UX",
+    "references": [
+      "mini:P1/b.java",
+      "mini:T1/m.java"
+    ],
+    "request": "enabled:u8,intensity:u8,reserved:zero[2]",
+    "success_body": "switches:u8",
+    "scope": "AR vibration / switch",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "3008",
+    "name": "FUNCTION_BUTTON_SETTING",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "mini:T1/D.java"
+    ],
+    "request": null,
+    "success_body": null,
+    "scope": "library enum",
+    "re_status": "enum only; no emitting request builder/call site identified; do not guess payload",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "3010",
+    "name": "ADDITIONAL_PRINTER_INFO",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "typed parser implemented; no hardware qualification",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/PrinterInfoAdditionalTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/AdditionalPrinterInfoRequest.java",
+      "mini:P1/a.java",
+      "mini:T1/u.java"
+    ],
+    "request": "selector:u8",
+    "success_body": "0:voltage:i16be,temperature:i16be; 1:attempts:u32be,battery_type:u8,color:u8,film_PI:u8[,cpu_type:u8 in Mini]",
+    "scope": "additional information",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "3020",
+    "name": "PRINTER_PARAMETER_RW",
+    "observed_in": [
+      "mini"
+    ],
+    "implementation": "typed builder/parser implemented as applicable; no complete application UX",
+    "references": [
+      "mini:Q1/e.java",
+      "mini:U1/d.java"
+    ],
+    "request": "parameter:u8,mode:u8,data:u8[8]",
+    "success_body": "write task consumes no fields; read-mode builder exists but no read task/parser found",
+    "scope": "Link+ parameter write",
+    "re_status": "write path recovered; read response undetermined",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "3080",
+    "name": "PRINTER_HEAD_LIGHT_CORRECT_INFO",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "typed builder/parser implemented as applicable; no complete application UX",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/SendPrintImageTask.java",
+      "wide:com/fujifilm/bluetooth/task/o.java",
+      "wide:com/fujifilm/bluetooth/data/request/PrinterHeadCorrectRequest.java",
+      "mini:P1/q.java",
+      "mini:T1/x.java",
+      "mini:T1/y.java"
+    ],
+    "request": "empty",
+    "success_body": "head:u8,judge:u8,reserved:u8,year:u16be,month:u8,day:u8,RGB:u16be[3]",
+    "scope": "original mini head calibration",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "3081",
+    "name": "PRINTER_HEAD_LIGHT_CORRECT_SETTINGS",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "typed builder/parser implemented as applicable; no complete application UX",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/SendPrintImageTask.java",
+      "wide:com/fujifilm/bluetooth/task/o.java",
+      "wide:com/fujifilm/bluetooth/data/request/PrinterHeadLightCorrectSettingsRequest.java",
+      "mini:P1/r.java",
+      "mini:T1/x.java",
+      "mini:T1/y.java"
+    ],
+    "request": "RGB:u16be[3]",
+    "success_body": "no fields consumed",
+    "scope": "original mini head calibration",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8000",
+    "name": "CAMERA_SETTINGS",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/d.java",
+      "wide:com/fujifilm/bluetooth/task/CameraLogTask.java",
+      "wide:com/fujifilm/bluetooth/task/j.java",
+      "wide:com/fujifilm/bluetooth/task/LiveViewTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/CameraSettingsRequest.java",
+      "wide:com/fujifilm/bluetooth/data/request/CameraSettingsGetRequest.java"
+    ],
+    "request": "flash:u8,timer:u8,reserved:zero[2]",
+    "success_body": "no fields consumed",
+    "scope": "hybrid camera",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8001",
+    "name": "CAMERA_SETTINGS_GET",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/CameraLogTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/CameraSettingsGetRequest.java"
+    ],
+    "request": "selector:u8",
+    "success_body": "selector:u8, experienced:u8 OR favorites:u8[6]",
+    "scope": "hybrid camera",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8100",
+    "name": "URL_UPLOAD_INFO",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/URLUploadTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlUploadRequest.java"
+    ],
+    "request": "empty",
+    "success_body": "flags:u8,file_name:UTF8[20],database_index:u32be",
+    "scope": "hybrid camera media",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8101",
+    "name": "URL_PICTURE_UPLOAD_START",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/URLUploadTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlPictureUploadStartRequest.java"
+    ],
+    "request": "database_index:u32be",
+    "success_body": "picture_type:u8,byte_count:u32be,block_size:u32be",
+    "scope": "hybrid camera media",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8102",
+    "name": "URL_PICTURE_UPLOAD",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/URLUploadTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlUploadRequest.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlPictureUploadStartRequest.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlPictureUploadDataRequest.java"
+    ],
+    "request": "sequence:u32be",
+    "success_body": "sequence:u32be,data:remaining_bytes",
+    "scope": "hybrid camera media",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8103",
+    "name": "URL_PICTURE_UPLOAD_END",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/URLUploadTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlUploadRequest.java"
+    ],
+    "request": "empty",
+    "success_body": "no fields consumed",
+    "scope": "hybrid camera media",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8104",
+    "name": "URL_AUDIO_UPLOAD_START",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/URLUploadTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlAudioUploadStartRequest.java"
+    ],
+    "request": "database_index:u32be",
+    "success_body": "audio_type:u8,byte_count:u32be,block_size:u32be",
+    "scope": "hybrid camera media",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8105",
+    "name": "URL_AUDIO_UPLOAD",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/URLUploadTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlAudioUploadDataRequest.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlUploadRequest.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlAudioUploadStartRequest.java"
+    ],
+    "request": "sequence:u32be",
+    "success_body": "sequence:u32be,data:remaining_bytes",
+    "scope": "hybrid camera media",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8106",
+    "name": "URL_AUDIO_UPLOAD_END",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/URLUploadTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlUploadRequest.java"
+    ],
+    "request": "empty",
+    "success_body": "no fields consumed",
+    "scope": "hybrid camera media",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8107",
+    "name": "URL_UPLOAD_ADDRESS",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/URLUploadTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlAddressDataRequest.java"
+    ],
+    "request": "database_index:u32be",
+    "success_body": "length:u8,url:UTF8[length]",
+    "scope": "hybrid camera media",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8108",
+    "name": "URL_UPLOAD_DATA_COMPLETE",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/URLUploadTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/UrlUploadCompleteRequest.java"
+    ],
+    "request": "database_index:u32be,flags:u8; bits0 picture,1 audio,2 address,3 print_image",
+    "success_body": "no fields consumed",
+    "scope": "hybrid camera media",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8200",
+    "name": "LIVE_VIEW_START",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/j.java",
+      "wide:com/fujifilm/bluetooth/task/LiveViewTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/LiveViewStartRequest.java"
+    ],
+    "request": "zero:u8",
+    "success_body": "no fields consumed",
+    "scope": "hybrid camera live view",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8201",
+    "name": "LIVE_VIEW_RECEIVE",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/LiveViewTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/LiveViewRequest.java"
+    ],
+    "request": "empty",
+    "success_body": "transfer_type:u8,frame_type:u8,length:u16be,image:bytes[length]",
+    "scope": "hybrid camera live view",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8202",
+    "name": "LIVE_VIEW_STOP",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/j.java",
+      "wide:com/fujifilm/bluetooth/task/LiveViewTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/LiveViewStopRequest.java"
+    ],
+    "request": "zero:u8",
+    "success_body": "no fields consumed",
+    "scope": "hybrid camera live view",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8210",
+    "name": "LIVE_VIEW_TAKE_PICTURE",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/LiveViewTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/LiveViewTakePictureRequest.java"
+    ],
+    "request": "zero:u8",
+    "success_body": "no fields consumed",
+    "scope": "hybrid camera capture",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8220",
+    "name": "POST_VIEW_UPLOAD_START",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/LiveViewTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/LiveViewRequest.java"
+    ],
+    "request": "empty",
+    "success_body": "picture_type:u8,byte_count:u32be,block_size:u32be",
+    "scope": "hybrid camera post view",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8221",
+    "name": "POST_VIEW_UPLOAD",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/LiveViewTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/LiveViewImageDownloadDataRequest.java",
+      "wide:com/fujifilm/bluetooth/data/request/LiveViewRequest.java"
+    ],
+    "request": "sequence:u32be",
+    "success_body": "sequence:u32be,data:remaining_bytes",
+    "scope": "hybrid camera post view",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8222",
+    "name": "POST_VIEW_UPLOAD_END",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/LiveViewTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/LiveViewRequest.java"
+    ],
+    "request": "empty",
+    "success_body": "no fields consumed",
+    "scope": "hybrid camera post view",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8230",
+    "name": "POST_VIEW_PRINT",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/util/ResultCode.java",
+      "wide:com/fujifilm/bluetooth/task/LiveViewTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/LiveViewRequest.java",
+      "mini:W1/C.java"
+    ],
+    "request": "empty",
+    "success_body": "estimated_seconds:u8",
+    "scope": "hybrid camera print",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8300",
+    "name": "FRAME_PICTURE_DOWNLOAD_START",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/FrameSetTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FrameSetStartRequest.java"
+    ],
+    "request": "picture_type:u8,frame_number:u8,frame_type:u8,reserved:u8=0,image_length:u32be",
+    "success_body": "block_size:u32be",
+    "scope": "hybrid camera frames",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8301",
+    "name": "FRAME_PICTURE_DOWNLOAD",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/FrameSetTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FrameSetDataRequest.java",
+      "wide:com/fujifilm/bluetooth/data/request/FrameSetRequest.java",
+      "wide:com/fujifilm/bluetooth/data/request/FrameSetStartRequest.java"
+    ],
+    "request": "sequence:u32be,data:bytes[block_size]",
+    "success_body": "sequence:u32be",
+    "scope": "hybrid camera frames",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8302",
+    "name": "FRAME_PICTURE_DOWNLOAD_END",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/FrameSetTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FrameSetRequest.java"
+    ],
+    "request": "empty",
+    "success_body": "no fields consumed",
+    "scope": "hybrid camera frames",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8303",
+    "name": "FRAME_PICTURE_NAME_SETTING",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/FrameSetTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FrameSetNameRequest.java"
+    ],
+    "request": "frame_number:u8,app_string_char_count:u8,name:UTF8_bytes; app may miscount non-ASCII",
+    "success_body": "no fields consumed",
+    "scope": "hybrid camera frames",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8304",
+    "name": "FRAME_PICTURE_NAME_GET",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [],
+    "request": null,
+    "success_body": null,
+    "scope": "library enum",
+    "re_status": "enum only; no emitting request builder/call site identified; do not guess payload",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8400",
+    "name": "CAMERA_LOG_SUBTOTAL_START",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/CameraLogTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/DeviceLogRequest.java"
+    ],
+    "request": "empty",
+    "success_body": "byte_count:u32be,block_size:u32be,profile_info:u32be",
+    "scope": "hybrid camera logs",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8401",
+    "name": "CAMERA_LOG_SUBTOTAL_DATA",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/CameraLogTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/SubTotalLogDataRequest.java"
+    ],
+    "request": "sequence:u32be",
+    "success_body": "sequence:u32be,data:remaining_bytes",
+    "scope": "hybrid camera logs",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8402",
+    "name": "CAMERA_LOG_SUBTOTAL_CLEAR",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/CameraLogTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/DeviceLogRequest.java"
+    ],
+    "request": "empty",
+    "success_body": "no fields consumed",
+    "scope": "hybrid camera logs",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8403",
+    "name": "CAMERA_LOG_DATE_START",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/CameraLogTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/DateLogStartRequest.java"
+    ],
+    "request": "log_type:u8",
+    "success_body": "log_type:u8,byte_count:u32be,block_size:u32be,count:u32be",
+    "scope": "hybrid camera logs",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8404",
+    "name": "CAMERA_LOG_DATE_DATA",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/CameraLogTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/DateLogDataRequest.java"
+    ],
+    "request": "log_type:u8,sequence:u32be",
+    "success_body": "log_type:u8,sequence:u32be,data:remaining_bytes",
+    "scope": "hybrid camera logs",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8405",
+    "name": "CAMERA_LOG_DATE_CLEAR",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/CameraLogTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/DateLogClearRequest.java"
+    ],
+    "request": "log_type:u8",
+    "success_body": "log_type:u8",
+    "scope": "hybrid camera logs",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8406",
+    "name": "CAMERA_LOG_FILTER_START",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/CameraLogTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FilterLogStartRequest.java"
+    ],
+    "request": "log_type:u8",
+    "success_body": "log_type:u8,byte_count:u32be,block_size:u32be,count:u32be",
+    "scope": "hybrid camera logs",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8407",
+    "name": "CAMERA_LOG_FILTER_DATA",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/CameraLogTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FilterLogDataRequest.java"
+    ],
+    "request": "log_type:u8,sequence:u32be",
+    "success_body": "log_type:u8,sequence:u32be,data:remaining_bytes",
+    "scope": "hybrid camera logs",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  },
+  {
+    "opcode": "8408",
+    "name": "CAMERA_LOG_FILTER_CLEAR",
+    "observed_in": [
+      "mini",
+      "wide"
+    ],
+    "implementation": "catalogued",
+    "references": [
+      "wide:com/fujifilm/bluetooth/task/CameraLogTask.java",
+      "wide:com/fujifilm/bluetooth/data/request/FilterLogClearRequest.java"
+    ],
+    "request": "log_type:u8",
+    "success_body": "log_type:u8",
+    "scope": "hybrid camera logs",
+    "re_status": "wire layout recovered",
+    "hardware_verified": false
+  }
+]

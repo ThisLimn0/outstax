@@ -1,0 +1,91 @@
+name: Release
+# Builds the Windows and Linux release zips on every v* tag (and on demand), runs the
+# tests and the simulator smoke test against each built CLI, uploads the zips as run
+# artifacts and, for tags, attaches them to the GitHub release.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write  # attach the zip to the GitHub release on tags
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    env:
+      # glibc 2.31 baseline (Ubuntu 20.04, Debian 11 and newer), linked with zig
+      TARGET: x86_64-unknown-linux-gnu
+      GLIBC: '2.31'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-unknown-linux-gnu
+
+      - uses: mlugg/setup-zig@v2
+        with:
+          version: 0.17.1
+
+      - name: Install cargo-zigbuild
+        run: cargo install cargo-zigbuild --version 0.24.1 --locked
+
+      - name: Test
+        run: cargo test --workspace --locked
+
+      - name: Build release zip
+        run: python3 scripts/build/release.py --target "$TARGET.$GLIBC" --output-dir dist
+
+      - name: Simulator smoke test (built CLI, mini/square/wide)
+        run: python3 scripts/build/smoke_test.py "target/$TARGET/release/outstax" --output smoke
+
+      - name: Check the glibc baseline
+        run: |
+          for f in target/$TARGET/release/outstax target/$TARGET/release/outstax-desktop; do
+            need=$(objdump -T "$f" | grep -o 'GLIBC_[0-9.]*' | sort -Vu | tail -1)
+            echo "$f needs $need"
+            test "$(printf '%s\nGLIBC_%s\n' "$need" "$GLIBC" | sort -V | tail -1)" = "GLIBC_$GLIBC"
+          done
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: outstax-linux-x86_64
+          path: dist/*.zip
+          if-no-files-found: error
+
+      - name: Attach to the GitHub release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
+          body_path: .github/RELEASE_NOTES.md
+
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Test
+        run: cargo test --workspace --locked
+
+      - name: Build release zip
+        run: python scripts/build/release.py --output-dir dist
+
+      - name: Simulator smoke test (built CLI, mini/square/wide)
+        run: python scripts/build/smoke_test.py target/release/outstax.exe --output smoke
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: outstax-windows-x86_64
+          path: dist/*.zip
+          if-no-files-found: error
+
+      - name: Attach to the GitHub release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
+          body_path: .github/RELEASE_NOTES.md

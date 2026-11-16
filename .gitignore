@@ -1,0 +1,19 @@
+/target/
+*.jsonl
+acquired-from-phone/
+*.apk
+*.xapk
+instax-lut.bin
+
+__pycache__/
+*.zip
+# Vendor material never belongs in this repository (it lives outside, in ../material)
+*.dex
+*.so
+*.hex
+*.dat
+*.DAT
+*.prf
+*.smali
+*.class
+*.jar

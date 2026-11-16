@@ -1,0 +1,19 @@
+[package]
+name = "outstax"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+default = ["ble"]
+ble = ["outstax-client/ble"]
+
+[dependencies]
+outstax-protocol = { path = "../protocol" }
+outstax-client = { path = "../client", default-features = false }
+anyhow.workspace = true
+clap.workspace = true
+log.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+
