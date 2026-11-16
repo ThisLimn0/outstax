@@ -12,10 +12,12 @@ SHA256SUMS.txt. Existing zips are never overwritten.
   python scripts/build/release.py --output-dir ..   # write the zip next to the project folder
   python scripts/build/release.py --target x86_64-unknown-linux-gnu.2.31
       # cross-build for Linux with cargo-zigbuild (zig as linker), glibc 2.31 baseline
+  python scripts/build/release.py --target universal-apple-darwin
+      # on a Mac: build Apple Silicon and Intel, merge them with lipo, package OutStax.app
 
 Uses CARGO_TARGET_DIR when set (keep build caches outside the project).
 """
-import argparse, hashlib, json, os, pathlib, subprocess, zipfile
+import argparse, hashlib, json, os, pathlib, shutil, subprocess, tempfile, zipfile
 
 PROJECT = pathlib.Path(__file__).resolve().parents[2]
 LICENCE_PREFIXES = ('LICENSE', 'LICENCE', 'COPYING', 'NOTICE', 'UNLICENSE', 'OFL', 'UFL')
@@ -99,9 +101,37 @@ Logs
   Settings > "Open log folder". CLI: add -v / -vv / -vvv, or set OUTSTAX_LOG=debug.
   TROUBLESHOOTING.md explains the common errors and what to send with a report.
 
-Source, build instructions and research notes: the OutStax project (README.md).
+{platform_note}Source and build instructions: https://github.com/ThisLimn0/outstax
 License: MIT (see LICENSE). Notices are in licenses/ and THIRD-PARTY-LICENSES.txt.
 """
+
+
+MACOS_NOTE = """macOS
+  OutStax.app is not notarised by Apple, so macOS blocks the first start. Open System
+  Settings > Privacy & Security and click "Open Anyway" next to the OutStax message
+  (on macOS 14 and older, right-click the app and choose Open instead). Allow Bluetooth
+  when macOS asks. The command-line tool asks on behalf of the Terminal app you use.
+
+"""
+
+
+def app_bundle(binary, version):
+    """Build OutStax.app around the desktop binary, sign it ad hoc and return its files."""
+    plist = (PROJECT / 'platform/macos/Info.plist').read_text(encoding='utf-8').replace(
+        '</dict></plist>',
+        f'<key>CFBundleShortVersionString</key><string>{version}</string>\n'
+        f'<key>CFBundleVersion</key><string>{version}</string>\n'
+        '<key>LSMinimumSystemVersion</key><string>11.0</string>\n'
+        '<key>NSHighResolutionCapable</key><true/>\n</dict></plist>')
+    with tempfile.TemporaryDirectory() as tmp:
+        app = pathlib.Path(tmp) / 'OutStax.app'
+        (app / 'Contents/MacOS').mkdir(parents=True)
+        shutil.copy2(binary, app / 'Contents/MacOS/outstax-desktop')
+        (app / 'Contents/Info.plist').write_text(plist, encoding='utf-8', newline='\n')
+        if shutil.which('codesign'):  # Apple Silicon refuses unsigned code, an ad hoc signature is enough
+            subprocess.run(['codesign', '--force', '--deep', '--sign', '-', str(app)], check=True)
+        return {f'OutStax.app/{f.relative_to(app).as_posix()}': f.read_bytes()
+                for f in sorted(app.rglob('*')) if f.is_file()}
 
 
 def main():
@@ -111,33 +141,56 @@ def main():
     ap.add_argument('--target', help='cross-build with cargo-zigbuild for this Rust target, optionally with a '
                     'glibc suffix, e.g. x86_64-unknown-linux-gnu.2.31 (default: native build for this host)')
     a = ap.parse_args()
-    triple = a.target.split('.', 1)[0] if a.target else host_triple()
-    build = ['cargo', 'zigbuild', '--target', a.target] if a.target else ['cargo', 'build']
-    if not a.no_build:
-        subprocess.run([*build, '--release', '--locked', '-p', 'outstax', '-p', 'outstax-desktop',
-                        '--features', 'outstax-desktop/desktop'], cwd=PROJECT, check=True)
-    target = pathlib.Path(os.environ.get('CARGO_TARGET_DIR', PROJECT / 'target'))
-    target = target / triple / 'release' if a.target else target / 'release'
+    packages = ['-p', 'outstax', '-p', 'outstax-desktop', '--features', 'outstax-desktop/desktop']
+    root = pathlib.Path(os.environ.get('CARGO_TARGET_DIR', PROJECT / 'target'))
+    universal = a.target == 'universal-apple-darwin'
+    macs = ('aarch64-apple-darwin', 'x86_64-apple-darwin')
+    triple = macs[0] if universal else a.target.split('.', 1)[0] if a.target else host_triple()
+    if universal:
+        target = root / 'universal-apple-darwin' / 'release'
+        if not a.no_build:
+            for arch in macs:
+                subprocess.run(['cargo', 'build', '--release', '--locked', '--target', arch, *packages],
+                               cwd=PROJECT, check=True)
+            target.mkdir(parents=True, exist_ok=True)
+            for program in ('outstax', 'outstax-desktop'):
+                subprocess.run(['lipo', '-create', '-output', str(target / program),
+                                *(str(root / arch / 'release' / program) for arch in macs)], check=True)
+    else:
+        build = ['cargo', 'zigbuild', '--target', a.target] if a.target else ['cargo', 'build']
+        if not a.no_build:
+            subprocess.run([*build, '--release', '--locked', *packages], cwd=PROJECT, check=True)
+        target = root / triple / 'release' if a.target else root / 'release'
     windows = 'windows' in triple
+    macos = 'apple' in triple
     exe = '.exe' if windows else ''
     version = json.loads(cargo('metadata', '--format-version', '1', '--no-deps', '--locked'))['packages'][0]['version']
-    system = 'windows' if windows else 'macos' if 'apple' in triple else 'linux' if 'linux' in triple else triple.split('-')[2]
-    name = f'outstax-{version}-{system}-{triple.split("-")[0]}'
+    system = 'windows' if windows else 'macos' if macos else 'linux' if 'linux' in triple else triple.split('-')[2]
+    name = f'outstax-{version}-{system}-{"universal" if universal else triple.split("-")[0]}'
     a.output_dir.mkdir(parents=True, exist_ok=True)
     out = a.output_dir.resolve() / f'{name}.zip'
     if out.exists():
         raise SystemExit(f'{out} exists; move or delete it first (releases are never overwritten)')
-    third, count = third_party_licences(triple)
-    files = {f'outstax{exe}': target / f'outstax{exe}', f'outstax-desktop{exe}': target / f'outstax-desktop{exe}',
-             'LICENSE': PROJECT / 'LICENSE', 'TROUBLESHOOTING.md': PROJECT / 'docs/guides/TROUBLESHOOTING.md'}
+    desktop = target / f'outstax-desktop{exe}'
+    files = {f'outstax{exe}': target / f'outstax{exe}', 'LICENSE': PROJECT / 'LICENSE',
+             'TROUBLESHOOTING.md': PROJECT / 'docs/guides/TROUBLESHOOTING.md'}
     files.update({f'licenses/{f.name}': f for f in sorted((PROJECT / 'licenses').iterdir())})
-    for path in files.values():
+    for path in [*files.values(), desktop]:
         if not path.is_file():
             raise SystemExit(f'missing {path} (build first, or check CARGO_TARGET_DIR)')
-    extra = {'README.txt': README.format(name=name, cli=f'outstax{exe}', gui=f'outstax-desktop{exe}'),
+    third, count = third_party_licences(triple)
+    data = {n: p.read_bytes() for n, p in files.items()}
+    if macos:  # a signed (ad hoc) .app bundle, so macOS can ask for Bluetooth permission
+        data.update(app_bundle(desktop, version))
+        gui, programs = 'OutStax.app', {'outstax', 'OutStax.app/Contents/MacOS/outstax-desktop'}
+    else:
+        gui = desktop.name
+        data[gui] = desktop.read_bytes()
+        programs = {f'outstax{exe}', gui}
+    extra = {'README.txt': README.format(name=name, cli=f'outstax{exe}', gui=gui,
+                                         platform_note=MACOS_NOTE if macos else ''),
              'THIRD-PARTY-LICENSES.txt': third}
     newline = '\r\n' if windows else '\n'
-    data = {n: p.read_bytes() for n, p in files.items()}
     data.update({n: t.replace('\n', newline).encode() for n, t in extra.items()})
     data['SHA256SUMS.txt'] = ''.join(f'{hashlib.sha256(b).hexdigest()}  {n}\n' for n, b in data.items()).encode()
     with zipfile.ZipFile(out, 'x', zipfile.ZIP_DEFLATED, compresslevel=9) as z:
@@ -145,8 +198,7 @@ def main():
             info = zipfile.ZipInfo(f'{name}/{n}', date_time=(2026, 1, 1, 0, 0, 0))
             info.compress_type = zipfile.ZIP_DEFLATED
             info.create_system = 3  # Unix, so unzip on Linux/macOS applies the mode below
-            program = n in (f'outstax{exe}', f'outstax-desktop{exe}')
-            info.external_attr = (0o100755 if program else 0o100644) << 16
+            info.external_attr = (0o100755 if n in programs else 0o100644) << 16
             z.writestr(info, b)
     with zipfile.ZipFile(out) as z:
         if z.testzip():

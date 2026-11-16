@@ -1,91 +1,120 @@
 name: Release
-# Builds the Windows and Linux release zips on every v* tag (and on demand), runs the
-# tests and the simulator smoke test against each built CLI, uploads the zips as run
-# artifacts and, for tags, attaches them to the GitHub release.
+# On every v* tag (and on demand) each platform is built and tested natively on its
+# own runner: tests, release zip, simulator smoke test against the built CLI. The
+# zips are uploaded as run artifacts. For tags, one publish job then attaches all of
+# them to the GitHub release.
 on:
   push:
     tags: ['v*']
   workflow_dispatch:
 
-permissions:
-  contents: write  # attach the zip to the GitHub release on tags
-
 jobs:
   linux:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - runner: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+          - runner: ubuntu-24.04-arm
+            target: aarch64-unknown-linux-gnu
+    runs-on: ${{ matrix.runner }}
     env:
-      # glibc 2.31 baseline (Ubuntu 20.04, Debian 11 and newer), linked with zig
-      TARGET: x86_64-unknown-linux-gnu
+      # glibc 2.31 baseline (Ubuntu 20.04, Debian 11, Raspberry Pi OS 11 and newer), linked with zig
       GLIBC: '2.31'
     steps:
       - uses: actions/checkout@v4
-
       - uses: dtolnay/rust-toolchain@stable
         with:
-          targets: x86_64-unknown-linux-gnu
-
+          targets: ${{ matrix.target }}
       - uses: mlugg/setup-zig@v2
         with:
           version: 0.17.1
-
       - name: Install cargo-zigbuild
         run: cargo install cargo-zigbuild --version 0.24.1 --locked
-
       - name: Test
         run: cargo test --workspace --locked
-
       - name: Build release zip
-        run: python3 scripts/build/release.py --target "$TARGET.$GLIBC" --output-dir dist
-
+        run: python3 scripts/build/release.py --target "${{ matrix.target }}.$GLIBC" --output-dir dist
       - name: Simulator smoke test (built CLI, mini/square/wide)
-        run: python3 scripts/build/smoke_test.py "target/$TARGET/release/outstax" --output smoke
-
+        run: python3 scripts/build/smoke_test.py "target/${{ matrix.target }}/release/outstax" --output smoke
       - name: Check the glibc baseline
         run: |
-          for f in target/$TARGET/release/outstax target/$TARGET/release/outstax-desktop; do
+          for f in target/${{ matrix.target }}/release/outstax target/${{ matrix.target }}/release/outstax-desktop; do
             need=$(objdump -T "$f" | grep -o 'GLIBC_[0-9.]*' | sort -Vu | tail -1)
             echo "$f needs $need"
             test "$(printf '%s\nGLIBC_%s\n' "$need" "$GLIBC" | sort -V | tail -1)" = "GLIBC_$GLIBC"
           done
-
       - uses: actions/upload-artifact@v4
         with:
-          name: outstax-linux-x86_64
+          name: release-${{ matrix.target }}
           path: dist/*.zip
           if-no-files-found: error
-
-      - name: Attach to the GitHub release
-        if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v2
-        with:
-          files: dist/*.zip
-          body_path: .github/RELEASE_NOTES.md
 
   windows:
-    runs-on: windows-latest
+    strategy:
+      matrix:
+        include:
+          - runner: windows-latest
+            target: x86_64-pc-windows-msvc
+          - runner: windows-11-arm
+            target: aarch64-pc-windows-msvc
+    runs-on: ${{ matrix.runner }}
     steps:
       - uses: actions/checkout@v4
-
       - uses: dtolnay/rust-toolchain@stable
-
       - name: Test
         run: cargo test --workspace --locked
-
       - name: Build release zip
         run: python scripts/build/release.py --output-dir dist
-
       - name: Simulator smoke test (built CLI, mini/square/wide)
         run: python scripts/build/smoke_test.py target/release/outstax.exe --output smoke
-
       - uses: actions/upload-artifact@v4
         with:
-          name: outstax-windows-x86_64
+          name: release-${{ matrix.target }}
           path: dist/*.zip
           if-no-files-found: error
 
-      - name: Attach to the GitHub release
-        if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v2
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-darwin,x86_64-apple-darwin
+      - name: Test
+        run: cargo test --workspace --locked
+      - name: Build release zip (Apple Silicon + Intel, OutStax.app)
+        run: python3 scripts/build/release.py --target universal-apple-darwin --output-dir dist
+      - name: Check the universal binaries and the app signature
+        run: |
+          lipo -archs target/universal-apple-darwin/release/outstax
+          lipo -archs target/universal-apple-darwin/release/outstax-desktop
+          unzip -q dist/*.zip -d unpacked
+          codesign --verify --deep --strict --verbose=2 unpacked/*/OutStax.app
+      - name: Simulator smoke test (built CLI, mini/square/wide)
+        run: python3 scripts/build/smoke_test.py target/universal-apple-darwin/release/outstax --output smoke
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-universal-apple-darwin
+          path: dist/*.zip
+          if-no-files-found: error
+
+  publish:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [linux, windows, macos]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # attach the zips to the GitHub release
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: release-*
+          path: dist
+          merge-multiple: true
+      - name: List the release files
+        run: ls -l dist
+      - uses: softprops/action-gh-release@v2
         with:
           files: dist/*.zip
           body_path: .github/RELEASE_NOTES.md

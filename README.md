@@ -4,8 +4,8 @@
 [![Release](https://github.com/ThisLimn0/outstax/actions/workflows/release.yml/badge.svg)](https://github.com/ThisLimn0/outstax/actions/workflows/release.yml)
 
 An independent desktop app and command-line tool for Fujifilm INSTAX Link
-printers, written in Rust. It prints over Bluetooth LE from Windows and Linux,
-and builds on macOS from source. OutStax is not affiliated with Fujifilm and
+printers, written in Rust. It prints over Bluetooth LE from Windows, macOS and
+Linux, on Intel/AMD and ARM machines. OutStax is not affiliated with Fujifilm and
 contains no Fujifilm code, firmware or assets.
 
 ## Status
@@ -29,14 +29,21 @@ yet. If you own one, a test upload (no film) and a report would help a lot.
 
 Ready-made builds are on the
 [releases page](https://github.com/ThisLimn0/outstax/releases). GitHub Actions
-builds them from the tagged source after the tests and a simulator run pass.
+builds and tests each one on its own platform from the tagged source.
 
-- **Windows 10/11 (x64):** unzip `outstax-0.1.0-windows-x86_64.zip` and start
-  `outstax-desktop.exe`.
-- **Linux (x64, glibc 2.31 or newer):** unzip `outstax-0.1.0-linux-x86_64.zip` and
-  start `./outstax-desktop`. You need an X11 or Wayland session and a running
-  BlueZ service.
-- **macOS:** no download yet. Build it from source on a Mac (see below).
+| Zip | For |
+|---|---|
+| `outstax-0.1.0-windows-x86_64.zip` | Windows 10/11 on Intel and AMD PCs |
+| `outstax-0.1.0-windows-aarch64.zip` | Windows 11 on ARM (Snapdragon laptops) |
+| `outstax-0.1.0-macos-universal.zip` | macOS 11 or newer, Apple Silicon and Intel |
+| `outstax-0.1.0-linux-x86_64.zip` | 64-bit Linux with glibc 2.31 or newer (Ubuntu 20.04, Debian 11 and later) |
+| `outstax-0.1.0-linux-aarch64.zip` | 64-bit ARM Linux, such as a Raspberry Pi 4 or 5 |
+
+Unzip it and start the desktop app: `outstax-desktop.exe` on Windows,
+`./outstax-desktop` on Linux, `OutStax.app` on macOS. On Linux you need an X11 or
+Wayland session and a running BlueZ service. The macOS app is not notarised by
+Apple, so confirm the first start under System Settings > Privacy & Security
+("Open Anyway"), then allow Bluetooth when macOS asks.
 
 ## Using the desktop app
 
