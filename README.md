@@ -10,7 +10,7 @@ contains no Fujifilm code, firmware or assets.
 
 ## Status
 
-Version 0.1.0. One printer has been tested on real hardware so far: an original
+Version 0.1.1. One printer has been tested on real hardware so far: an original
 mini Link (firmware 0104) on Windows 11, where a test upload and a real print both
 worked ([hardware record](docs/evidence/hardware-2026-11-13-mini-link.txt)). The
 other models speak the same protocol and should work, but nobody has tried them
@@ -33,11 +33,11 @@ builds and tests each one on its own platform from the tagged source.
 
 | Zip | For |
 |---|---|
-| `outstax-0.1.0-windows-x86_64.zip` | Windows 10/11 on Intel and AMD PCs |
-| `outstax-0.1.0-windows-aarch64.zip` | Windows 11 on ARM (Snapdragon laptops) |
-| `outstax-0.1.0-macos-universal.zip` | macOS 11 or newer, Apple Silicon and Intel |
-| `outstax-0.1.0-linux-x86_64.zip` | 64-bit Linux with glibc 2.31 or newer (Ubuntu 20.04, Debian 11 and later) |
-| `outstax-0.1.0-linux-aarch64.zip` | 64-bit ARM Linux, such as a Raspberry Pi 4 or 5 |
+| `outstax-0.1.1-windows-x86_64.zip` | Windows 10/11 on Intel and AMD PCs |
+| `outstax-0.1.1-windows-aarch64.zip` | Windows 11 on ARM (Snapdragon laptops) |
+| `outstax-0.1.1-macos-universal.zip` | macOS 11 or newer, Apple Silicon and Intel |
+| `outstax-0.1.1-linux-x86_64.zip` | 64-bit Linux with glibc 2.31 or newer (Ubuntu 20.04, Debian 11 and later) |
+| `outstax-0.1.1-linux-aarch64.zip` | 64-bit ARM Linux, such as a Raspberry Pi 4 or 5 |
 
 Unzip it and start the desktop app: `outstax-desktop.exe` on Windows,
 `./outstax-desktop` on Linux, `OutStax.app` on macOS. On Linux you need an X11 or
@@ -149,7 +149,7 @@ is a starting point for a bundle.
   `--target x86_64-unknown-linux-gnu.2.31` cross-builds the Linux zip with
   [zig](https://ziglang.org) and `cargo-zigbuild`.
 - Pushing a `v*` tag runs [the release workflow](.github/workflows/release.yml),
-  which builds, tests and publishes the Windows and Linux zips with
+  which builds, tests and publishes the Windows, macOS and Linux zips with
   [the release notes](.github/RELEASE_NOTES.md).
 - `python scripts/build/prose_check.py` checks the documentation style.
 - [docs/guides/HARDWARE_TESTING.md](docs/guides/HARDWARE_TESTING.md) says how to

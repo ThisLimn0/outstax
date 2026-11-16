@@ -1973,7 +1973,7 @@ dependencies = [
 
 [[package]]
 name = "outstax"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "anyhow",
  "clap",
@@ -1986,7 +1986,7 @@ dependencies = [
 
 [[package]]
 name = "outstax-client"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -2005,7 +2005,7 @@ dependencies = [
 
 [[package]]
 name = "outstax-desktop"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "anyhow",
  "eframe",
@@ -2018,7 +2018,7 @@ dependencies = [
 
 [[package]]
 name = "outstax-protocol"
-version = "0.1.0"
+version = "0.1.1"
 
 [[package]]
 name = "owned_ttf_parser"
