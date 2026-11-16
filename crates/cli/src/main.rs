@@ -141,8 +141,11 @@ enum Action {
         width: Option<u32>,
         #[arg(long)]
         height: Option<u32>,
-        #[arg(long, default_value_t = 107520)]
-        max_bytes: usize,
+        #[arg(
+            long,
+            help = "JPEG size limit in bytes. Default: 153600 for mini, 337920 for wide, 107520 for square or explicit --width/--height"
+        )]
+        max_bytes: Option<usize>,
         #[arg(long,value_enum,default_value_t=FitArg::Crop)]
         fit: FitArg,
         #[arg(long)]
@@ -385,16 +388,19 @@ async fn main() -> Result<()> {
             design,
             unsharp,
         } => {
-            let (w, h) = match (width, height) {
-                (None, None) => dimensions(format)?,
-                (Some(w), Some(h)) => (*w, *h),
+            let ((w, h), default_limit) = match (width, height) {
+                (None, None) => {
+                    let (w, h) = dimensions(format)?;
+                    ((w, h), imaging::default_max_bytes(w, h))
+                }
+                (Some(w), Some(h)) => ((*w, *h), 107520),
                 _ => bail!("provide both --width and --height"),
             };
             let p = imaging::prepare_with_options(
                 imaging::load(image)?,
                 w,
                 h,
-                *max_bytes,
+                max_bytes.unwrap_or(default_limit),
                 (*fit).into(),
                 imaging::Processing {
                     lut: None,

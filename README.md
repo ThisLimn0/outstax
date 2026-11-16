@@ -51,6 +51,8 @@ Apple, so confirm the first start under System Settings > Privacy & Security
 2. Press **Connect** and pick your printer. The top bar then shows its battery
    and how many shots are left.
 3. Open a photo with **Open** or drop it on the window. JPEG, PNG and WebP work.
+   Photos with an embedded colour profile (Display P3 or Adobe RGB, say) are
+   converted to sRGB first.
 4. Frame it. In Fill mode you drag the photo to move it and scroll (or use the
    Zoom slider) to zoom. Double-click puts it back in the middle. Fit mode adds
    white margins instead. Brightness, contrast, saturation and colour temperature

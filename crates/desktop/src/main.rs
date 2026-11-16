@@ -72,6 +72,7 @@ struct PreviewKey {
     contain: bool,
     lut: Option<String>,
     dims: (u32, u32),
+    max_bytes: usize,
 }
 
 #[derive(Clone, Copy, PartialEq, Debug)]
@@ -251,7 +252,7 @@ fn job_jpeg(
         Source::Photo { full, .. } => {
             let table = lut.as_deref().map(|p| lut_bytes(cache, p)).transpose()?;
             let jpeg = imaging::prepare_with_options(
-                imaging::adjust((*full).clone(), adjust),
+                (*full).clone(),
                 info.image.width as u32,
                 info.image.height as u32,
                 info.image.max_bytes as usize,
@@ -259,7 +260,7 @@ fn job_jpeg(
                 Processing {
                     lut: table.as_deref().map(Vec::as_slice),
                     design,
-                    crop: adjust.crop,
+                    adjust,
                     ..Default::default()
                 },
             )?
@@ -378,6 +379,16 @@ impl App {
     }
     fn dims(&self) -> (u32, u32) {
         self.printer.as_ref().map_or((600, 800), |p| p.dims)
+    }
+    /// The JPEG size limit a print would use, so the preview shows the real compression.
+    fn max_bytes(&self) -> usize {
+        self.printer.as_ref().map_or_else(
+            || {
+                let (w, h) = self.dims();
+                imaging::default_max_bytes(w, h)
+            },
+            |p| p.max_bytes as usize,
+        )
     }
     fn frame_aspect(&self) -> f32 {
         let (w, h) = match &self.source {
@@ -647,6 +658,7 @@ impl App {
             contain: self.contain,
             lut: self.lut_choice(),
             dims: self.dims(),
+            max_bytes: self.max_bytes(),
         };
         if self.requested.as_ref() == Some(&key) {
             self.changed_at = None;
@@ -669,17 +681,16 @@ impl App {
                     .as_deref()
                     .map(|p| lut_bytes(&cache, p))
                     .transpose()?;
-                let image = imaging::adjust((*small).clone(), key.adjust);
-                // Same pipeline as printing, minus Design Print's wire warp.
+                // Same pipeline and byte limit as printing, minus Design Print's wire warp.
                 let jpeg = imaging::prepare_with_options(
-                    image,
+                    (*small).clone(),
                     key.dims.0,
                     key.dims.1,
-                    8 << 20,
+                    key.max_bytes,
                     fit(key.contain),
                     Processing {
                         lut: lut.as_deref().map(Vec::as_slice),
-                        crop: key.adjust.crop,
+                        adjust: key.adjust,
                         ..Default::default()
                     },
                 )?
